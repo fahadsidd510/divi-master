@@ -1,0 +1,149 @@
+/*
+Theme Name: Divi Child Theme
+Description: A child theme to house custom coding which modifies the Divi parent theme by Elegant Themes. Includes default line numbers where the code was taken from in the parent theme.
+Author:   Brad Dalton http://wpsites.net
+Template: Divi
+*/
+
+@import url("../Divi/style.css");
+
+
+/* Style Footer Credits - Lines 948 & 949 */
+
+#footer-info { 
+text-align: left; 
+color: green; 
+padding-bottom: 10px; 
+float: left; 
+}
+
+#footer-info a { 
+font-weight: 700; 
+color: yellow; 
+}
+
+#footer-info a:hover { 
+color: pink; 
+}
+
+
+/* Style Footer Social Icons - Lines 1185 to 1198 */
+
+#footer-bottom .et-social-facebook a {
+	color: blue;
+}
+#footer-bottom .et-social-twitter a {
+	color: powderblue;
+}
+#footer-bottom .et-social-google-plus a {
+	color: red;
+}
+#footer-bottom .et-social-rss a {
+	color: orange;
+}
+
+/* Hover Colors*/
+#footer-bottom .et-social-facebook a:hover {
+	color: pink;
+}
+#footer-bottom .et-social-twitter a:hover {
+	color: pink;
+}
+#footer-bottom .et-social-google-plus a:hover {
+	color: pink;
+}
+#footer-bottom .et-social-rss a:hover {
+	color: pink;
+}
+
+#top-menu li {     padding-right: 15px; }
+
+
+.et_fixed_nav #main-header, .et_fixed_nav #top-header {
+    position: relative;
+    top: 0 !important;
+}
+
+#top-header .et-social-icons {
+    margin-right: 20px;
+}
+#et-info-phone:before {
+    content: "\e090" !important;
+}
+#et-info {
+    float: right;
+}
+span#et-info-email {
+    margin-left: 20px;
+}
+
+#main-header2 #et-top-navigation {
+    float: left;
+    padding-left: 0 !important;
+}
+header#main-header2 {
+    background: #82a6bf;
+}
+
+header#main-header1  .logo_container {
+    position: relative;
+    float: left;
+	width: unset; 
+    height: unset; 
+}
+header#main-header1 img#logo {
+    /*width: 485px;*/
+    max-width: 300px;
+}
+.adopt-enq {
+    float: right;
+    max-width: 500px;
+}
+header#main-header1 {
+    padding: 10px 0;
+}
+.adopt-enq p {
+    text-align: right;
+    font-size: 18px;
+    color: #423A52;
+    line-height: 30px;
+    font-weight: 700;
+}
+.adopt-enq p a{
+	color: #82a6bf;
+	font-weight: 700;
+}
+@media(max-width: 560px) {
+    .adopt-enq p {
+        font-size: 16px;
+    }
+}
+.nav li ul{
+	border-color: #dda59c !important;
+}
+#top-menu a {
+    color: #ffffff !important;
+}
+#top-menu li li {
+	display: block;
+}
+#top-menu li li a {
+	color: #14316c !important;
+	font-size: 14px !important;
+	line-height: 20px !important;
+	padding-right: 0;
+    padding-left: 0;
+}
+#top-menu li.current-menu-item>a {
+    color: #423A52!important;
+}
+h1, h2, h3, h4, h5, h6, p, body, input, textarea, select{
+    font-family: 'Raleway',Helvetica,Arial,Lucida,sans-serif !important;
+}
+.et_fixed_nav.et_show_nav #page-container, .et_non_fixed_nav.et_transparent_nav.et_show_nav #page-container {
+    padding-top: 0 !important;
+}
+
+#footer-widgets {
+    padding-top: 50px;
+}
