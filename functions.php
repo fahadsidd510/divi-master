@@ -382,3 +382,10 @@ function register_landing_menu() {
   register_nav_menu('landing-menu',__( 'Landing Menu' ));
 }
 add_action( 'init', 'register_landing_menu' );
+
+
+
+/**
+ * AZ Landing Page — Asset isolation
+ */
+

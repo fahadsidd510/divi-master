@@ -1,71 +1,71 @@
-<!DOCTYPE html>
-<!--[if IE 6]>
-<html id="ie6" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 7]>
-<html id="ie7" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if IE 8]>
-<html id="ie8" <?php language_attributes(); ?>>
-<![endif]-->
-<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<?php
+/**
+ * Header: Arizona Landing Page
+ * Called via get_header( 'arizona' ) in template-arizona.php
+ * Outputs: <head> + opening <body> + header markup
+ */
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<!--<![endif]-->
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<?php elegant_description(); ?>
-	<?php elegant_keywords(); ?>
-	<?php elegant_canonical(); ?>
 
-	<?php do_action( 'et_head_meta' ); ?>
+  <meta charset="<?php bloginfo( 'charset' ); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/src/css/landing-css.css" type="text/css" media="all" />
-
-	<?php wp_head();
-	$page_id = get_the_ID();
-	$landing_logo = get_field('landing_logo', $page_id);
-	$header_text = get_field('add_header_text', $page_id);
-	?>
+  <!-- SEO -->
+  <title><?php wp_title( '|', true, 'right' ); ?><?php bloginfo( 'name' ); ?></title>
+  <meta name="description" content="<?php echo esc_attr( get_bloginfo( 'description' ) ); ?>">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri();?>/src/css/az-landing-css.css" type="text/css" media="all" />
+  <?php wp_head(); ?>
 </head>
-<body <?php body_class(); ?>>
-<div id="page-top-section">
-<header>
-	<div class="lp-container">
-		<div class="header-wrapper">
-				<?php if($landing_logo) : ?>
-				<div class="landing-logo">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<img width="185" height="185" src="<?php echo $landing_logo['url']?>" alt="<?php echo $landing_logo['alt']?>" />
-					</a>
-				</div>
-				<?php endif; ?>
-				<div class="hamburger" id="menuToggle">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
+<body <?php body_class( 'az-landing-page' ); ?>>
 
-				<div class="landing-nav">
-					<?php
-					wp_nav_menu( array(
-						'theme_location' => 'landing-menu',
-						'container'      => false,
-						'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-						'fallback_cb'    => false,
-					) );
-					?>
+<?php wp_body_open(); ?>
 
-				</div>
-				<div class="header-cta-text">
-					<?php
-					if($header_text):
-						echo $header_text;
-					endif;
-					?>
-				</div>
-		</div><!-- header-wrapper -->
-	</div>
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header">
+  <div class="az-container">
+    <div class="header-wrapper">
+
+      <!-- Logo -->
+      <div class="logo-wrapper">
+        <a href="/">
+          <img src="http://az-pregnancy.local/wp-content/uploads/2026/05/AZ-pregnancy-logo.png"
+               alt="AZ Pregnancy Help — Adoption is a beautiful choice">
+        </a>
+      </div>
+
+      <!-- Top Bar -->
+      <div class="top-header">
+        <div class="top-header-content">
+          <div class="phone-row">
+            <div class="phone-left">
+              <span class="label">Pregnant?</span>
+              <a href="tel:6236954112" class="number">623.695.4112 (Call/Text)</a>
+            </div>
+            <div class="phone-right">
+              <a href="tel:6239364729">623.936.4729</a>
+              <span class="sep">|</span>
+              <a href="tel:8003409665">800.340.9665</a>
+            </div>
+          </div>
+          <div class="location-row">Phoenix, Arizona | Serving Statewide</div>
+        </div>
+      </div>
+
+      <!-- Nav Bar -->
+      <nav class="bottom-header">
+		<ul class="nav-menu">
+          <li><a href="#">I'M PREGNANT <span class="arrow">▾</span></a></li>
+          <li><a href="#">BABY IS HERE <span class="arrow">▾</span></a></li>
+          <li><a href="#">WAITING FAMILIES </a></li>
+          <li><a href="#">ABOUT US </a></li>
+          <li><a href="#">RESOURCES </a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </div>
 </header>
-
