@@ -21,19 +21,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header( 'arizona' );
 ?>
 
-<!-- ══════════════════════════════════════
-     SECTION 2: HERO BANNER
-     ══════════════════════════════════════ -->
+<!-- Hero Banner Section -->
 <section class="hero-banner" style="background-image: url('http://az-pregnancy.local/wp-content/uploads/2026/05/az-banner.webp');">
-
-  <!-- Background -->
-  <!-- <div class="bg-image">
-    <img src="http://az-pregnancy.local/wp-content/uploads/2026/05/az-banner.webp"
-         alt="Pregnant woman smiling"
-         loading="eager">
-  </div> -->
-  <!-- <div class="bg-overlay"></div> -->
-
   <!-- Content -->
   <div class="az-container">
     <div class="banner-content">
@@ -69,6 +58,14 @@ get_header( 'arizona' );
   </div>
 
 </section>
+
+<!-- Podcast Section -->
+<main class="podcast-section">
+  <section class="birth-podcast">
+
+  </section>
+</main>
+
 
 <?php
 get_footer( 'arizona' );
