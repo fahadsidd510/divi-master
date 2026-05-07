@@ -329,6 +329,114 @@ get_header( 'arizona' );
         </div>
       </div>
 
+      <div class="ep-button-wrapper">
+        <a class="ep-button" href="#">View All Episodes</a>
+      </div>
+
+      <div class="ep-listening-wrapper">
+        <div class="ep-book-icon">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ep-book-black.svg" alt="Learn About Adoption">
+        </div>
+        <div class="ep-listen-content">
+          <h3>Prefer reading instead of listening?</h3>
+          <p>Explore full podcast transcripts for detailed guidance and support.</p>
+        </div>
+        <a href="#" class="ep-transcript-btn">Read All Transcripts</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Topic Cards Section ── -->
+  <section class="topic-cards">
+    <div class="az-container">
+      <div class="topic-cards-grid">
+        <!-- Card 1 -->
+        <div class="topic-card">
+          <div class="topic-card-icon">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/topic-adoption.svg" alt="Learn About Adoption">
+          </div>
+          <div class="topic-card-text">
+            <h3>Learn About Adoption</h3>
+            <p>Understand your options and the adoption Process.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="topic-card">
+          <div class="topic-card-icon">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/topic-stories.svg" alt="Hear Real Stories">
+          </div>
+          <div class="topic-card-text">
+            <h3>Hear Real Stories</h3>
+            <p>Listen to personal stories from birth mothers</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="topic-card">
+          <div class="topic-card-icon">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/topic-rights.svg" alt="Understand your Rights">
+          </div>
+          <div class="topic-card-text">
+            <h3>Understand your Rights</h3>
+            <p>Know your legal rights and the support available</p>
+          </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="topic-card">
+          <div class="topic-card-icon">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/topic-support.svg" alt="Get Emotional Support">
+          </div>
+          <div class="topic-card-text">
+            <h3>Get Emotional Support</h3>
+            <p>Receive guidance and empathy on your journey</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ── Podcast Community Section ── -->
+  <section class="podcast-community">
+    <div class="az-container">
+      <div class="pc-wrapper">
+        <!-- Left Content -->
+        <div class="pc-content">
+          <div class="pc-badge">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podcast-comunity-heading-mic.svg" alt="Mic icon">
+            <span>Podcast Community</span>
+          </div>
+          <h2 class="pc-heading">Join Our Podcast Community</h2>
+          <h3 class="pc-subheading">Birth Mother Matters in Adoption Radio</h3>
+          <p class="pc-description">
+            Learn adoption from every perspective.<br>
+            Real stories . Real insights . Real adoption journeys
+          </p>
+          <div class="pc-badges-row">
+            <div class="pc-pill">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/gift.svg" alt="Free">
+              <span>100% Free</span>
+            </div>
+            <div class="pc-pill">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/cost.svg" alt="No Cost">
+              <span>No Cost</span>
+            </div>
+            <div class="pc-pill">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/no-fees.svg" alt="No Fees">
+              <span>No Fees</span>
+            </div>
+          </div>
+          <div class="pc-follow-bar">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/follow-us-bell.svg" alt="Bell icon">
+            <div class="pc-follow-text">
+              <strong>Follow Us to get Notified</strong>
+              <span>We'll let you know when new episode are released!</span>
+            </div>
+          </div>
+        </div>
+        <!-- Right Phone Mockup -->
+        <div class="pc-phone">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Mbl.png" alt="Podcast app on phone">
+        </div>
+      </div>
     </div>
   </section>
 </main>
