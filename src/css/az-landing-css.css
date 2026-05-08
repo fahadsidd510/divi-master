@@ -134,8 +134,8 @@ body {
 .az-container {
   max-width: var(--container-max);
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
   width: 100%;
 }
 
@@ -473,7 +473,7 @@ body {
 .podcast-section {
   background: url('../images/podcast-bg.webp') center center / cover no-repeat !important;
   width: 100%;
-  padding: 80px 30px;
+  /* padding: 80px 30px; */
 }
 
 /* ── 7a. Birth Mother Intro ── */
@@ -1133,11 +1133,583 @@ body {
   }
 
   .pc-follow-bar {
+    /* flex-direction: column;
+    text-align: center; */
+    padding: 20px;
+  }
+  .pc-follow-text{
+    text-align: left;
+  }
+}
+
+
+/* ── Listen On Your Favourite Platform ── */
+
+.listen-platforms {
+  background: var(--color-orange-btn);
+  padding: 50px 0 55px;
+}
+
+/* Header */
+.lp-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.lp-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 6px;
+}
+
+.lp-heading-row img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.lp-header h2 {
+  font-family: var(--font-display) !important;
+  font-size: clamp(26px, 3vw, 44px);
+  font-weight: 400;
+  color: var(--color-white);
+  line-height: 1.2;
+  margin: 0;
+}
+
+.lp-header p {
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(14px, 1.4vw, 20px);
+  color: var(--color-white);
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Inner container with lighter orange */
+.lp-inner {
+  background: #F2AB94;
+  border-radius: 16px;
+  padding: 50px 85px;
+}
+
+/* 4-column platform grid */
+.lp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.lp-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-height: 64px;
+}
+
+/* .lp-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+} */
+
+.lp-card img {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* YouTube full-width bar */
+.lp-youtube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: var(--color-white);
+  border-radius: 10px;
+  padding: 18px 30px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lp-youtube:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.lp-youtube img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.lp-youtube span {
+  font-family: var(--font-display) !important;
+  font-size: clamp(24px, 3.2vw, 32px);
+  font-weight: 400;
+  color: var(--color-text-dark);
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 900px) {
+  .lp-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .listen-platforms {
+    padding: 36px 0 40px;
+  }
+
+  .lp-inner {
+    padding: 16px;
+    border-radius: 12px;
+  }
+
+  .lp-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .lp-card {
+    padding: 12px 10px;
+    /* min-height: 52px; */
+    border-radius: 8px;
+  }
+
+  .lp-card img {
+    /* max-height: 32px; */
+  }
+
+  .lp-heading-row img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .lp-youtube {
+    padding: 14px 16px;
+    gap: 12px;
+    border-radius: 8px;
+  }
+
+  .lp-youtube img {
+    width: 34px;
+    height: 24px;
+  }
+}
+
+
+/* ══════════════════════════════════════
+   Here For You Section
+   ══════════════════════════════════════ */
+
+.here-for-you {
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 0 70px;
+}
+
+/* ── Top Content ── */
+
+.hfy-top {
+  max-width: 55%;
+  margin-bottom: 30px;
+}
+
+.hfy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-orange-btn);
+  border-radius: 8px;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+}
+
+.hfy-badge img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.hfy-badge span {
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(13px, 1.2vw, 18px);
+  font-weight: 700;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hfy-top h2 {
+  font-family: var(--font-display) !important;
+  font-size: clamp(30px, 3.8vw, 56px);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  line-height: 1.1;
+  margin: 0 0 10px;
+}
+
+.hfy-top h2 span {
+  color: var(--color-orange-btn);
+}
+
+.hfy-tagline {
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(14px, 1.2vw, 18px);
+  color: var(--color-text-muted);
+  margin: 0 0 24px;
+}
+
+/* Schedule pill */
+.hfy-schedule {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 12px 22px;
+}
+
+.hfy-schedule img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.hfy-schedule strong {
+  display: block;
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.hfy-schedule span {
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(13px, 1.1vw, 16px);
+  color: var(--color-text-dark);
+}
+
+.hfy-schedule em {
+  color: var(--color-orange-btn);
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* ── Support Label ── */
+
+.hfy-support-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0 20px;
+}
+
+.hfy-support-label img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+.hfy-support-label h3 {
+  font-family: var(--font-display) !important;
+  font-size: clamp(20px, 2.2vw, 32px);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+/* ── 4 Support Cards ── */
+
+.hfy-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.hfy-card {
+  background: var(--color-white);
+  border-radius: 14px;
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease;
+}
+
+.hfy-card:hover {
+  transform: translateY(-4px);
+}
+
+.hfy-card-icon {
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 14px;
+  background: #FAE0D6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hfy-card-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.hfy-card h4 {
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(14px, 1.3vw, 19px);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin: 0 0 6px;
+}
+
+.hfy-card p {
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(13px, 1.1vw, 16px);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ── About Us Bar ── */
+
+.hfy-about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: #F2CCBF;
+  border-radius: 14px;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+}
+
+.hfy-about-left {
+  flex: 1;
+}
+
+.hfy-about-badge {
+  display: inline-block;
+  background: var(--color-orange-btn);
+  color: var(--color-white);
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(12px, 1vw, 15px);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 5px 14px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.hfy-about-left p {
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(14px, 1.4vw, 20px);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.hfy-about-left p span {
+  color: var(--color-orange-btn);
+  font-weight: 400;
+}
+
+.hfy-about-cta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--color-orange-btn);
+  border-radius: 12px;
+  padding: 16px 24px;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: filter 0.2s ease;
+}
+
+.hfy-about-cta:hover {
+  filter: brightness(1.08);
+}
+
+.hfy-about-cta > img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.hfy-about-cta div:first-of-type span {
+  display: block;
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(12px, 1vw, 15px);
+  color: var(--color-white);
+}
+
+.hfy-about-cta div:first-of-type strong {
+  display: block;
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(20px, 2.2vw, 30px);
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.hfy-about-247 {
+  background: var(--color-white);
+  color: var(--color-orange-btn);
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(16px, 1.6vw, 22px);
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 50%;
+  line-height: 1;
+}
+
+/* ── You're Not Alone Bar ── */
+
+.hfy-alone {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: #F7F0ED;
+  border-radius: 14px;
+  overflow: hidden;
+  padding-right: 40px;
+}
+
+.hfy-alone-img {
+  flex-shrink: 0;
+  width: 220px;
+}
+
+.hfy-alone-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hfy-alone-text h3 {
+  font-family: var(--font-display) !important;
+  font-size: clamp(24px, 3vw, 42px);
+  font-weight: 400;
+  color: var(--color-orange-btn);
+  margin: 0 0 6px;
+}
+
+.hfy-alone-text p {
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(14px, 1.4vw, 20px);
+  color: var(--color-text-dark);
+  line-height: 1.4;
+  margin: 0 0 4px;
+}
+
+.hfy-alone-text p.hfy-alone-highlight {
+  color: var(--color-orange-btn);
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 900px) {
+  .hfy-top {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hfy-schedule {
+    justify-content: center;
+  }
+
+  .hfy-support-label {
+    justify-content: center;
+  }
+
+  .hfy-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hfy-about {
     flex-direction: column;
     text-align: center;
+  }
+
+  .hfy-about-cta {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hfy-alone {
+    flex-direction: column;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .hfy-alone-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .hfy-alone-text {
     padding: 20px;
   }
 }
+
+@media (max-width: 680px) {
+  .here-for-you {
+    padding: 40px 0 50px;
+  }
+
+  .hfy-cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .hfy-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .hfy-card-icon {
+    margin: 0;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+  }
+
+  .hfy-card-icon img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hfy-about {
+    padding: 20px;
+  }
+
+  .hfy-about-247 {
+    padding: 6px 10px;
+  }
+
+  .hfy-alone-img {
+    height: 160px;
+  }
+}
+
 
 
 /* ══════════════════════════════════════
@@ -1449,7 +2021,7 @@ body {
   }
 
   .podcast-section {
-    padding: 40px 12px;
+    padding: 40px 0px;
   }
 
   .category-card p{
@@ -1524,8 +2096,8 @@ body {
 
 @media (max-width: 600px) {
   .az-container {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .site-header {

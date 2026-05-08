@@ -439,6 +439,151 @@ get_header( 'arizona' );
       </div>
     </div>
   </section>
+  <!-- ── Listen On Your Favourite Platform ── -->
+  <section class="listen-platforms">
+    <div class="az-container">
+      <div class="lp-header">
+        <div class="lp-heading-row">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/headphones-icon.svg" alt="Headphones">
+          <h2>Listen on your Favourite Platform</h2>
+        </div>
+        <p>Choose your preferred app and start listening today!</p>
+      </div>
+      <div class="lp-inner">
+        <div class="lp-grid">
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/itunes.png" alt="iTunes">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/spotify.png" alt="Spotify">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/castbox.png" alt="Castbox">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/stitcher.png" alt="Stitcher">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/radiopublic.png" alt="RadioPublic">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/pocketcasts.png" alt="Pocket Casts">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/googleplay.png" alt="Google Play">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/blubrry.png" alt="Blubrry">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podbean.png" alt="PodBean">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podchaser.png" alt="Podchaser">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ipodder.png" alt="iPodder">
+          </a>
+          <a href="#" class="lp-card">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/tunein.png" alt="TuneIn">
+          </a>
+        </div>
+        <a href="#" class="lp-youtube">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/youtube.png" alt="YouTube">
+          <span>YouTube Channel: AZ Pregnancy Help</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ── We're Here For You Section ── -->
+  <section class="here-for-you" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/here-for-you-bg.webp');">
+    <div class="az-container">
+
+      <!-- Top: Badge + Heading + Subtext + Schedule -->
+      <div class="hfy-top">
+        <div class="hfy-badge">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/headphones-icon.svg" alt="Headphones">
+          <span>We're Here For You</span>
+        </div>
+        <h2>We're Here for You -<br>Every Step of Your<br><span>Adoption Journey</span></h2>
+        <p class="hfy-tagline">Real Stories. Real Support. Real Choices.</p>
+        <div class="hfy-schedule">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/calendar-icon.svg" alt="Calendar">
+          <div>
+            <strong>New Podcast Episodes</strong>
+            <span>Every <em>Tuesday &amp; Friday</em> at <em>4:30 PM</em></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Support heading -->
+      <div class="hfy-support-label">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/heart-peach.svg" alt="Heart">
+        <h3>How we support you</h3>
+      </div>
+
+      <!-- 4 Support Cards -->
+      <div class="hfy-cards">
+        <div class="hfy-card">
+          <div class="hfy-card-icon">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/support-financial.svg" alt="Financial Assistance">
+          </div>
+          <h4>Financial Assistance</h4>
+          <p>Help when you need it most.</p>
+        </div>
+        <div class="hfy-card">
+          <div class="hfy-card-icon">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/support-housing.svg" alt="Housing &amp; Food Support">
+          </div>
+          <h4>Housing &amp; Food Support</h4>
+          <p>Safe housing and basic needs.</p>
+        </div>
+        <div class="hfy-card">
+          <div class="hfy-card-icon">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/support-pregnancy.svg" alt="Pregnancy Options Guidance">
+          </div>
+          <h4>Pregnancy Options Guidance</h4>
+          <p>Explore your options with care.</p>
+        </div>
+        <div class="hfy-card">
+          <div class="hfy-card-icon">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/support-247.svg" alt="24/7 Call &amp; Text Support">
+          </div>
+          <h4>24/7 Call &amp; Text Support</h4>
+          <p>We're always here to listen.</p>
+        </div>
+      </div>
+
+      <!-- About Us Bar -->
+      <div class="hfy-about">
+        <div class="hfy-about-left">
+          <div class="hfy-about-badge">About Us</div>
+          <p>AZ Pregnancy Help supports birth mothers across Arizona with <span>safe, confidential, and free adoption support services.</span></p>
+        </div>
+        <a href="tel:6239654112" class="hfy-about-cta">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/phone-white.svg" alt="Phone">
+          <div>
+            <span>Call or Text Us Anytime</span>
+            <strong>623-965-4112</strong>
+          </div>
+          <div class="hfy-about-247">24/7</div>
+        </a>
+      </div>
+
+      <!-- You're Not Alone Bar -->
+      <div class="hfy-alone">
+        <div class="hfy-alone-img">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/not-alone-mother.png" alt="Mother and baby">
+        </div>
+        <div class="hfy-alone-text">
+          <h3>You're Not Alone</h3>
+          <p><strong>Facing an unplanned pregnancy?</strong></p>
+          <p class="hfy-alone-highlight">We're here to support, guide, and walk with you through every step.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
 </main>
 <?php
 get_footer( 'arizona' );
