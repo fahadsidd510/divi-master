@@ -330,7 +330,7 @@ get_header( 'arizona' );
       </div>
 
       <div class="ep-button-wrapper">
-        <a class="ep-button" href="#">View All Episodes</a>
+        <a class="ep-button" href="#">See all 265 episodes</a>
       </div>
 
       <div class="ep-listening-wrapper">
@@ -404,7 +404,7 @@ get_header( 'arizona' );
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podcast-comunity-heading-mic.svg" alt="Mic icon">
             <span>Podcast Community</span>
           </div>
-          <h2 class="pc-heading">Join Our Podcast Community</h2>
+          <h2 class="pc-heading">Join Our Podcast <br>Community</h2>
           <h3 class="pc-subheading">Birth Mother Matters in Adoption Radio</h3>
           <p class="pc-description">
             Learn adoption from every perspective.<br>
@@ -442,14 +442,22 @@ get_header( 'arizona' );
   <!-- ── Listen On Your Favourite Platform ── -->
   <section class="listen-platforms">
     <div class="az-container">
-      <div class="lp-header">
+      <!-- <div class="lp-header">
         <div class="lp-heading-row">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/headphones-icon.svg" alt="Headphones">
           <h2>Listen on your Favourite Platform</h2>
         </div>
         <p>Choose your preferred app and start listening today!</p>
-      </div>
+      </div> -->
       <div class="lp-inner">
+        <div class="lp-header">
+          <div class="lp-heading-row">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/headphones-icon.svg" alt="Headphones">
+            <h2>Listen on your Favourite Platform</h2>
+          </div>
+          <p>Choose your preferred app and start listening today!</p>
+        </div>
+
         <div class="lp-grid">
           <a href="#" class="lp-card">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/itunes.png" alt="iTunes">
@@ -502,17 +510,17 @@ get_header( 'arizona' );
       <!-- Top: Badge + Heading + Subtext + Schedule -->
       <div class="hfy-top">
         <div class="hfy-badge">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/headphones-icon.svg" alt="Headphones">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/headphone-orange.svg" alt="Headphones">
           <span>We're Here For You</span>
         </div>
         <h2>We're Here for You -<br>Every Step of Your<br><span>Adoption Journey</span></h2>
         <p class="hfy-tagline">Real Stories. Real Support. Real Choices.</p>
-        <div class="hfy-schedule">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/calendar-icon.svg" alt="Calendar">
-          <div>
-            <strong>New Podcast Episodes</strong>
-            <span>Every <em>Tuesday &amp; Friday</em> at <em>4:30 PM</em></span>
-          </div>
+      </div>
+      <div class="hfy-schedule">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/calendar-icon.svg" alt="Calendar">
+        <div>
+          <p>New Podcast Episodes</p>
+          <p>Every <span>Tuesday &amp; Friday</span> at <span>4:30 PM</span></p>
         </div>
       </div>
 
@@ -572,9 +580,6 @@ get_header( 'arizona' );
 
       <!-- You're Not Alone Bar -->
       <div class="hfy-alone">
-        <div class="hfy-alone-img">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/not-alone-mother.png" alt="Mother and baby">
-        </div>
         <div class="hfy-alone-text">
           <h3>You're Not Alone</h3>
           <p><strong>Facing an unplanned pregnancy?</strong></p>

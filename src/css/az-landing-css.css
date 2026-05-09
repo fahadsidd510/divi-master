@@ -78,6 +78,16 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../fonts/segoe-ui-regular.woff2') format('woff2'),
+       url('../fonts/segoe-ui-regular.woff') format('woff'),
+       url('../fonts/segoe-ui-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* ══════════════════════════════════════
    2. CSS VARIABLES
@@ -89,6 +99,7 @@
   --font-secondary: 'Microsoft Tai Le', sans-serif;
   --font-display: 'Modern No. 20', serif;
   --font-episode: 'Microsoft Uighur', sans-serif;
+  --font-button-heading: 'Segoe UI', sans-serif;
 
   /* Colors */
   --color-navy: #2b3060;
@@ -717,7 +728,7 @@ body {
   justify-content: center;
   gap: 8px;
   margin-top: 50px;
-  padding: 10px 35px;
+  padding: 20px 35px;
   border-radius: 25px;
   font-family: var(--font-secondary);
   font-size: 33px;
@@ -767,7 +778,7 @@ body {
 /* ── Listening / Transcript CTA ── */
 
 .ep-listening-wrapper {
-  background: #F9EDE8;
+  background: #FDE4D6;
   border-radius: 20px;
   padding: 50px 40px 55px;
   text-align: center;
@@ -796,13 +807,12 @@ body {
   font-weight: 400;
   color: var(--color-text-dark);
   line-height: 1.2;
-  margin: 0 0 8px;
 }
 
 .ep-listen-content p {
   font-family: var(--font-secondary) !important;
   font-size: clamp(24px, 1.8vw, 28px);
-  color: var(--color-text-muted);
+  color: var(--color-text-dark);
   line-height: 1.5;
   margin: 0;
 }
@@ -812,10 +822,10 @@ body {
   background: var(--color-orange-btn);
   color: var(--color-white);
   font-family: var(--font-primary);
-  font-size: clamp(18px, 2vw, 26px);
+  font-size: clamp(20px, 1.8vw, 38px);
   font-weight: 400;
   text-decoration: none;
-  padding: 14px 44px;
+  padding: 20px 44px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -864,7 +874,7 @@ body {
 .topic-cards-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 63px;
   max-width: 75%;
   margin: 0 auto;
 }
@@ -872,8 +882,9 @@ body {
 .topic-card {
   display: flex;
   align-items: center;
-  gap: 20px;
-  background: #F7F3F1;
+  justify-content: center;
+  gap: 30px;
+  background: #FEF7F7;
   border-radius: 16px;
   padding: 30px 28px;
 }
@@ -884,14 +895,18 @@ body {
 
 .topic-card-icon img {
   display: block;
-  width: 90px;
-  height: 90px;
+  /* width: 90px;
+  height: 90px; */
   object-fit: contain;
+}
+
+.topic-card-text {
+    width: 65%;
 }
 
 .topic-card-text h3 {
   font-family: var(--font-display) !important;
-  font-size: clamp(22px, 2.4vw, 34px);
+  font-size: clamp(35px, 2.4vw, 50px);
   font-weight: 400;
   color: var(--color-text-dark);
   line-height: 1.1;
@@ -900,8 +915,8 @@ body {
 
 .topic-card-text p {
   font-family: var(--font-secondary) !important;
-  font-size: clamp(14px, 1.4vw, 19px);
-  color: var(--color-text-muted);
+  font-size: clamp(20px, 1.4vw, 25px);
+  color: var(--color-text-dark);
   line-height: 1.4;
   margin: 0;
 }
@@ -911,12 +926,13 @@ body {
   .topic-cards-grid {
     max-width: 100%;
   }
+  
 }
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .topic-cards-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 20px;
   }
 
   .topic-card {
@@ -930,6 +946,35 @@ body {
   }
 }
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) { 
+
+  .ep-listening-wrapper {
+        max-width: 100%;
+        padding: 36px 20px 40px;
+        border-radius: 16px;
+    }
+
+    .topic-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        max-width: 100%;
+    }
+
+    .topic-card{
+      min-height: 210px;
+    }
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1144px) { 
+  .topic-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
 
 /* ── Podcast Community Section ── */
 
@@ -940,7 +985,6 @@ body {
 .pc-wrapper {
   display: flex;
   align-items: center;
-  gap: 40px;
 }
 
 .pc-content {
@@ -958,7 +1002,6 @@ body {
 
 .pc-phone img {
   width: 100%;
-  max-width: 480px;
   height: auto;
   display: block;
   object-fit: contain;
@@ -971,19 +1014,19 @@ body {
   gap: 10px;
   background: var(--color-orange-btn);
   border-radius: 8px;
-  padding: 8px 20px;
+  padding: 10px 32px;
   margin-bottom: 20px;
 }
 
 .pc-badge img {
-  width: 30px;
-  height: 30px;
+  /* width: 30px;
+  height: 30px; */
   object-fit: contain;
 }
 
 .pc-badge span {
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(14px, 1.4vw, 20px);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(20px, 2vw, 25px);
   font-weight: 700;
   color: var(--color-white);
   text-transform: uppercase;
@@ -993,7 +1036,7 @@ body {
 /* Heading */
 .pc-heading {
   font-family: var(--font-display) !important;
-  font-size: clamp(32px, 4vw, 58px);
+  font-size: clamp(42px, 4.8vw, 64px);
   font-weight: 400;
   color: var(--color-text-dark);
   line-height: 1.1;
@@ -1001,28 +1044,26 @@ body {
 }
 
 .pc-subheading {
-  font-family: var(--font-display) !important;
-  font-size: clamp(20px, 2.4vw, 36px);
+  font-family: var(--font-secondary) !important;
+  font-size: clamp(24px, 2.6vw, 39px);
   font-weight: 400;
   color: var(--color-orange-btn);
   line-height: 1.2;
-  margin: 0 0 14px;
 }
 
 .pc-description {
-  font-family: var(--font-secondary) !important;
+  font-family: var(--font-button-heading) !important;
   font-size: clamp(15px, 1.4vw, 20px);
-  color: var(--color-text-muted);
+  color: #707070;
   line-height: 1.6;
   margin: 0 0 28px;
-  font-style: italic;
 }
 
 /* Pills row — 100% Free / No Cost / No Fees */
 .pc-badges-row {
   display: flex;
   gap: 14px;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .pc-pill {
@@ -1041,10 +1082,10 @@ body {
 }
 
 .pc-pill span {
-  font-family: var(--font-display) !important;
+  font-family: var(--font-button-heading) !important;
   font-size: clamp(16px, 1.8vw, 26px);
   font-weight: 400;
-  color: var(--color-text-dark);
+  color: #1E0D37;
 }
 
 /* Follow bar */
@@ -1059,8 +1100,8 @@ body {
 }
 
 .pc-follow-bar > img {
-  width: 36px;
-  height: 36px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -1068,18 +1109,19 @@ body {
 .pc-follow-text {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
 .pc-follow-text strong {
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(16px, 1.6vw, 22px);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(18px, 1.8vw, 28px);
   font-weight: 700;
   color: var(--color-white);
 }
 
 .pc-follow-text span {
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(13px, 1.2vw, 16px);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(15px, 1.5vw, 18px);
   color: var(--color-white);
   opacity: 0.9;
 }
@@ -1147,42 +1189,42 @@ body {
 
 .listen-platforms {
   background: var(--color-orange-btn);
-  padding: 50px 0 55px;
+  padding: 60px 0 75px;
 }
 
 /* Header */
 .lp-header {
   text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
 }
 
 .lp-heading-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 24px;
   margin-bottom: 6px;
 }
 
 .lp-heading-row img {
-  width: 46px;
-  height: 46px;
+  /* width: 46px;
+  height: 46px; */
   object-fit: contain;
 }
 
 .lp-header h2 {
   font-family: var(--font-display) !important;
-  font-size: clamp(26px, 3vw, 44px);
+  font-size: clamp(36px, 4vw, 59px);
   font-weight: 400;
-  color: var(--color-white);
+  color: #1E0D37;
   line-height: 1.2;
   margin: 0;
 }
 
 .lp-header p {
   font-family: var(--font-secondary) !important;
-  font-size: clamp(14px, 1.4vw, 20px);
-  color: var(--color-white);
+  font-size: clamp(18px, 1.8vw, 30px);
+  color: var(--color-orange-btn);
   opacity: 0.9;
   margin: 0;
 }
@@ -1321,16 +1363,18 @@ body {
 
 .hfy-top {
   max-width: 55%;
+  margin-top: 120px;
   margin-bottom: 30px;
+  padding: 0px 30px;
 }
 
-.hfy-badge {
+/* .hfy-badge {
   display: inline-flex;
   align-items: center;
   gap: 10px;
   background: var(--color-orange-btn);
-  border-radius: 8px;
-  padding: 8px 20px;
+  border-radius: 32px;
+  padding: 15px 30px;
   margin-bottom: 20px;
 }
 
@@ -1341,17 +1385,62 @@ body {
 }
 
 .hfy-badge span {
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(13px, 1.2vw, 18px);
-  font-weight: 700;
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(18px, 1.8vw, 30px);
+  font-weight: 400;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+} */
+
+.hfy-badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-orange-btn);
+  border-radius: 32px;
+  padding: 15px 30px 15px 80px;
+  margin-bottom: 20px;
+}
+
+.hfy-badge img {
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.hfy-badge span {
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(18px, 1.8vw, 30px);
+  font-weight: 400;
   color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
+
+/* ── Responsive ── */
+
+@media (max-width: 680px) {
+  .hfy-badge {
+    padding: 12px 22px 12px 60px;
+  }
+
+  .hfy-badge img {
+    width: 52px;
+    height: 52px;
+    left: -6px;
+  }
+}
+
 .hfy-top h2 {
   font-family: var(--font-display) !important;
-  font-size: clamp(30px, 3.8vw, 56px);
+  font-size: clamp(38px, 4.2vw, 64px);
   font-weight: 400;
   color: var(--color-text-dark);
   line-height: 1.1;
@@ -1364,8 +1453,8 @@ body {
 
 .hfy-tagline {
   font-family: var(--font-secondary) !important;
-  font-size: clamp(14px, 1.2vw, 18px);
-  color: var(--color-text-muted);
+  font-size: clamp(15px, 1.4vw, 20px);
+  color: #707070;
   margin: 0 0 24px;
 }
 
@@ -1373,38 +1462,37 @@ body {
 .hfy-schedule {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 10px;
-  padding: 12px 22px;
+  gap: 26px;
+  background: #fadad1;
+  border-radius: 16px;
+  padding: 25px 60px 25px 50px;
 }
 
 .hfy-schedule img {
-  width: 36px;
-  height: 36px;
+  /* width: 36px;
+  height: 36px; */
   object-fit: contain;
   flex-shrink: 0;
 }
 
-.hfy-schedule strong {
+.hfy-schedule p, .hfy-schedule span p {
   display: block;
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(14px, 1.2vw, 18px);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(18px, 1.8vw, 27px);
   font-weight: 700;
-  color: var(--color-text-dark);
+  color: #707070;
+  padding-bottom: 15px;
 }
 
 .hfy-schedule span {
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(13px, 1.1vw, 16px);
-  color: var(--color-text-dark);
+  color: var(--color-orange-btn);
 }
 
-.hfy-schedule em {
+/* .hfy-schedule em {
   color: var(--color-orange-btn);
   font-style: normal;
   font-weight: 700;
-}
+} */
 
 /* ── Support Label ── */
 
@@ -1413,17 +1501,18 @@ body {
   align-items: center;
   gap: 10px;
   margin: 30px 0 20px;
+  padding: 0px 30px;
 }
 
 .hfy-support-label img {
-  width: 28px;
-  height: 28px;
+  /* width: 28px;
+  height: 28px; */
   object-fit: contain;
 }
 
 .hfy-support-label h3 {
   font-family: var(--font-display) !important;
-  font-size: clamp(20px, 2.2vw, 32px);
+  font-size: clamp(26px, 2.8vw, 41px);
   font-weight: 400;
   color: var(--color-text-dark);
   margin: 0;
@@ -1434,8 +1523,10 @@ body {
 .hfy-cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  gap: 25px;
+  margin-top: 50px;
   margin-bottom: 40px;
+  padding: 0px 30px;
 }
 
 .hfy-card {
@@ -1452,10 +1543,10 @@ body {
 }
 
 .hfy-card-icon {
-  width: 72px;
-  height: 72px;
+  /* width: 72px;
+  height: 72px; */
   margin: 0 auto 14px;
-  background: #FAE0D6;
+  /* background: #FAE0D6; */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1463,22 +1554,23 @@ body {
 }
 
 .hfy-card-icon img {
-  width: 40px;
-  height: 40px;
+  /* width: 40px;
+  height: 40px; */
   object-fit: contain;
 }
 
 .hfy-card h4 {
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(14px, 1.3vw, 19px);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(18px, 1.8vw, 28px);
   font-weight: 700;
   color: var(--color-text-dark);
   margin: 0 0 6px;
+  line-height: 1.2;
 }
 
 .hfy-card p {
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(13px, 1.1vw, 16px);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(16px, 1.6vw, 26px);
   color: var(--color-text-muted);
   line-height: 1.4;
   margin: 0;
@@ -1491,9 +1583,9 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 30px;
-  background: #F2CCBF;
+  background: #f8d3ca;
   border-radius: 14px;
-  padding: 28px 32px;
+  padding: 55px 50px;
   margin-bottom: 24px;
 }
 
@@ -1510,8 +1602,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 5px 14px;
-  border-radius: 6px;
+  padding: 8px 20px 8px 15px;
+  border-radius: 25px;
   margin-bottom: 10px;
 }
 
@@ -1580,25 +1672,21 @@ body {
 /* ── You're Not Alone Bar ── */
 
 .hfy-alone {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  background: #F7F0ED;
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  background: url('../images/not-alone-mother.png') left center / auto 100% no-repeat;
   border-radius: 14px;
   overflow: hidden;
-  padding-right: 40px;
+  padding: 45px 40px 45px 380px;
+  box-sizing: border-box;
+  min-height: 220px;
 }
 
-.hfy-alone-img {
-  flex-shrink: 0;
-  width: 220px;
-}
-
-.hfy-alone-img img {
-  display: block;
+.hfy-alone-text {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .hfy-alone-text h3 {
@@ -1652,18 +1740,8 @@ body {
   }
 
   .hfy-alone {
-    flex-direction: column;
-    padding-right: 0;
-    text-align: center;
-  }
-
-  .hfy-alone-img {
-    width: 100%;
-    height: 200px;
-  }
-
-  .hfy-alone-text {
-    padding: 20px;
+    padding: 40px 30px 40px 280px;
+    background-size: auto 100%;
   }
 }
 
@@ -1705,8 +1783,12 @@ body {
     padding: 6px 10px;
   }
 
-  .hfy-alone-img {
-    height: 160px;
+  .hfy-alone {
+    flex-direction: column;
+    padding: 180px 20px 30px 20px;
+    background-position: center top;
+    background-size: 240px auto;
+    text-align: center;
   }
 }
 
