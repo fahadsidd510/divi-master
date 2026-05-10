@@ -601,36 +601,211 @@ get_header( 'arizona' );
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/leaf-image.png" alt="">
         </div>
       </div>
-
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
-
-
-
     </div>
   </section>
+  <!-- ── Want to Learn More Section ── -->
+  <!-- <section class="want-learn" style="background-image: url('<?php //echo get_stylesheet_directory_uri(); ?>/src/images/what-learn-background.png');"> -->
+  <section class="want-learn">
+    <div class="az-container">
+      <div class="wl-wrapper">
+        <div class="wl-image">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/blog-laptop.png" alt="Blog on laptop">
+        </div>
+        <div class="wl-content">
+          <!-- <div class="wl-badge">
+            <span>Keep Learning</span>
+          </div> -->
+          <div class="pc-badge pc-badge-transparent">
+            <img src="http://az-pregnancy.local/wp-content/themes/divi-master/src/images/book-orange.svg" alt="Orange book icon">
+            <span>KEEP LEARNING</span>
+          </div>
+          <h2>Want to Learn More?</h2>
+          <p>Once you're done with the adoption Radio, <span>visit our Blog</span> for more information about birth mothers and the adoption process!</p>
+          <div class="pc-badge pc-badge-orange">
+            <img src="http://az-pregnancy.local/wp-content/themes/divi-master/src/images/book-white.svg" alt="White book icon">
+            <span>Go to Blog</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ── Latest Episodes Section ── -->
+  <section class="latest-episodes">
+    <div class="az-container">
+      <div class="le-inner">
+
+        <!-- Top Header: Title + Explore the Podcast Card -->
+        <div class="le-header">
+          <div class="le-header-left">
+            <div class="pc-badge pc-badge-blog">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podcast-comunity-heading-mic.svg" alt="Mic icon">
+              <span>LATEST EPISODES</span>
+            </div>
+            <h2>Real Stories. Real Voices.<br><span>Real Adoption Journeys.</span></h2>
+            <p>Listen, Learn, and feel, supported. New episodes added regularly!</p>
+          </div>
+
+          <div class="le-header-right">
+            <div class="le-explore-icon">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/headphone-orange.svg" alt="Headphones">
+            </div>
+            <div class="le-explore-text">
+              <h3>Explore the Podcast</h3>
+              <p>Every episode brings you closer to understanding adoption.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Episode Cards Grid -->
+        <div class="le-grid">
+
+          <!-- Card 1 -->
+          <article class="le-card">
+            <div class="le-thumb">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Growing-Up-Adopted-s3-220-980x703.png" alt="Growing Up Adopted">
+              <div class="le-thumb-badge">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podcast-comunity-heading-mic.svg" alt="">
+                <span>EPISODE 220</span>
+              </div>
+            </div>
+            <h3>Birth Mother Matters in Adoption<br>S3, Ep 220: Growing Up Adopted</h3>
+            <div class="le-meta">
+              <span class="le-author">by Cairs Content Team</span>
+              <span class="le-date">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="">
+                Jun 23, 2025
+              </span>
+            </div>
+            <div class="le-tags">
+              <p>Adoption, Adoption Agency, Adoption Choices of Arizona, Adoption Radio, AZ Pregnancy Help, Building Arizona Families, Uncategorized</p>
+            </div>
+            <div class="le-excerpt">
+              <p>Kelly: Welcome and thank you for joining us on Birth Mother Matters in Adoption with Kelly Rourke-Scarry, where we delve into the issues of adoption from every angle of the adoption triad. Kelly is the executive director, president, and co-founder of Building Arizona...</p>
+            </div>
+            <div class="le-actions">
+              <a href="#" class="le-listen-btn">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/microphone-white.svg" alt="">
+                Listen Now
+              </a>
+              <a href="#" class="le-read-more">
+                Read More
+                <span>&#8250;</span>
+              </a>
+            </div>
+            <div class="le-waveform">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/waveform.svg" alt="Audio waveform">
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="le-card">
+            <div class="le-thumb">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Growing-Up-Adopted-s3-220-980x703.png" alt="ICPC with Lisa Simpson">
+            </div>
+            <h3>Birth Mother Matters in Adoption<br>Podcast - ICPC with Lisa Simpson</h3>
+            <div class="le-meta">
+              <span class="le-author">by Cairs Content Team</span>
+              <span class="le-date">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="">
+                Jun 23, 2025
+              </span>
+            </div>
+            <div class="le-tags">
+              <p>Adoption, Adoption Agency, Adoption Choices of Arizona, Adoption Radio, AZ Pregnancy Help, Building Arizona Families, Uncategorized</p>
+            </div>
+            <div class="le-excerpt">
+              <p>Ron Raines: Welcome and thank you for joining us on Birth Mother Matters in Adoption with Kelly Rourke-Scarry and me, Ron Raines, where we delve into the issues of adoption from every angle of the adoption triad. Kelly Rourke-Scarry: Do what's best for your kid and...</p>
+            </div>
+            <div class="le-actions">
+              <a href="#" class="le-listen-btn">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/microphone-white.svg" alt="">
+                Listen Now
+              </a>
+              <a href="#" class="le-read-more">
+                Read More
+                <span>&#8250;</span>
+              </a>
+            </div>
+            <div class="le-waveform">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/waveform.svg" alt="Audio waveform">
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="le-card">
+            <div class="le-thumb">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Growing-Up-Adopted-s3-220-980x703.png" alt="Adoption All Around Us">
+            </div>
+            <h3>Birth Mother Matters in Adoption<br>S4, Episode 233: Adoption All Around Us</h3>
+            <div class="le-meta">
+              <span class="le-author">by Cairs Content Team</span>
+              <span class="le-date">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="">
+                Jun 18, 2025
+              </span>
+            </div>
+            <div class="le-tags">
+              <p>Adoption, Adoption Agency, Adoption Choices of Arizona, Adoption Radio, AZ Pregnancy Help, Building Arizona Families, Uncategorized</p>
+            </div>
+            <div class="le-excerpt">
+              <p>Narrator/Host: Thanks for watching! Welcome and thank you for joining us on the Birth Mother Matters in Adoption podcast with Kelly Rourke, where we delve into the issues of adoption from every angle of the adoption triad. Narrator: Kelly is the Executive Director,...</p>
+            </div>
+            <div class="le-actions">
+              <a href="#" class="le-listen-btn">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/microphone-white.svg" alt="">
+                Listen Now
+              </a>
+              <a href="#" class="le-read-more">
+                Read More
+                <span>&#8250;</span>
+              </a>
+            </div>
+            <div class="le-waveform">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/waveform.svg" alt="Audio waveform">
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="le-pagination">
+          <a href="#" class="le-page-btn le-page-prev">
+            <span>&#8592;</span>
+            Older Entries
+          </a>
+          <span class="le-page-count">1 of 12</span>
+          <a href="#" class="le-page-btn le-page-next">
+            Next Entries
+            <span>&#8594;</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
 </main>
 <?php
 get_footer( 'arizona' );
