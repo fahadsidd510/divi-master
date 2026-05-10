@@ -487,6 +487,11 @@ body {
   /* padding: 80px 30px; */
 }
 
+.birth-podcast-inner
+ {
+    padding-top: 110px;
+}
+
 /* ── 7a. Birth Mother Intro ── */
 
 .az-content h2 {
@@ -1597,20 +1602,20 @@ body {
   display: inline-block;
   background: var(--color-orange-btn);
   color: var(--color-white);
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(12px, 1vw, 15px);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(16px, 1.6vw, 27px);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  padding: 8px 20px 8px 15px;
+  padding: 15px 35px 15px 25px;
   border-radius: 25px;
   margin-bottom: 10px;
 }
 
 .hfy-about-left p {
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(14px, 1.4vw, 20px);
-  font-weight: 700;
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(17px, 1.7vw, 28px);
+  font-weight: 600;
   color: var(--color-text-dark);
   line-height: 1.4;
   margin: 0;
@@ -1618,13 +1623,13 @@ body {
 
 .hfy-about-left p span {
   color: var(--color-orange-btn);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .hfy-about-cta {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 30px;
   background: var(--color-orange-btn);
   border-radius: 12px;
   padding: 16px 24px;
@@ -1638,46 +1643,47 @@ body {
 }
 
 .hfy-about-cta > img {
-  width: 36px;
-  height: 36px;
+  /* width: 25px;
+  height: 25px; */
   object-fit: contain;
 }
 
 .hfy-about-cta div:first-of-type span {
   display: block;
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(12px, 1vw, 15px);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(16px, 1.6vw, 28px);
   color: var(--color-white);
 }
 
 .hfy-about-cta div:first-of-type strong {
   display: block;
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(20px, 2.2vw, 30px);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(28px, 3vw, 48px);
   font-weight: 700;
   color: var(--color-white);
+  line-height: 1.2;
 }
 
 .hfy-about-247 {
-  background: var(--color-white);
+  background: #F9DBD1;
   color: var(--color-orange-btn);
   font-family: var(--font-secondary) !important;
-  font-size: clamp(16px, 1.6vw, 22px);
+  font-size: clamp(20px, 2vw, 33px);
   font-weight: 700;
-  padding: 8px 14px;
-  border-radius: 50%;
+  padding: 15px 20px;
+  border-radius: 37px;
   line-height: 1;
 }
 
 /* ── You're Not Alone Bar ── */
 
-.hfy-alone {
+/* .hfy-alone {
   display: block !important;
   width: 100% !important;
   max-width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
-  background: url('../images/not-alone-mother.png') left center / auto 100% no-repeat;
+  background: url('../images/not-alone-mother-new.png') left center / auto 100% no-repeat;
   border-radius: 14px;
   overflow: hidden;
   padding: 45px 40px 45px 380px;
@@ -1707,11 +1713,11 @@ body {
 
 .hfy-alone-text p.hfy-alone-highlight {
   color: var(--color-orange-btn);
-}
+} */
 
 /* ── Responsive ── */
 
-@media (max-width: 900px) {
+/* @media (max-width: 900px) {
   .hfy-top {
     max-width: 100%;
     text-align: center;
@@ -1790,9 +1796,132 @@ body {
     background-size: 240px auto;
     text-align: center;
   }
+} */
+
+/* ── You're Not Alone Bar ── */
+
+.hfy-alone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  background: #FEF0ED;
+  border-radius: 30px;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  box-shadow: 8px 10px 7px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.hfy-alone-img {
+  flex-shrink: 0;
+  width: 400px;
+}
+
+.hfy-alone-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.hfy-alone-text {
+  flex: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.hfy-alone-text h3 {
+  font-family: var(--font-display) !important;
+  font-size: clamp(38px, 4vw, 64px);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  margin: 0 0 6px;
+}
+
+.hfy-alone-text p {
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(20px, 2vw, 33px);
+  font-weight: 500;
+  color: #707070;
+  line-height: 1.2;
+  padding-bottom: 20px;
 }
 
 
+p.alone-orange-text {
+  font-family: var(--font-button-heading);
+  font-size: clamp(20px, 2vw, 33px);
+  color: var(--color-orange-btn);
+  font-weight: 500;
+  width: 80%;
+}
+
+.hfy-alone-text p.hfy-alone-highlight {
+  color: var(--color-orange-btn);
+}
+
+/* Decorative leaf on right */
+.hfy-alone-leaf {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hfy-alone-leaf img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 900px) {
+  .hfy-alone {
+    padding: 24px 30px;
+    gap: 20px;
+  }
+
+  .hfy-alone-img {
+    width: 170px;
+  }
+
+  .hfy-alone-leaf {
+    width: 150px;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 680px) {
+  .hfy-alone {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .hfy-alone-img {
+    width: 160px;
+  }
+  .hfy-alone-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  p.alone-orange-text {
+    text-align: center;
+  }
+
+  .hfy-alone-leaf {
+    width: 100px;
+    opacity: 0.5;
+  }
+}
 
 /* ══════════════════════════════════════
    8. RESPONSIVE

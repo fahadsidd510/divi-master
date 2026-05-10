@@ -566,7 +566,7 @@ get_header( 'arizona' );
       <div class="hfy-about">
         <div class="hfy-about-left">
           <div class="hfy-about-badge">About Us</div>
-          <p>AZ Pregnancy Help supports birth mothers across Arizona with <span>safe, confidential, and free adoption support services.</span></p>
+          <p>AZ Pregnancy Help supports birth mothers across Arizona <br>with <span>safe, confidential, and free adoption support services.</span></p>
         </div>
         <a href="tel:6239654112" class="hfy-about-cta">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/phone-white.svg" alt="Phone">
@@ -579,13 +579,55 @@ get_header( 'arizona' );
       </div>
 
       <!-- You're Not Alone Bar -->
-      <div class="hfy-alone">
+      <!-- <div class="hfy-alone">
         <div class="hfy-alone-text">
           <h3>You're Not Alone</h3>
           <p><strong>Facing an unplanned pregnancy?</strong></p>
           <p class="hfy-alone-highlight">We're here to support, guide, and walk with you through every step.</p>
         </div>
+      </div> -->
+
+      <!-- You're Not Alone Bar -->
+      <div class="hfy-alone">
+        <div class="hfy-alone-img">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/mother-child.png" alt="Mother and child">
+        </div>
+        <div class="hfy-alone-text">
+          <h3>You're Not Alone</h3>
+          <p>Facing an unplanned pregnancy?</p>
+          <p class="alone-orange-text">We're here to support, guide, and walk with you through every step.</p>
+        </div>
+        <div class="hfy-alone-leaf">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/leaf-image.png" alt="">
+        </div>
       </div>
+
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+
+
 
     </div>
   </section>
