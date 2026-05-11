@@ -664,7 +664,7 @@ get_header( 'arizona' );
             <div class="le-thumb">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Growing-Up-Adopted-s3-220-980x703.png" alt="Growing Up Adopted">
               <div class="le-thumb-badge">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podcast-comunity-heading-mic.svg" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/mike.svg" alt="">
                 <span>EPISODE 220</span>
               </div>
             </div>
@@ -672,7 +672,7 @@ get_header( 'arizona' );
             <div class="le-meta">
               <span class="le-author">by Cairs Content Team</span>
               <span class="le-date">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/le-date.svg" alt="">
                 Jun 23, 2025
               </span>
             </div>
@@ -783,29 +783,259 @@ get_header( 'arizona' );
       </div>
     </div>
   </section>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+  <!-- ── Our Partners & Sponsors Section ── -->
+  <section class="partners-sponsors">
+    <div class="az-container">
+      <div class="ps-header">
+        <h2>Our Partners &amp; Sponsors</h2>
+        <span class="ps-divider"></span>
+      </div>
+      <div class="ps-logos">
+        <a href="#" class="ps-logo">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/realwave.png" alt="Real Wave">
+        </a>
+        <a href="#" class="ps-logo">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/loudnick.png" alt="LoudNick">
+        </a>
+        <a href="#" class="ps-logo">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/jobline.png" alt="Job Line">
+        </a>
+        <a href="#" class="ps-logo">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/itch.png" alt="Pitch">
+        </a>
+        <a href="#" class="ps-logo">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/crosswill.png" alt="Crosswill">
+        </a>
+        <a href="#" class="ps-logo">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/gabo.png" alt="GABO">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- ── Communities Across Arizona Section ── -->
+  <section class="communities">
+    <div class="az-container">
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+      <!-- Top: Heading + Arizona Image -->
+      <div class="comm-top">
+        <div class="comm-top-content">
+          <div class="comm-badge">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-white.svg" alt="Pin">
+            <span>Arizona Communities We Serve</span>
+          </div>
+          <h2>Proudly Supporting<br><span>Communities Across Arizona</span></h2>
+          <p>Find support near you, We're here for birth mothers throughout Arizona.</p>
+        </div>
+        <div class="comm-top-image">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/heart-leave.png" alt="Arizona with heart">
+        </div>
+      </div>
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+      <!-- Bottom: We Serve Cities Card -->
+      <div class="comm-serve">
+        <div class="comm-serve-header">
+          <div class="comm-serve-icon">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location.svg" alt="Pin">
+          </div>
+          <div class="comm-serve-heading">
+            <h3>WE SERVE: <span>25+ Arizona Cities</span></h3>
+            <p>Select your city to learn more or get local support.</p>
+          </div>
+        </div>
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+        <ul class="comm-cities">
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Phoenix</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Peoria</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Avondale</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Yavapai</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Gila</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Tucson</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Tempe</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Flagstaff</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Mohave</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Santa Cruz</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Mesa</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Surprise</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Casa Adobes</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Yuma</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Graham</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Chandler</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">San Tan Valley</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Queen Creek</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Coconino</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">La Paz</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Gilbert</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Yuma</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Maricopa</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Cochise</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Greeniee</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Glendale</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Goodyear</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Pima</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Navajo</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Scottsdale</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Buckeye</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Pinal</a></li>
+          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Apache</a></li>
+        </ul>
+      </div>
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+    </div>
+  </section>
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+  <!-- ── Footer Section: Get In Touch & Explore ── -->
+  <section class="footer-explore">
+    <div class="az-container">
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+      <!-- Top: Heading -->
+      <div class="fe-top">
+        <div class="fe-badge">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-white.svg" alt="Pin">
+          <span>Get In Touch &amp; Explore</span>
+        </div>
+        <h2>We're Here to Help<br><span>&amp; Walk With You</span></h2>
+        <p>Reach out, explore helpful resources, or learn more about adoption.</p>
+      </div>
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+      <!-- 3-Column Grid -->
+      <div class="fe-grid">
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+        <!-- Column 1: Map + Address + Adoptive Parent CTA -->
+        <div class="fe-col fe-col-left">
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+          <!-- Map Card -->
+          <div class="fe-card fe-map-card">
+            <div class="fe-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.5!2d-112.1!3d33.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMwJzAwLjAiTiAxMTLCsDA2JzAwLjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <address>
+              <p>8433 N Black Canyon Hwy</p>
+              <p>Building 6, Suite 152</p>
+              <p>Phoenix, AZ 85021</p>
+            </address>
+          </div>
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+          <!-- Adoptive Parent CTA Card -->
+          <div class="fe-card fe-parent-card">
+            <div class="fe-parent-icon">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/heart-home.png" alt="Heart with home">
+            </div>
+            <h3>Interested in becoming<br>an adoptive parent?</h3>
+            <a href="#" class="fe-learn-btn">
+              Learn More
+              <span>&#8250;</span>
+            </a>
+            <div class="fe-baf-logo">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/building-arizona-families-logo.png" alt="Building Arizona Families">
+            </div>
+          </div>
 
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus maiores repellat aliquam optio ipsa deleniti nesciunt rerum praesentium magnam suscipit minima, recusandae iusto temporibus odit nostrum soluta? Ipsa, soluta vitae.</p>
+        </div>
+
+        <!-- Column 2: Useful Links -->
+        <div class="fe-col">
+          <div class="fe-card fe-links-card">
+            <div class="fe-card-header">
+              <div class="fe-card-icon">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/link-chain-svgrepo-com.svg" alt="Link">
+              </div>
+              <h3>Useful Links</h3>
+            </div>
+            <ul class="fe-links">
+              <li><a href="#"><span class="fe-dot"></span>Placing Your Baby for Adoption<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Adoption Process<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Arizona Crisis Pregnancy<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Domestic Violence &amp; Adoption<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Drug Use &amp; Adoption<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Pregnant &amp; Incarcerated<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Homeless &amp; Adoption<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Teenage Pregnancies &amp; Adoption<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Financial Assistance<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Adoption in 10 Steps<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Opt-out preferences<span class="fe-arrow">&#8250;</span></a></li>
+              <li><a href="#"><span class="fe-dot"></span>Privacy Policy<span class="fe-arrow">&#8250;</span></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 3: Contact Us -->
+        <div class="fe-col">
+          <div class="fe-card fe-contact-card">
+            <h3 class="fe-contact-title">Contact Us</h3>
+
+            <!-- Phone numbers -->
+            <div class="fe-phones">
+              <div class="fe-phone-item">
+                <span class="fe-phone-label">Telephone</span>
+                <a href="tel:6236954112" class="fe-phone-num">623.695.4112</a>
+              </div>
+              <div class="fe-phone-item">
+                <span class="fe-phone-label">Tool Free</span>
+                <a href="tel:8003409665" class="fe-phone-num">800.340.9665</a>
+              </div>
+              <div class="fe-phone-item">
+                <span class="fe-phone-label">Fax</span>
+                <a href="tel:6232186104" class="fe-phone-num">623.218.6104</a>
+              </div>
+            </div>
+
+            <!-- Text -->
+            <div class="fe-contact-section">
+              <div class="fe-section-heading">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Chat.svg" alt="Chat">
+                <h4>Text</h4>
+              </div>
+              <div class="fe-text-row">
+                <span class="fe-text-label">Birth Mothers:</span>
+                <a href="sms:6239654112" class="fe-text-num">623.965.4112</a>
+              </div>
+              <div class="fe-text-row">
+                <span class="fe-text-label">Espanol:</span>
+                <a href="sms:6236969538" class="fe-text-num">623.696.9538</a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="fe-contact-section">
+              <div class="fe-section-heading">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/envolope.svg" alt="Email">
+                <h4>Email</h4>
+              </div>
+              <a href="#" class="fe-message-btn">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/plane.svg" alt="Send">
+                Send a Message
+              </a>
+            </div>
+
+            <!-- Social icons -->
+            <div class="fe-socials">
+              <a href="#" class="fe-social">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/facebook-svgrepo-com.svg" alt="Facebook">
+              </a>
+              <a href="#" class="fe-social">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/instagram-svgrepo-com.svg" alt="Instagram">
+              </a>
+              <a href="#" class="fe-social">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/twitter-svgrepo-com.svg" alt="Twitter">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer Bottom CTA ── -->
+  <section class="footer-cta">
+    <div class="az-container">
+      <h2>Need someone to talk to right now?</h2>
+      <div class="footer-cta-btns">
+        <a href="tel:6239654112" class="footer-cta-btn footer-cta-call">Call Us</a>
+        <a href="#" class="footer-cta-btn footer-cta-chat">Chat With Us</a>
+      </div>
+    </div>
+  </section>
 </main>
 <?php
 get_footer( 'arizona' );
