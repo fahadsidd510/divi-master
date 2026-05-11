@@ -63,29 +63,89 @@
         </button>
         <ul class="nav-menu">
           <li class="has-dropdown">
-            <a href="#">I'M PREGNANT
+            <a href="https://azpregnancyhelp.com/">
+              I'm Pregnant
               <span class="arrow" aria-hidden="true">
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
                   <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
             </a>
+            <ul class="sub-menu">
+              <li><a href="https://azpregnancyhelp.com/">I'm Pregnant</a></li>
+              <li><a href="https://azpregnancyhelp.com/placing-your-baby-for-adoption-arizona/">Placing Your Baby for Adoption</a></li>
+              <li><a href="https://azpregnancyhelp.com/arizona-adoption-plan/">Adoption Process</a></li>
+              <li class="has-dropdown">
+                <a href="https://azpregnancyhelp.com/arizona-crisis-pregnancy/">
+                  Unplanned &amp; Crisis Pregnancies
+                  <span class="arrow arrow-side" aria-hidden="true">
+                    <svg width="8" height="12" viewBox="0 0 8 12" fill="none">
+                      <path d="M1 1L6 6L1 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                </a>
+                <ul class="sub-menu sub-menu-deep">
+                  <li><a href="https://azpregnancyhelp.com/pregnant-womens-shelter-domestic-violence/">Domestic Violence &amp; Adoption</a></li>
+                  <li><a href="https://azpregnancyhelp.com/unwanted-pregnancy-options-in-arizona-substance-use-and-azadoption/">Drug Use &amp; Adoption</a></li>
+                  <li><a href="https://azpregnancyhelp.com/pregnant-arizona-adoption-when-in-jail-or-prison/">Pregnant &amp; Incarcerated</a></li>
+                  <li><a href="https://azpregnancyhelp.com/homeless-pregnant-adoption-help-arizona/">Homeless &amp; Adoption</a></li>
+                  <li><a href="https://azpregnancyhelp.com/teenage-pregnancies-and-adoption/">Teenage Pregnancies &amp; Adoption</a></li>
+                </ul>
+              </li>
+            </ul>
           </li>
+
           <li class="has-dropdown">
-            <a href="#">BABY IS HERE
+            <a href="https://azpregnancyhelp.com/baby-is-here/">
+              Baby is Here
               <span class="arrow" aria-hidden="true">
                 <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
                   <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
             </a>
+            <ul class="sub-menu">
+              <li><a href="https://azpregnancyhelp.com/baby-is-here/">Baby is Here</a></li>
+              <li><a href="https://azpregnancyhelp.com/adoption-plan-placing-baby-for-adoption/">DCS/CPS Involvement</a></li>
+            </ul>
           </li>
-          <li><a href="#">WAITING FAMILIES</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">RESOURCES</a></li>
+
+          <li><a href="https://azpregnancyhelp.com/find-a-family-for-my-baby/">Waiting Families</a></li>
+
+          <li class="has-dropdown">
+            <a href="https://azpregnancyhelp.com/arizona-adoption-agency-give-my-baby-up-for-adoption/">
+              About Us
+              <span class="arrow" aria-hidden="true">
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                  <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+            <ul class="sub-menu">
+              <li><a href="https://azpregnancyhelp.com/adoption-agency-give-baby-up-for-adoption-arizona/#staff">Staff</a></li>
+              <li><a href="https://azpregnancyhelp.com/adoption-agency-commitment/">Adoption Agency Commitment</a></li>
+              <li><a href="https://azpregnancyhelp.com/who-do-we-work-with/">WHO do we work with</a></li>
+            </ul>
+          </li>
+
+          <li class="has-dropdown">
+            <a href="https://azpregnancyhelp.com/arizona-resources-for-pregnant-women-adopting-a-baby/">
+              Resources
+              <span class="arrow" aria-hidden="true">
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none">
+                  <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+            </a>
+            <ul class="sub-menu">
+              <li><a href="https://azpregnancyhelp.com/arizona-adoption-agency-give-my-baby-up-for-adoption/dealing-with-unplanned-pregnancy-arizona-testimonials/">Testimonials</a></li>
+              <li><a target="_blank" href="https://birthmothermatterspodcast.com">Birth Mother Matters</a></li>
+              <li><a href="https://azpregnancyhelp.com/crisis-pregnancies-arizona-unplanned-pregnancy-blog/">Adoption Blog</a></li>
+              <li><a href="https://azpregnancyhelp.com/pregnant-placing-baby-for-adoption-in-arizona-podcasts/">Adoption Podcast</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
-
     </div>
   </div>
 </header>
@@ -94,12 +154,34 @@
 document.addEventListener('DOMContentLoaded', function() {
   var toggle = document.querySelector('.nav-toggle');
   var menu = document.querySelector('.nav-menu');
+
   if (toggle && menu) {
-    toggle.addEventListener('click', function() {
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
       var open = menu.classList.toggle('is-open');
       toggle.classList.toggle('is-open', open);
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
+
+  var dropdownItems = document.querySelectorAll('.has-dropdown > a');
+  dropdownItems.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      if (window.matchMedia('(max-width: 1024px)').matches) {
+        e.preventDefault();
+        e.stopPropagation();
+        var parent = link.parentElement;
+        parent.classList.toggle('is-expanded');
+      }
+    });
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.closest('.bottom-header') && menu && menu.classList.contains('is-open')) {
+      menu.classList.remove('is-open');
+      toggle.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+  });
 });
 </script>
