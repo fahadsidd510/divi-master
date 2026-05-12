@@ -340,8 +340,9 @@ get_header( 'arizona' );
         <div class="ep-listen-content">
           <h3>Prefer reading instead of listening?</h3>
           <p>Explore full podcast transcripts for detailed guidance and support.</p>
+          <a href="#">Read All Transcripts</a>
         </div>
-        <a href="#" class="ep-transcript-btn">Read All Transcripts</a>
+        <!-- <a href="#" class="ep-transcript-btn">Read All Transcripts</a> -->
       </div>
 
     </div>
@@ -404,12 +405,9 @@ get_header( 'arizona' );
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podcast-comunity-heading-mic.svg" alt="Mic icon">
             <span>Podcast Community</span>
           </div>
-          <h2 class="pc-heading">Join Our Podcast <br>Community</h2>
-          <h3 class="pc-subheading">Birth Mother Matters in Adoption Radio</h3>
-          <p class="pc-description">
-            Learn adoption from every perspective.<br>
-            Real stories . Real insights . Real adoption journeys
-          </p>
+          <h2>Join Our Podcast <br>Community</h2>
+          <h3>Birth Mother Matters in Adoption Radio</h3>
+          <p>Learn adoption from every perspective.<br> Real stories . Real insights . Real adoption journeys</p>
           <div class="pc-badges-row">
             <div class="pc-pill">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/gift.svg" alt="Free">
