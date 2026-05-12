@@ -2481,8 +2481,8 @@ p.alone-orange-text {
 
   .hero-banner {
     min-height: auto;
-    margin-top: -335px;
-    padding-top: 350px;
+    margin-top: -365px;
+    padding-top: 370px;
     background-position: 75%;
   }
 
@@ -2506,6 +2506,10 @@ p.alone-orange-text {
 
   .podcast-icon img {
     width: 60px;
+  }
+
+  .birth-podcast-inner{
+    padding-top: 50px;
   }
 }
 
