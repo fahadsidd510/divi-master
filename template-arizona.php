@@ -842,39 +842,39 @@ get_header( 'arizona' );
         </div>
 
         <ul class="comm-cities">
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Phoenix</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Peoria</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Avondale</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Yavapai</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Gila</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Tucson</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Tempe</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Flagstaff</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Mohave</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Santa Cruz</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Mesa</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Surprise</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Casa Adobes</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Yuma</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Graham</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Chandler</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">San Tan Valley</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Queen Creek</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Coconino</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">La Paz</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Gilbert</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Yuma</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Maricopa</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Cochise</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Greeniee</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Glendale</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Goodyear</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Pima</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Navajo</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Scottsdale</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Buckeye</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Pinal</a></li>
-          <li><a href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-orange.svg" alt="">Apache</a></li>
+          <li><a href="#">Phoenix</a></li>
+          <li><a href="#">Peoria</a></li>
+          <li><a href="#">Avondale</a></li>
+          <li><a href="#">Yavapai</a></li>
+          <li><a href="#">Gila</a></li>
+          <li><a href="#">Tucson</a></li>
+          <li><a href="#">Tempe</a></li>
+          <li><a href="#">Flagstaff</a></li>
+          <li><a href="#">Mohave</a></li>
+          <li><a href="#">Santa Cruz</a></li>
+          <li><a href="#">Mesa</a></li>
+          <li><a href="#">Surprise</a></li>
+          <li><a href="#">Casa Adobes</a></li>
+          <li><a href="#">Yuma</a></li>
+          <li><a href="#">Graham</a></li>
+          <li><a href="#">Chandler</a></li>
+          <li><a href="#">San Tan Valley</a></li>
+          <li><a href="#">Queen Creek</a></li>
+          <li><a href="#">Coconino</a></li>
+          <li><a href="#">La Paz</a></li>
+          <li><a href="#">Gilbert</a></li>
+          <li><a href="#">Yuma</a></li>
+          <li><a href="#">Maricopa</a></li>
+          <li><a href="#">Cochise</a></li>
+          <li><a href="#">Greeniee</a></li>
+          <li><a href="#">Glendale</a></li>
+          <li><a href="#">Goodyear</a></li>
+          <li><a href="#">Pima</a></li>
+          <li><a href="#">Navajo</a></li>
+          <li><a href="#">Scottsdale</a></li>
+          <li><a href="#">Buckeye</a></li>
+          <li><a href="#">Pinal</a></li>
+          <li><a href="#">Apache</a></li>
         </ul>
       </div>
 
@@ -1028,10 +1028,8 @@ get_header( 'arizona' );
   <section class="footer-cta">
     <div class="az-container">
       <h2>Need someone to talk to right now?</h2>
-      <div class="footer-cta-btns">
-        <a href="tel:6239654112" class="footer-cta-btn footer-cta-call">Call Us</a>
-        <a href="#" class="footer-cta-btn footer-cta-chat">Chat With Us</a>
-      </div>
+      <a href="tel:6239654112">Call Us</a>
+      <a href="#">Chat With Us</a>
     </div>
   </section>
 </main>
