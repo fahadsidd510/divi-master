@@ -452,8 +452,66 @@ body {
 /* ══════════════════════════════════════
    HEADER — RESPONSIVE
    ══════════════════════════════════════ */
+/* ── 1024px – 1100px: tight desktop — reduce sizes further ── */
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .logo-wrapper img {
+    width: 200px;
+    height: 190px;
+  }
 
-@media (min-width: 1025px) and (max-width: 1400px) {
+  .top-header {
+    height: 90px;
+    padding: 50px 24px;
+  }
+
+  .top-header-content {
+    padding-left: 120px;
+    gap: 10px;
+  }
+
+  .phone-row {
+    gap: 20px;
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+
+  .phone-left {
+    gap: 20px;
+  }
+
+  .phone-left .label,
+  .phone-left .number,
+  .phone-right a {
+    font-size: 17px;
+  }
+
+  .location-row {
+    font-size: 17px;
+  }
+
+  .bottom-header {
+    padding: 8px;
+  }
+
+  .nav-menu {
+    gap: 12px;
+    padding-left: 140px;
+  }
+
+  .nav-menu > li > a {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    padding: 12px 6px;
+  }
+
+  .nav-menu > li.menu-item-has-children > a::after {
+    width: 10px;
+    height: 6px;
+    margin-left: 4px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
   .logo-wrapper img {
     width: 240px;
     height: 230px;
@@ -481,7 +539,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .site-header {
     padding-top: 20px;
   }
@@ -2546,7 +2604,7 @@ p.alone-orange-text {
 
 /* ── 8c. ≤1024px — Episode Cards Tablet ── */
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .ep-cards-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 22px;
@@ -3012,6 +3070,10 @@ p.alone-orange-text {
     padding: 30px 0 40px;
   }
 
+  .lp-heading-row {
+    flex-direction: column;
+  }
+
   /* Top heading area */
   .hfy-top {
     margin-top: 20px;
@@ -3070,6 +3132,7 @@ p.alone-orange-text {
 
   .hfy-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
     text-align: left;
     gap: 16px;
@@ -3115,7 +3178,7 @@ p.alone-orange-text {
   .hfy-about-cta {
     flex-direction: row;
     align-items: center;
-    gap: 12px;
+    /* gap: 12px; */
     padding: 14px 16px;
     border-radius: 10px;
   }
@@ -3138,6 +3201,11 @@ p.alone-orange-text {
     padding: 10px 14px;
     border-radius: 24px;
   }
+
+  .pc-badge img{
+    width: 28px;
+    height: 28px;
+  }
 }
 
 /* ── Small Mobile (≤400px) ── */
@@ -3153,7 +3221,14 @@ p.alone-orange-text {
     margin: 0 auto;
   }
 }
-
+@media (min-width: 681px) and (max-width: 809px) {
+    .lp-heading-row {
+        flex-direction: column;
+    }
+    .le-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 /* ══════════════════════════════════════
@@ -3693,7 +3768,7 @@ p.alone-orange-text {
 
 /* ── Responsive ── */
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .le-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3754,7 +3829,7 @@ p.alone-orange-text {
   }
 
   .le-thumb img {
-    height: 200px;
+    /* height: 200px; */
   }
 
   .le-actions {

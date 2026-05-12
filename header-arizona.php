@@ -108,7 +108,7 @@ $header_bottom_text = get_field('header_bottom_text', $page_id);
 
     dropdownParents.forEach(function(link) {
       link.addEventListener('click', function(e) {
-        if (window.matchMedia('(max-width: 1024px)').matches) {
+        if (window.matchMedia('(max-width: 1023px)').matches) {
           e.preventDefault();
           e.stopPropagation();
           link.parentElement.classList.toggle('is-open-mobile');

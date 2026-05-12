@@ -6,33 +6,58 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 get_header( 'arizona' );
+$page_id = get_the_ID();
+$az_banner_image = get_field('az_banner_image', $page_id);
+$az_banner_mic_image = get_field('az_banner_mic_image', $page_id);
+$ez_banner_content = get_field('ez_banner_content', $page_id);
+$ez_banner_button_1 = get_field('ez_banner_button_1', $page_id);
+$ez_banner_button_2 = get_field('ez_banner_button_2', $page_id);
+$birth_mother_content = get_field('birth_mother_content', $page_id);
+$birth_mother_feature_repeater = get_field('birth_mother_feature', $page_id);
+$episodes_content = get_field('episodes_content', $page_id);
+$reading_book_icon = get_field('reading_book_icon', $page_id);
+$reading_content = get_field('reading_content', $page_id);
+$reading_feature_repeater = get_field('reading_feature', $page_id);
+$podcast_top_button = get_field('podcast_top_button', $page_id);
+$podcast_top_content = get_field('podcast_content', $page_id);
+$podcast_top_image = get_field('podcast_image', $page_id);
+$podcast_offers_repeater = get_field('podcast_offers', $page_id);
+$podcast_follow_button_heading = get_field('podcast_follow_button_heading', $page_id);
+$podcast_follow_button_text = get_field('podcast_follow_button_text', $page_id);
+$podcast_follow_button_link = get_field('podcast_follow_button_link', $page_id);
 
 ?>
 
 <!-- Hero Banner Section -->
-<section class="hero-banner" style="background-image: url('http://az-pregnancy.local/wp-content/uploads/2026/05/az-banner.webp');">
+<section class="hero-banner" style="background-image: url('<?php echo $az_banner_image['url']; ?>');">
   <div class="az-container">
     <div class="banner-content">
       <div class="banner-inner">
         <div class="podcast-icon">
-          <img src="http://az-pregnancy.local/wp-content/uploads/2026/05/Group-9457.svg"
-               alt="Podcast microphone icon">
+          <?php if ( $az_banner_mic_image ) : ?>
+            <img src="<?php echo esc_url( $az_banner_mic_image['url'] ); ?>"
+                 alt="<?php echo esc_attr( $az_banner_mic_image['alt'] ); ?>">
+          <?php endif; ?>
         </div>
-        <h1 class="banner-heading">You Are Not Alone</h1>
-        <p class="banner-subtext">
-          Real stories, guidance and support<br>
-          for your adoption journey.
-        </p>
-
+        <?php if ($ez_banner_content) { echo $ez_banner_content;} ?>
+        
         <div class="az-cta-btn-group">
-          <button class="az-cta-btn az-cta-btn--podcast">
-            <span class="az-cta-btn__icon icon-play"></span>
-            Listen to Podcasts
-          </button>
-          <button class="az-cta-btn az-cta-btn--transcript">
-            <span class="az-cta-btn__icon icon-book"></span>
-            Read Transcripts
-          </button>
+          <?php if ($ez_banner_button_1) : ?>
+          <a href="<?php echo $ez_banner_button_1['url']; ?>" target="<?php echo $ez_banner_button_1['target']; ?>">
+            <button class="az-cta-btn az-cta-btn--podcast">
+              <span class="az-cta-btn__icon icon-play"></span>
+              <?php echo esc_html( $ez_banner_button_1['title'] ); ?>
+            </button>
+          </a>
+          <?php endif; ?>
+          <?php if ($ez_banner_button_2) : ?>
+          <a href="<?php echo $ez_banner_button_2['url']; ?>" target="<?php echo $ez_banner_button_2['target']; ?>">
+            <button class="az-cta-btn az-cta-btn--transcript">
+              <span class="az-cta-btn__icon icon-book"></span>
+              Read Transcripts
+            </button>
+          </a>
+          <?php endif; ?>
         </div>
       </div>
     </div>
@@ -45,54 +70,49 @@ get_header( 'arizona' );
 <main class="podcast-section">
 
   <!-- ── Section 1: Birth Mother Intro ── -->
+   <?php if ($birth_mother_content) : ?>
   <section class="birth-podcast">
     <div class="az-container">
       <div class="birth-podcast-inner az-content">
-        <h2>Birth Mother Matters in Adoption is a free podcast created</h2>
-          <p>to support, guide and empower women considering adoption.</p>
+        <?php echo $birth_mother_content; ?>
       </div>
     </div>
   </section>
+  <?php endif; ?>
 
   <!-- ── Section 2: Three Category Cards ── -->
   <section class="category-cards">
     <div class="az-container">
+    <?php if ( have_rows('birth_mother_feature', $page_id) ) : ?>
       <div class="category-cards-grid">
-        <!-- Card 1 -->
-        <div class="category-card">
-          <div class="category-card-img">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/real-stories.png" alt="Real Stories" width="75" height="70">
+        <?php while ( have_rows('birth_mother_feature', $page_id) ) : the_row();
+          $icon = get_sub_field('birth_mother_feature_icon');
+          $content = get_sub_field('birth_mother_feature_content');
+        ?>
+          <div class="category-card">
+            <?php if ( $icon ) : ?>
+              <div class="category-card-img">
+                <img src="<?php echo esc_url( $icon['url'] ); ?>" alt="<?php echo esc_attr( $icon['alt'] ?: $icon['title'] ); ?>" width="<?php echo esc_attr( $icon['width'] ); ?>" height="<?php echo esc_attr( $icon['height'] ); ?>">
+              </div>
+            <?php endif; ?>
+            <?php if ( $content ) : ?>
+              <?php echo $content; ?>
+            <?php endif; ?>
           </div>
-          <h3>Real Stories</h3>
-          <p>Hear true stories from other birth mothers.</p>
-        </div>
-        <!-- Card 2 -->
-        <div class="category-card">
-          <div class="category-card-img">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/support-guidance.png" alt="Support & Guidance" width="75" height="70">
-          </div>
-          <h3>Support &amp; Guidance</h3>
-          <p>Get advice from adoption experts.</p>
-        </div>
-        <!-- Card 3 -->
-        <div class="category-card">
-          <div class="category-card-img">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/learn-adoption.png" alt="Learn About Adoption" width="75" height="70">
-          </div>
-          <h3>Learn About Adoption</h3>
-          <p>Understand the adoption process.</p>
-        </div>
+        <?php endwhile; ?>
       </div>
+    <?php endif; ?>
     </div>
   </section>
 
   <!-- ── Section 3: Listen & Explore Episodes ── -->
   <section class="explore-episodes">
     <div class="az-container">
-      <div class="explore-episodes-intro az-content">
-        <h2 class="section-heading-script">Listen &amp; Explore More Episodes</h2>
-        <p>Helpful conversations and real stories to guide you through your Adoption Journey.</p>
-      </div>
+      <?php if ($episodes_content) : ?>
+       <div class="explore-episodes-intro az-content">
+          <?php echo $episodes_content; ?>
+        </div>
+      <?php endif; ?>
 
       <div class="ep-cards-grid">
         <!-- ep-card 1 -->
@@ -326,14 +346,18 @@ get_header( 'arizona' );
       </div>
 
       <div class="ep-listening-wrapper">
+        <?php if ($reading_book_icon) : ?>
         <div class="ep-book-icon">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ep-book-black.svg" alt="Learn About Adoption">
+          <img src="<?php echo esc_url( $reading_book_icon['url'] ); ?>" alt="<?php echo esc_attr( $reading_book_icon['alt'] ); ?>">
         </div>
+        <?php 
+        endif; 
+        if ($reading_content) :
+        ?>
         <div class="ep-listen-content">
-          <h3>Prefer reading instead of listening?</h3>
-          <p>Explore full podcast transcripts for detailed guidance and support.</p>
-          <a href="#">Read All Transcripts</a>
+          <?php echo $reading_content; ?>
         </div>
+        <?php endif; ?>
         <!-- <a href="#" class="ep-transcript-btn">Read All Transcripts</a> -->
       </div>
 
@@ -385,6 +409,7 @@ get_header( 'arizona' );
           </div>
         </div>
       </div>
+      
     </div>
   </section>
   <!-- ── Podcast Community Section ── -->
@@ -393,10 +418,12 @@ get_header( 'arizona' );
       <div class="pc-wrapper">
         <!-- Left Content -->
         <div class="pc-content">
+          <?php if ($podcast_top_button) : ?>
           <div class="pc-badge">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podcast-comunity-heading-mic.svg" alt="Mic icon">
-            <span>Podcast Community</span>
+            <span><?php echo $podcast_top_button['title']; ?></span>
           </div>
+          <?php endif; ?>
           <h2>Join Our Podcast <br>Community</h2>
           <h3>Birth Mother Matters in Adoption Radio</h3>
           <p>Learn adoption from every perspective.<br> Real stories . Real insights . Real adoption journeys</p>
