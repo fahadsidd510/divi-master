@@ -380,6 +380,7 @@ add_filter('wp_get_attachment_image_src', 'fix_svg_display', 10, 2);
 // Register Landing Menu
 function register_landing_menu() {
   register_nav_menu('landing-menu',__( 'Landing Menu' ));
+  register_nav_menu('az-landing-menu',__( 'AZ Landing Menu' ));
 }
 add_action( 'init', 'register_landing_menu' );
 

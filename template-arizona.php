@@ -6,6 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 get_header( 'arizona' );
+
 ?>
 
 <!-- Hero Banner Section -->
@@ -22,16 +23,7 @@ get_header( 'arizona' );
           Real stories, guidance and support<br>
           for your adoption journey.
         </p>
-        <!-- <div class="banner-ctas">
-          <a href="#" class="btn-podcast btn-podcast-blue">
-            <img src="http://az-pregnancy.local/wp-content/uploads/2026/05/Path-8695.svg" alt="">
-            Listen to Podcasts
-          </a>
-          <a href="#" class="btn-podcast btn-podcast-orange">
-            <img src="http://az-pregnancy.local/wp-content/uploads/2026/05/Group-9399-1.svg" alt="">
-            Read Transcripts
-          </a>
-        </div> -->
+
         <div class="az-cta-btn-group">
           <button class="az-cta-btn az-cta-btn--podcast">
             <span class="az-cta-btn__icon icon-play"></span>
