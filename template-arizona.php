@@ -12,12 +12,15 @@ $az_banner_mic_image = get_field('az_banner_mic_image', $page_id);
 $ez_banner_content = get_field('ez_banner_content', $page_id);
 $ez_banner_button_1 = get_field('ez_banner_button_1', $page_id);
 $ez_banner_button_2 = get_field('ez_banner_button_2', $page_id);
+
 $birth_mother_content = get_field('birth_mother_content', $page_id);
 $birth_mother_feature_repeater = get_field('birth_mother_feature', $page_id);
 $episodes_content = get_field('episodes_content', $page_id);
+
 $reading_book_icon = get_field('reading_book_icon', $page_id);
 $reading_content = get_field('reading_content', $page_id);
 $reading_feature_repeater = get_field('reading_feature', $page_id);
+
 $podcast_top_button = get_field('podcast_top_button', $page_id);
 $podcast_top_content = get_field('podcast_content', $page_id);
 $podcast_image = get_field('podcast_image', $page_id);
@@ -26,11 +29,51 @@ $podcast_follow_button_heading = get_field('podcast_follow_button_heading', $pag
 $podcast_follow_button_text = get_field('podcast_follow_button_text', $page_id);
 $podcast_follow_button_link = get_field('podcast_follow_button_link', $page_id);
 $platform_icon = get_field('platform_icon', $page_id);
-$platform_content = get_field('platform_content', $page_id);
+$platform_heading = get_field('platform_heading', $page_id);
+$platform_sub_heading = get_field('platform_sub_heading', $page_id);
 $platform_partners_repeater = get_field('platform_partners', $page_id);
 $platform_youtube_icon = get_field('platform_youtube_icon', $page_id);
 $platform_youtube_text_and_link = get_field('platform_youtube_text_and_link', $page_id);
+$platform_journey_heading_icon = get_field('journey_heading_icon', $page_id);
+$journey_heading = get_field('journey_heading', $page_id);
+$journey_content = get_field('journey_content', $page_id);
+$journey_background_image = get_field('journey_background_image', $page_id);
+$journey_podcast_icon = get_field('journey_podcast_icon', $page_id);
+$journey_podcast_text = get_field('journey_podcast_text', $page_id);
+$support_heading_icon = get_field('support_heading_icon', $page_id);
+$support_heading_text = get_field('support_heading_text', $page_id);
+$support_features_repeater = get_field('support_features', $page_id);
+$about_us_heading = get_field('about_us_heading', $page_id);
+$about_us_content = get_field('about_us_content', $page_id);
+$about_call_button_text = get_field('about_call_button_text', $page_id);
+$about_us_button_icon = get_field('about_us_button_icon', $page_id);
+$about_phone_number = get_field('about_phone_number', $page_id);
+$about_button_number_text = get_field('about_button_number_text', $page_id);
 
+$alone_image = get_field('alone_image', $page_id);
+$alone_content = get_field('alone_content', $page_id);
+
+$learning_image = get_field('learning_image', $page_id);
+$learning_heading_button_icon = get_field('learning_heading_button_icon', $page_id);
+$learning_heading_button_text = get_field('learning_heading_button_text', $page_id);
+$learning_content = get_field('learning_content', $page_id);
+$learning_blog_button = get_field('learning_blog_button', $page_id);
+
+$stories_heading_icon = get_field('stories_heading_icon', $page_id);
+$stories_heading_text = get_field('stories_heading_text', $page_id);
+$stories_content = get_field('stories_content', $page_id);
+$explore_content_image = get_field('explore_content_image', $page_id);
+$explore_content = get_field('explore_content', $page_id);
+
+$sponsors_heading = get_field('sponsors_heading', $page_id);
+$sponsor_partners_repeater = get_field('sponsor_partners', $page_id);
+
+$cities_top_heading = get_field('cities_top_heading', $page_id);
+$cities_content = get_field('cities_content', $page_id);
+$cities_image = get_field('cities_image', $page_id);
+$cities_inner_heading_icon = get_field('cities_inner_heading_icon', $page_id);
+$cities_inner_heading = get_field('cities_inner_heading', $page_id);
+$cities_locations = get_field('cities_locations', $page_id);
 ?>
 
 <!-- Hero Banner Section -->
@@ -118,238 +161,7 @@ $platform_youtube_text_and_link = get_field('platform_youtube_text_and_link', $p
           <?php echo $episodes_content; ?>
         </div>
       <?php endif; ?>
-
-      <div class="ep-cards-grid">
-        <!-- ep-card 1 -->
-        <div class="ep-card">
-          <div class="ep-card-top">
-            <div class="ep-card-thumb">
-              <!-- Replace src with your actual image path -->
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ep_cover1.png" alt="Birth Mother Matters in Adoption">
-            </div>
-            <div class="ep-card-info">
-              <div class="ep-card-badge">S4 <span class="sep">|</span> E243</div>
-              <div class="ep-card-title">Birth Mother Matters in Adoption</div>
-              <div class="ep-card-subtitle">Support for Birth Mothers</div>
-            </div>
-          </div>
-          <div class="ep-card-body">
-            <p class="ep-card-description">Birth Mother Matters in Adoption<br>by <span class="author">Kelly Rourke &amp; Ron Reigns</span></p>
-          </div>
-          <div class="ep-card-meta">
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/clock.svg" alt="duration">
-              <span>13:02 Min</span>
-            </div>
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="date">
-              <span>Jul 22, 2025</span>
-            </div>
-          </div>
-          <div class="ep-card-actions">
-            <button class="ep-btn ep-btn-listen">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/play.svg" alt="play">
-              Listen to Podcasts
-            </button>
-            <button class="ep-btn ep-btn-read">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/read.svg" alt="read">
-              Read Transcripts
-            </button>
-          </div>
-        </div>
-        
-        
-        <!-- ep-card 2 -->
-         <div class="ep-card">
-          <div class="ep-card-top">
-            <div class="ep-card-thumb">
-              <!-- Replace src with your actual image path -->
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ep_cover1.png" alt="Birth Mother Matters in Adoption">
-            </div>
-            <div class="ep-card-info">
-              <div class="ep-card-badge">S4 <span class="sep">|</span> E243</div>
-              <div class="ep-card-title">Birth Mother Matters in Adoption</div>
-              <div class="ep-card-subtitle">Support for Birth Mothers</div>
-            </div>
-          </div>
-          <div class="ep-card-body">
-            <p class="ep-card-description">Birth Mother Matters in Adoption<br>by <span class="author">Kelly Rourke &amp; Ron Reigns</span></p>
-          </div>
-          <div class="ep-card-meta">
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/clock.svg" alt="duration">
-              <span>13:02 Min</span>
-            </div>
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="date">
-              <span>Jul 22, 2025</span>
-            </div>
-          </div>
-          <div class="ep-card-actions">
-            <button class="ep-btn ep-btn-listen">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/play.svg" alt="play">
-              Listen to Podcasts
-            </button>
-            <button class="ep-btn ep-btn-read">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/read.svg" alt="read">
-              Read Transcripts
-            </button>
-          </div>
-        </div>
-
-        <div class="ep-card">
-          <div class="ep-card-top">
-            <div class="ep-card-thumb">
-              <!-- Replace src with your actual image path -->
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ep_cover1.png" alt="Birth Mother Matters in Adoption">
-            </div>
-            <div class="ep-card-info">
-              <div class="ep-card-badge">S4 <span class="sep">|</span> E243</div>
-              <div class="ep-card-title">Birth Mother Matters in Adoption</div>
-              <div class="ep-card-subtitle">Support for Birth Mothers</div>
-            </div>
-          </div>
-          <div class="ep-card-body">
-            <p class="ep-card-description">Birth Mother Matters in Adoption<br>by <span class="author">Kelly Rourke &amp; Ron Reigns</span></p>
-          </div>
-          <div class="ep-card-meta">
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/clock.svg" alt="duration">
-              <span>13:02 Min</span>
-            </div>
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="date">
-              <span>Jul 22, 2025</span>
-            </div>
-          </div>
-          <div class="ep-card-actions">
-            <button class="ep-btn ep-btn-listen">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/play.svg" alt="play">
-              Listen to Podcasts
-            </button>
-            <button class="ep-btn ep-btn-read">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/read.svg" alt="read">
-              Read Transcripts
-            </button>
-          </div>
-        </div>
-
-        <div class="ep-card">
-          <div class="ep-card-top">
-            <div class="ep-card-thumb">
-              <!-- Replace src with your actual image path -->
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ep_cover1.png" alt="Birth Mother Matters in Adoption">
-            </div>
-            <div class="ep-card-info">
-              <div class="ep-card-badge">S4 <span class="sep">|</span> E243</div>
-              <div class="ep-card-title">Birth Mother Matters in Adoption</div>
-              <div class="ep-card-subtitle">Support for Birth Mothers</div>
-            </div>
-          </div>
-          <div class="ep-card-body">
-            <p class="ep-card-description">Birth Mother Matters in Adoption<br>by <span class="author">Kelly Rourke &amp; Ron Reigns</span></p>
-          </div>
-          <div class="ep-card-meta">
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/clock.svg" alt="duration">
-              <span>13:02 Min</span>
-            </div>
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="date">
-              <span>Jul 22, 2025</span>
-            </div>
-          </div>
-          <div class="ep-card-actions">
-            <button class="ep-btn ep-btn-listen">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/play.svg" alt="play">
-              Listen to Podcasts
-            </button>
-            <button class="ep-btn ep-btn-read">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/read.svg" alt="read">
-              Read Transcripts
-            </button>
-          </div>
-        </div>
-
-        <div class="ep-card">
-          <div class="ep-card-top">
-            <div class="ep-card-thumb">
-              <!-- Replace src with your actual image path -->
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ep_cover1.png" alt="Birth Mother Matters in Adoption">
-            </div>
-            <div class="ep-card-info">
-              <div class="ep-card-badge">S4 <span class="sep">|</span> E243</div>
-              <div class="ep-card-title">Birth Mother Matters in Adoption</div>
-              <div class="ep-card-subtitle">Support for Birth Mothers</div>
-            </div>
-          </div>
-          <div class="ep-card-body">
-            <p class="ep-card-description">Birth Mother Matters in Adoption<br>by <span class="author">Kelly Rourke &amp; Ron Reigns</span></p>
-          </div>
-          <div class="ep-card-meta">
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/clock.svg" alt="duration">
-              <span>13:02 Min</span>
-            </div>
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="date">
-              <span>Jul 22, 2025</span>
-            </div>
-          </div>
-          <div class="ep-card-actions">
-            <button class="ep-btn ep-btn-listen">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/play.svg" alt="play">
-              Listen to Podcasts
-            </button>
-            <button class="ep-btn ep-btn-read">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/read.svg" alt="read">
-              Read Transcripts
-            </button>
-          </div>
-        </div>
-
-        <div class="ep-card">
-          <div class="ep-card-top">
-            <div class="ep-card-thumb">
-              <!-- Replace src with your actual image path -->
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ep_cover1.png" alt="Birth Mother Matters in Adoption">
-            </div>
-            <div class="ep-card-info">
-              <div class="ep-card-badge">S4 <span class="sep">|</span> E243</div>
-              <div class="ep-card-title">Birth Mother Matters in Adoption</div>
-              <div class="ep-card-subtitle">Support for Birth Mothers</div>
-            </div>
-          </div>
-          <div class="ep-card-body">
-            <p class="ep-card-description">Birth Mother Matters in Adoption<br>by <span class="author">Kelly Rourke &amp; Ron Reigns</span></p>
-          </div>
-          <div class="ep-card-meta">
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/clock.svg" alt="duration">
-              <span>13:02 Min</span>
-            </div>
-            <div class="meta-item">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="date">
-              <span>Jul 22, 2025</span>
-            </div>
-          </div>
-          <div class="ep-card-actions">
-            <button class="ep-btn ep-btn-listen">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/play.svg" alt="play">
-              Listen to Podcasts
-            </button>
-            <button class="ep-btn ep-btn-read">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/read.svg" alt="read">
-              Read Transcripts
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <div class="ep-button-wrapper">
-        <a class="ep-button" href="#">See all 265 episodes</a>
-      </div>
-
+      <?php echo do_shortcode('[rss_podcast_cards limit="6"]'); ?>
       <div class="ep-listening-wrapper">
         <?php if ($reading_book_icon) : ?>
         <div class="ep-book-icon">
@@ -365,56 +177,37 @@ $platform_youtube_text_and_link = get_field('platform_youtube_text_and_link', $p
         <?php endif; ?>
         <!-- <a href="#" class="ep-transcript-btn">Read All Transcripts</a> -->
       </div>
-
     </div>
   </section>
 
   <!-- ── Topic Cards Section ── -->
   <section class="topic-cards">
     <div class="az-container">
-      <div class="topic-cards-grid">
-        <!-- Card 1 -->
-        <div class="topic-card">
-          <div class="topic-card-icon">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/topic-adoption.svg" alt="Learn About Adoption">
-          </div>
-          <div class="topic-card-text">
-            <h3>Learn About Adoption</h3>
-            <p>Understand your options and the adoption Process.</p>
-          </div>
+      <?php 
+      if ($reading_feature_repeater): ?>  
+        <div class="topic-cards-grid">
+          <?php foreach ($reading_feature_repeater as $item): 
+            $icon    = $item['reading_feature_icon'];
+            $content = $item['reading_feature_content'];
+            $icon_url = is_array($icon) ? $icon['url'] : $icon;
+            $alt      = is_array($icon) ? $icon['alt'] : '';
+          ?>
+            <div class="topic-card">
+              <?php if ($icon_url): ?>
+                <div class="topic-card-icon">
+                  <img src="<?php echo esc_url($icon_url); ?>" 
+                      alt="<?php echo esc_attr($alt ?: 'Feature Icon'); ?>">
+                </div>
+              <?php endif; ?>
+              <div class="topic-card-text">
+                <?php if ($content): ?>
+                  <?php echo wp_kses_post($content); ?>
+                <?php endif; ?>
+              </div>
+            </div>
+          <?php endforeach; ?>
         </div>
-        <!-- Card 2 -->
-        <div class="topic-card">
-          <div class="topic-card-icon">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/topic-stories.svg" alt="Hear Real Stories">
-          </div>
-          <div class="topic-card-text">
-            <h3>Hear Real Stories</h3>
-            <p>Listen to personal stories from birth mothers</p>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="topic-card">
-          <div class="topic-card-icon">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/topic-rights.svg" alt="Understand your Rights">
-          </div>
-          <div class="topic-card-text">
-            <h3>Understand your Rights</h3>
-            <p>Know your legal rights and the support available</p>
-          </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="topic-card">
-          <div class="topic-card-icon">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/topic-support.svg" alt="Get Emotional Support">
-          </div>
-          <div class="topic-card-text">
-            <h3>Get Emotional Support</h3>
-            <p>Receive guidance and empathy on your journey</p>
-          </div>
-        </div>
-      </div>
-      
+      <?php endif; ?>
     </div>
   </section>
   <!-- ── Podcast Community Section ── -->
@@ -486,151 +279,143 @@ $platform_youtube_text_and_link = get_field('platform_youtube_text_and_link', $p
       <div class="lp-inner">
         <div class="lp-header">
           <div class="lp-heading-row">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/headphones-icon.svg" alt="Headphones">
-            <h2>Listen on your Favourite Platform</h2>
+            <?php if ($platform_icon) : ?>
+              <img src="<?php echo esc_url($platform_icon['url']); ?>" alt="<?php echo esc_attr($platform_icon['alt']); ?>">
+            <?php endif; ?>
+            <?php if ($platform_heading) : ?>
+              <h2><?php echo $platform_heading; ?></h2>
+            <?php endif; ?>
           </div>
-          <p>Choose your preferred app and start listening today!</p>
+          <?php if ($platform_sub_heading) : ?>
+            <p><?php echo $platform_sub_heading; ?></p>
+          <?php endif; ?>
         </div>
 
-        <div class="lp-grid">
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/itunes.png" alt="iTunes">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/spotify.png" alt="Spotify">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/castbox.png" alt="Castbox">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/stitcher.png" alt="Stitcher">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/radiopublic.png" alt="RadioPublic">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/pocketcasts.png" alt="Pocket Casts">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/googleplay.png" alt="Google Play">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/blubrry.png" alt="Blubrry">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podbean.png" alt="PodBean">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podchaser.png" alt="Podchaser">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/ipodder.png" alt="iPodder">
-          </a>
-          <a href="#" class="lp-card">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/tunein.png" alt="TuneIn">
-          </a>
-        </div>
-        <a href="#" class="lp-youtube">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/youtube.png" alt="YouTube">
-          <span>YouTube Channel: AZ Pregnancy Help</span>
+        <?php
+        if ($platform_partners_repeater): ?>   
+          <div class="lp-grid">
+            <?php foreach ($platform_partners_repeater as $partner):               
+              $image = $partner['partner_image'];
+              $link  = $partner['partner_link'];
+              // Handle image
+              $image_url = is_array($image) ? $image['url'] : $image;
+              // Handle link (ACF link field returns array)
+              $url    = $link['url'] ?? '#';
+              $target = $link['target'] ?? '_self';
+              $title  = $link['title'] ?? '';
+            ?>
+              <a href="<?php echo esc_url($url); ?>" 
+                target="<?php echo esc_attr($target); ?>" 
+                class="lp-card">
+                <?php if ($image_url): ?>
+                  <img src="<?php echo esc_url($image_url); ?>" 
+                      alt="<?php echo esc_attr($title); ?>">
+                <?php endif; ?>
+              </a>
+            <?php endforeach; ?>
+          </div>
+        <?php endif; ?>
+        <?php if ($platform_youtube_icon && $platform_youtube_text_and_link) : ?>
+        <a href="<?php echo esc_url($platform_youtube_text_and_link['url']); ?>" target="<?php echo esc_attr($platform_youtube_text_and_link['target']); ?>" class="lp-youtube">
+          <img src="<?php echo $platform_youtube_icon['url']; ?>" alt="<?php echo esc_attr($platform_youtube_icon['alt']); ?>">
+          <span><?php echo esc_html($platform_youtube_text_and_link['title']); ?></span>
         </a>
+        <?php endif; ?>
       </div>
     </div>
   </section>
   <!-- ── We're Here For You Section ── -->
-  <section class="here-for-you" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/src/images/here-for-you-bg.webp');">
+  <section class="here-for-you" style="background-image: url('<?php echo esc_url($journey_background_image['url']); ?>');">
     <div class="az-container">
-
       <!-- Top: Badge + Heading + Subtext + Schedule -->
       <div class="hfy-top">
         <div class="hfy-badge">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/headphone-orange.svg" alt="Headphones">
-          <span>We're Here For You</span>
+          <?php if ($platform_journey_heading_icon) : ?>
+            <img src="<?php echo esc_url($platform_journey_heading_icon['url']); ?>" alt="<?php echo esc_attr($platform_journey_heading_icon['alt']); ?>">
+          <?php endif; ?>
+          <?php if ($journey_heading) : ?>
+          <span><?php echo esc_html($journey_heading); ?></span>
+          <?php endif; ?>
         </div>
-        <h2>We're Here for You -<br>Every Step of Your<br><span>Adoption Journey</span></h2>
-        <p class="hfy-tagline">Real Stories. Real Support. Real Choices.</p>
+        <?php if ($journey_content) : ?>
+          <?php echo $journey_content; ?>
+        <?php endif; ?>
       </div>
       <div class="hfy-schedule">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/calendar-icon.svg" alt="Calendar">
+        <?php if ($journey_podcast_icon) : ?>
+          <img src="<?php echo esc_url($journey_podcast_icon['url']); ?>" alt="<?php echo esc_attr($journey_podcast_icon['alt']); ?>">
+        <?php endif; ?>
         <div>
-          <p>New Podcast Episodes</p>
-          <p>Every <span>Tuesday &amp; Friday</span> at <span>4:30 PM</span></p>
+        <?php if ($journey_podcast_text) : ?>
+          <?php echo $journey_podcast_text; ?>
+        <?php endif; ?>
         </div>
       </div>
 
       <!-- Support heading -->
+      <?php if ($support_heading_icon && $support_heading_text) : ?>
       <div class="hfy-support-label">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/heart-peach.svg" alt="Heart">
-        <h3>How we support you</h3>
+        <img src="<?php echo esc_url($support_heading_icon['url']); ?>" alt="<?php echo esc_attr($support_heading_icon['alt']); ?>">
+        <h3><?php echo esc_html($support_heading_text); ?></h3>
       </div>
-
+      <?php endif; ?>
       <!-- 4 Support Cards -->
-      <div class="hfy-cards">
-        <div class="hfy-card">
-          <div class="hfy-card-icon">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/support-financial.svg" alt="Financial Assistance">
-          </div>
-          <h4>Financial Assistance</h4>
-          <p>Help when you need it most.</p>
+      <?php if ($support_features_repeater): ?>
+        <div class="hfy-cards">
+          <?php foreach ($support_features_repeater as $feature): 
+            $icon    = $feature['support_feature_icon'];
+            $content = $feature['support_feature_content'];
+            $icon_url = is_array($icon) ? $icon['url'] : $icon;
+          ?>
+            <div class="hfy-card">
+              <?php if ($icon_url): ?>
+                <div class="hfy-card-icon">
+                  <img src="<?php echo esc_url($icon_url); ?>" alt="">
+                </div>
+              <?php endif; ?>
+              <?php if ($content): ?>
+                <?php echo wp_kses_post($content); ?>
+              <?php endif; ?>
+            </div>
+          <?php endforeach; ?>
         </div>
-        <div class="hfy-card">
-          <div class="hfy-card-icon">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/support-housing.svg" alt="Housing &amp; Food Support">
-          </div>
-          <h4>Housing &amp; Food Support</h4>
-          <p>Safe housing and basic needs.</p>
-        </div>
-        <div class="hfy-card">
-          <div class="hfy-card-icon">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/support-pregnancy.svg" alt="Pregnancy Options Guidance">
-          </div>
-          <h4>Pregnancy Options Guidance</h4>
-          <p>Explore your options with care.</p>
-        </div>
-        <div class="hfy-card">
-          <div class="hfy-card-icon">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/support-247.svg" alt="24/7 Call &amp; Text Support">
-          </div>
-          <h4>24/7 Call &amp; Text Support</h4>
-          <p>We're always here to listen.</p>
-        </div>
-      </div>
-
+      <?php endif; ?>
       <!-- About Us Bar -->
       <div class="hfy-about">
         <div class="hfy-about-left">
-          <div class="hfy-about-badge">About Us</div>
-          <p>AZ Pregnancy Help supports birth mothers across Arizona <br>with <span>safe, confidential, and free adoption support services.</span></p>
+          <?php if ($about_us_heading) : ?>
+          <div class="hfy-about-badge"><?php echo esc_html($about_us_heading); ?></div>
+          <?php endif; ?>
+          <?php if ($about_us_content) : ?>
+          <?php echo wp_kses_post($about_us_content); ?>
+          <?php endif; ?>
         </div>
-        <a href="tel:6239654112" class="hfy-about-cta">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/phone-white.svg" alt="Phone">
+        <?php if ($about_phone_number) : ?>
+        <a href="tel:<?php echo esc_attr($about_phone_number['url']); ?>" class="hfy-about-cta">
+          <img src="<?php echo esc_url($about_us_button_icon['url']); ?>" alt="<?php echo esc_attr($about_us_button_icon['alt']); ?>">
           <div>
-            <span>Call or Text Us Anytime</span>
-            <strong>623-965-4112</strong>
+            <span><?php echo esc_html($about_call_button_text); ?></span>
+            <strong><?php echo esc_html($about_phone_number['title']); ?></strong>
           </div>
-          <div class="hfy-about-247">24/7</div>
+          <?php if ($about_button_number_text) : ?>
+          <div class="hfy-about-247"><?php echo esc_html($about_button_number_text); ?></div>
+          <?php endif; ?>
         </a>
+        <?php endif; ?>
       </div>
 
       <!-- You're Not Alone Bar -->
-      <!-- <div class="hfy-alone">
-        <div class="hfy-alone-text">
-          <h3>You're Not Alone</h3>
-          <p><strong>Facing an unplanned pregnancy?</strong></p>
-          <p class="hfy-alone-highlight">We're here to support, guide, and walk with you through every step.</p>
-        </div>
-      </div> -->
-
-      <!-- You're Not Alone Bar -->
       <div class="hfy-alone">
-        <div class="hfy-alone-img">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/mother-child.png" alt="Mother and child">
+        <?php if ($alone_image) : ?>
+         <div class="hfy-alone-img">
+          <img src="<?php echo esc_url($alone_image['url']); ?>" alt="<?php echo esc_attr($alone_image['alt']); ?>">
         </div>
+        <?php endif; ?>
+        <?php if ($alone_content) : ?>
         <div class="hfy-alone-text">
-          <h3>You're Not Alone</h3>
-          <p>Facing an unplanned pregnancy?</p>
-          <p class="alone-orange-text">We're here to support, guide, and walk with you through every step.</p>
+          <?php echo wp_kses_post($alone_content); ?>
         </div>
+        <?php endif; ?>
         <div class="hfy-alone-leaf">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/leaf-image.png" alt="">
         </div>
@@ -638,27 +423,33 @@ $platform_youtube_text_and_link = get_field('platform_youtube_text_and_link', $p
     </div>
   </section>
   <!-- ── Want to Learn More Section ── -->
-  <!-- <section class="want-learn" style="background-image: url('<?php //echo get_stylesheet_directory_uri(); ?>/src/images/what-learn-background.png');"> -->
   <section class="want-learn">
     <div class="az-container">
       <div class="wl-wrapper">
+        <?php if ($learning_image) : ?>
         <div class="wl-image">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/blog-laptop.png" alt="Blog on laptop">
+          <img src="<?php echo esc_url($learning_image['url']);?>" alt="<?php echo esc_url($learning_image['alt']);?>">
         </div>
+        <?php endif; ?>
         <div class="wl-content">
-          <!-- <div class="wl-badge">
-            <span>Keep Learning</span>
-          </div> -->
+          <?php if($learning_heading_button_icon) : ?>
           <div class="pc-badge pc-badge-transparent">
-            <img src="http://az-pregnancy.local/wp-content/themes/divi-master/src/images/book-orange.svg" alt="Orange book icon">
-            <span>KEEP LEARNING</span>
+            <img src="<?php echo esc_url($learning_heading_button_icon['url']); ?>" alt="<?php echo esc_attr($learning_heading_button_icon['alt']); ?>">
+            <span><?php echo esc_html($learning_heading_button_text); ?></span>
           </div>
-          <h2>Want to Learn More?</h2>
-          <p>Once you're done with the adoption Radio, <span>visit our Blog</span> for more information about birth mothers and the adoption process!</p>
-          <div class="pc-badge pc-badge-orange">
-            <img src="http://az-pregnancy.local/wp-content/themes/divi-master/src/images/book-white.svg" alt="White book icon">
-            <span>Go to Blog</span>
-          </div>
+          <?php endif; ?>
+          <?php if ($learning_content) : 
+            echo wp_kses_post($learning_content);
+          endif;  
+          ?>
+          <?php if ($learning_blog_button) : ?>
+          <a href="<?php echo esc_url($learning_blog_button['url']); ?>" target="<?php echo esc_attr($learning_blog_button['target']); ?>">
+            <div class="pc-badge pc-badge-orange">
+              <img src="http://az-pregnancy.local/wp-content/themes/divi-master/src/images/book-white.svg" alt="White book icon">
+              <span><?php echo $learning_blog_button['title']; ?></span>
+            </div>
+          </a>
+          <?php endif; ?>
         </div>
       </div>
     </div>
@@ -671,148 +462,33 @@ $platform_youtube_text_and_link = get_field('platform_youtube_text_and_link', $p
         <!-- Top Header: Title + Explore the Podcast Card -->
         <div class="le-header">
           <div class="le-header-left">
+            <?php if ($stories_heading_text) : ?>
             <div class="pc-badge pc-badge-blog">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/podcast-comunity-heading-mic.svg" alt="Mic icon">
-              <span>LATEST EPISODES</span>
+              <span><?php echo esc_html($stories_heading_text); ?></span>
             </div>
-            <h2>Real Stories. Real Voices.<br><span>Real Adoption Journeys.</span></h2>
-            <p>Listen, Learn, and feel, supported. New episodes added regularly!</p>
+            <?php endif; ?>
+            <?php if ($stories_content) : 
+              echo wp_kses_post($stories_content);
+            endif;
+            ?>
           </div>
 
           <div class="le-header-right">
+            <?php if ($explore_content_image) : ?>
             <div class="le-explore-icon">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/headphone-orange.svg" alt="Headphones">
+              <img src="<?php echo $explore_content_image['url']; ?>" alt="<?php echo esc_attr($explore_content_image['alt']); ?>">
             </div>
+            <?php endif;?>
+            <?php if ($explore_content) : ?>
             <div class="le-explore-text">
-              <h3>Explore the Podcast</h3>
-              <p>Every episode brings you closer to understanding adoption.</p>
+              <?php echo $explore_content;?>
             </div>
+            <?php endif; ?>
           </div>
         </div>
 
-        <!-- Episode Cards Grid -->
-        <div class="le-grid">
-
-          <!-- Card 1 -->
-          <article class="le-card">
-            <div class="le-thumb">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Growing-Up-Adopted-s3-220-980x703.png" alt="Growing Up Adopted">
-              <div class="le-thumb-badge">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/mike.svg" alt="">
-                <span>EPISODE 220</span>
-              </div>
-            </div>
-            <h3>Birth Mother Matters in Adoption<br>S3, Ep 220: Growing Up Adopted</h3>
-            <div class="le-meta">
-              <span class="le-author">by Cairs Content Team</span>
-              <span class="le-date">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/le-date.svg" alt="">
-                Jun 23, 2025
-              </span>
-            </div>
-            <div class="le-tags">
-              <p>Adoption, Adoption Agency, Adoption Choices of Arizona, Adoption Radio, AZ Pregnancy Help, Building Arizona Families, Uncategorized</p>
-            </div>
-            <div class="le-excerpt">
-              <p>Kelly: Welcome and thank you for joining us on Birth Mother Matters in Adoption with Kelly Rourke-Scarry, where we delve into the issues of adoption from every angle of the adoption triad. Kelly is the executive director, president, and co-founder of Building Arizona...</p>
-            </div>
-            <div class="le-actions">
-              <a href="#" class="le-listen-btn">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/microphone-white.svg" alt="">
-                Listen Now
-              </a>
-              <a href="#" class="le-read-more">
-                Read More
-                <span>&#8250;</span>
-              </a>
-            </div>
-            <div class="le-waveform">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/waveform.svg" alt="Audio waveform">
-            </div>
-          </article>
-
-          <!-- Card 2 -->
-          <article class="le-card">
-            <div class="le-thumb">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Growing-Up-Adopted-s3-220-980x703.png" alt="ICPC with Lisa Simpson">
-            </div>
-            <h3>Birth Mother Matters in Adoption<br>Podcast - ICPC with Lisa Simpson</h3>
-            <div class="le-meta">
-              <span class="le-author">by Cairs Content Team</span>
-              <span class="le-date">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="">
-                Jun 23, 2025
-              </span>
-            </div>
-            <div class="le-tags">
-              <p>Adoption, Adoption Agency, Adoption Choices of Arizona, Adoption Radio, AZ Pregnancy Help, Building Arizona Families, Uncategorized</p>
-            </div>
-            <div class="le-excerpt">
-              <p>Ron Raines: Welcome and thank you for joining us on Birth Mother Matters in Adoption with Kelly Rourke-Scarry and me, Ron Raines, where we delve into the issues of adoption from every angle of the adoption triad. Kelly Rourke-Scarry: Do what's best for your kid and...</p>
-            </div>
-            <div class="le-actions">
-              <a href="#" class="le-listen-btn">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/microphone-white.svg" alt="">
-                Listen Now
-              </a>
-              <a href="#" class="le-read-more">
-                Read More
-                <span>&#8250;</span>
-              </a>
-            </div>
-            <div class="le-waveform">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/waveform.svg" alt="Audio waveform">
-            </div>
-          </article>
-
-          <!-- Card 3 -->
-          <article class="le-card">
-            <div class="le-thumb">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Growing-Up-Adopted-s3-220-980x703.png" alt="Adoption All Around Us">
-            </div>
-            <h3>Birth Mother Matters in Adoption<br>S4, Episode 233: Adoption All Around Us</h3>
-            <div class="le-meta">
-              <span class="le-author">by Cairs Content Team</span>
-              <span class="le-date">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/date.svg" alt="">
-                Jun 18, 2025
-              </span>
-            </div>
-            <div class="le-tags">
-              <p>Adoption, Adoption Agency, Adoption Choices of Arizona, Adoption Radio, AZ Pregnancy Help, Building Arizona Families, Uncategorized</p>
-            </div>
-            <div class="le-excerpt">
-              <p>Narrator/Host: Thanks for watching! Welcome and thank you for joining us on the Birth Mother Matters in Adoption podcast with Kelly Rourke, where we delve into the issues of adoption from every angle of the adoption triad. Narrator: Kelly is the Executive Director,...</p>
-            </div>
-            <div class="le-actions">
-              <a href="#" class="le-listen-btn">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/microphone-white.svg" alt="">
-                Listen Now
-              </a>
-              <a href="#" class="le-read-more">
-                Read More
-                <span>&#8250;</span>
-              </a>
-            </div>
-            <div class="le-waveform">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/waveform.svg" alt="Audio waveform">
-            </div>
-          </article>
-
-        </div>
-
-        <!-- Pagination -->
-        <div class="le-pagination">
-          <a href="#" class="le-page-btn le-page-prev">
-            <span>&#8592;</span>
-            Older Entries
-          </a>
-          <span class="le-page-count">1 of 12</span>
-          <a href="#" class="le-page-btn le-page-next">
-            Next Entries
-            <span>&#8594;</span>
-          </a>
-        </div>
+        <?php echo do_shortcode('[podcast_list posts_per_page="3"]'); ?>
 
       </div>
     </div>
@@ -820,254 +496,77 @@ $platform_youtube_text_and_link = get_field('platform_youtube_text_and_link', $p
   <!-- ── Our Partners & Sponsors Section ── -->
   <section class="partners-sponsors">
     <div class="az-container">
-      <div class="ps-header">
-        <h2>Our Partners &amp; Sponsors</h2>
-        <span class="ps-divider"></span>
-      </div>
-      <div class="ps-logos">
-        <a href="#" class="ps-logo">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/realwave.png" alt="Real Wave">
-        </a>
-        <a href="#" class="ps-logo">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/loudnick.png" alt="LoudNick">
-        </a>
-        <a href="#" class="ps-logo">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/jobline.png" alt="Job Line">
-        </a>
-        <a href="#" class="ps-logo">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/itch.png" alt="Pitch">
-        </a>
-        <a href="#" class="ps-logo">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/crosswill.png" alt="Crosswill">
-        </a>
-        <a href="#" class="ps-logo">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/gabo.png" alt="GABO">
-        </a>
-      </div>
+      <?php if ($sponsors_heading) : ?>
+        <div class="ps-header">
+          <h2><?php echo esc_html($sponsors_heading); ?></h2>
+          <span class="ps-divider"></span>
+        </div>
+      <?php endif; ?>
+      <?php 
+        if ($sponsor_partners_repeater): ?>
+          <div class="ps-logos">
+            <?php foreach ($sponsor_partners_repeater as $sponsor): 
+              
+              $image = $sponsor['add_sponsor'];
+              $image_url = is_array($image) ? $image['url'] : $image;
+              $alt = is_array($image) ? $image['alt'] : '';
+            ?>
+              <a href="#" class="ps-logo">
+                <?php if ($image_url): ?>
+                  <img src="<?php echo esc_url($image_url); ?>" 
+                      alt="<?php echo esc_attr($alt ?: 'Sponsor Logo'); ?>">
+                <?php endif; ?>
+              </a>
+            <?php endforeach; ?>
+          </div>
+      <?php endif; ?>
     </div>
   </section>
   <!-- ── Communities Across Arizona Section ── -->
   <section class="communities">
     <div class="az-container">
-
       <!-- Top: Heading + Arizona Image -->
       <div class="comm-top">
         <div class="comm-top-content">
+          <?php if ($cities_top_heading) : ?>
           <div class="comm-badge">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-white.svg" alt="Pin">
-            <span>Arizona Communities We Serve</span>
+            <span><?php echo esc_html($cities_top_heading); ?></span>
           </div>
-          <h2>Proudly Supporting<br><span>Communities Across Arizona</span></h2>
-          <p>Find support near you, We're here for birth mothers throughout Arizona.</p>
+          <?php endif; ?>
+          <?php if ($cities_content) : 
+            echo wp_kses_post($cities_content);
+          endif;  
+          ?>
         </div>
+        <?php if ($cities_image) : ?>
         <div class="comm-top-image">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/heart-leave.png" alt="Arizona with heart">
+          <img src="<?php echo $cities_image['url']; ?>" alt="<?php echo esc_attr($cities_image['alt']); ?>">
         </div>
+        <?php endif; ?>
       </div>
 
       <!-- Bottom: We Serve Cities Card -->
       <div class="comm-serve">
         <div class="comm-serve-header">
+          <?php if ($cities_inner_heading_icon) : ?>
           <div class="comm-serve-icon">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location.svg" alt="Pin">
+            <img src="<?php echo $cities_inner_heading_icon['url']; ?>" alt="<?php echo esc_attr($cities_inner_heading_icon['alt']); ?>">
           </div>
+          <?php endif; ?>
+          <?php if ($cities_inner_heading) : ?>
           <div class="comm-serve-heading">
-            <h3>WE SERVE: <span>25+ Arizona Cities</span></h3>
-            <p>Select your city to learn more or get local support.</p>
+            <?php echo $cities_inner_heading; ?>
           </div>
+          <?php endif; ?>
         </div>
-
-        <ul class="comm-cities">
-          <li><a href="#">Phoenix</a></li>
-          <li><a href="#">Peoria</a></li>
-          <li><a href="#">Avondale</a></li>
-          <li><a href="#">Yavapai</a></li>
-          <li><a href="#">Gila</a></li>
-          <li><a href="#">Tucson</a></li>
-          <li><a href="#">Tempe</a></li>
-          <li><a href="#">Flagstaff</a></li>
-          <li><a href="#">Mohave</a></li>
-          <li><a href="#">Santa Cruz</a></li>
-          <li><a href="#">Mesa</a></li>
-          <li><a href="#">Surprise</a></li>
-          <li><a href="#">Casa Adobes</a></li>
-          <li><a href="#">Yuma</a></li>
-          <li><a href="#">Graham</a></li>
-          <li><a href="#">Chandler</a></li>
-          <li><a href="#">San Tan Valley</a></li>
-          <li><a href="#">Queen Creek</a></li>
-          <li><a href="#">Coconino</a></li>
-          <li><a href="#">La Paz</a></li>
-          <li><a href="#">Gilbert</a></li>
-          <li><a href="#">Yuma</a></li>
-          <li><a href="#">Maricopa</a></li>
-          <li><a href="#">Cochise</a></li>
-          <li><a href="#">Greeniee</a></li>
-          <li><a href="#">Glendale</a></li>
-          <li><a href="#">Goodyear</a></li>
-          <li><a href="#">Pima</a></li>
-          <li><a href="#">Navajo</a></li>
-          <li><a href="#">Scottsdale</a></li>
-          <li><a href="#">Buckeye</a></li>
-          <li><a href="#">Pinal</a></li>
-          <li><a href="#">Apache</a></li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ── Footer Section: Get In Touch & Explore ── -->
-  <section class="footer-explore">
-    <div class="az-container">
-
-      <!-- Top: Heading -->
-      <div class="fe-top">
-        <div class="fe-badge">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-white.svg" alt="Pin">
-          <span>Get In Touch &amp; Explore</span>
-        </div>
-        <h2>We're Here to Help<br><span>&amp; Walk With You</span></h2>
-        <p>Reach out, explore helpful resources, or learn more about adoption.</p>
-      </div>
-
-      <!-- 3-Column Grid -->
-      <div class="fe-grid">
-
-        <!-- Column 1: Map + Address + Adoptive Parent CTA -->
-        <div class="fe-col fe-col-left">
-
-          <!-- Map Card -->
-          <div class="fe-card fe-map-card">
-            <div class="fe-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.5!2d-112.1!3d33.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzPCsDMwJzAwLjAiTiAxMTLCsDA2JzAwLjAiVw!5e0!3m2!1sen!2sus!4v1234567890"
-                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <address>
-              <p>8433 N Black Canyon Hwy</p>
-              <p>Building 6, Suite 152</p>
-              <p>Phoenix, AZ 85021</p>
-            </address>
-          </div>
-
-          <!-- Adoptive Parent CTA Card -->
-          <div class="fe-card fe-parent-card">
-            <div class="fe-parent-icon">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/heart-home.png" alt="Heart with home">
-            </div>
-            <h3>Interested in becoming<br>an adoptive parent?</h3>
-            <a href="#" class="fe-learn-btn">
-              Learn More
-              <span>&#8250;</span>
-            </a>
-            <div class="fe-baf-logo">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/building-arizona-families-logo.png" alt="Building Arizona Families">
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Column 2: Useful Links -->
-        <div class="fe-col">
-          <div class="fe-card fe-links-card">
-            <div class="fe-card-header">
-              <div class="fe-card-icon">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/link-chain-svgrepo-com.svg" alt="Link">
-              </div>
-              <h3>Useful Links</h3>
-            </div>
-            <ul class="fe-links">
-              <li><a href="#"><span class="fe-dot"></span>Placing Your Baby for Adoption<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Adoption Process<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Arizona Crisis Pregnancy<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Domestic Violence &amp; Adoption<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Drug Use &amp; Adoption<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Pregnant &amp; Incarcerated<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Homeless &amp; Adoption<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Teenage Pregnancies &amp; Adoption<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Financial Assistance<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Adoption in 10 Steps<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Opt-out preferences<span class="fe-arrow">&#8250;</span></a></li>
-              <li><a href="#"><span class="fe-dot"></span>Privacy Policy<span class="fe-arrow">&#8250;</span></a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Column 3: Contact Us -->
-        <div class="fe-col">
-          <div class="fe-card fe-contact-card">
-            <h3 class="fe-contact-title">Contact Us</h3>
-
-            <!-- Phone numbers -->
-            <div class="fe-phones">
-              <div class="fe-phone-item">
-                <span class="fe-phone-label">Telephone</span>
-                <a href="tel:6236954112" class="fe-phone-num">623.695.4112</a>
-              </div>
-              <div class="fe-phone-item">
-                <span class="fe-phone-label">Tool Free</span>
-                <a href="tel:8003409665" class="fe-phone-num">800.340.9665</a>
-              </div>
-              <div class="fe-phone-item">
-                <span class="fe-phone-label">Fax</span>
-                <a href="tel:6232186104" class="fe-phone-num">623.218.6104</a>
-              </div>
-            </div>
-
-            <!-- Text -->
-            <div class="fe-contact-section">
-              <div class="fe-section-heading">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Chat.svg" alt="Chat">
-                <h4>Text</h4>
-              </div>
-              <div class="fe-text-row">
-                <span class="fe-text-label">Birth Mothers:</span>
-                <a href="sms:6239654112" class="fe-text-num">623.965.4112</a>
-              </div>
-              <div class="fe-text-row">
-                <span class="fe-text-label">Espanol:</span>
-                <a href="sms:6236969538" class="fe-text-num">623.696.9538</a>
-              </div>
-            </div>
-
-            <!-- Email -->
-            <div class="fe-contact-section">
-              <div class="fe-section-heading">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/envolope.svg" alt="Email">
-                <h4>Email</h4>
-              </div>
-              <a href="#" class="fe-message-btn">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/plane.svg" alt="Send">
-                Send a Message
-              </a>
-            </div>
-
-            <!-- Social icons -->
-            <div class="fe-socials">
-              <a href="#" class="fe-social">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/facebook-svgrepo-com.svg" alt="Facebook">
-              </a>
-              <a href="#" class="fe-social">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/instagram-svgrepo-com.svg" alt="Instagram">
-              </a>
-              <a href="#" class="fe-social">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/twitter-svgrepo-com.svg" alt="Twitter">
-              </a>
-            </div>
-          </div>
-        </div>
+        <?php if($cities_locations) : 
+          echo wp_kses_post($cities_locations);
+        endif;
+        ?>
       </div>
     </div>
   </section>
 
-  <!-- ── Footer Bottom CTA ── -->
-  <section class="footer-cta">
-    <div class="az-container">
-      <h2>Need someone to talk to right now?</h2>
-      <a href="tel:6239654112">Call Us</a>
-      <a href="#">Chat With Us</a>
-    </div>
-  </section>
-</main>
 <?php
 get_footer( 'arizona' );

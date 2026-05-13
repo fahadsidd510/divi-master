@@ -1211,6 +1211,7 @@ body {
   border-radius: 4px;
   overflow: hidden;
   flex-shrink: 0;
+  width: 200px;
 }
 
 .ep-card-thumb img {
@@ -1273,6 +1274,7 @@ body {
   font-family: var(--font-secondary);
   font-size: clamp(14px, 1.2vw, 17px);
   color: #1E4838;
+  width: 70%;
 }
 
 .ep-card-meta {
@@ -1516,6 +1518,7 @@ body {
 
 .topic-card-icon {
   flex-shrink: 0;
+  width: 115px;
 }
 
 .topic-card-icon img {
@@ -1565,10 +1568,14 @@ body {
     gap: 16px;
   }
 
+  .topic-card-icon {
+    width: 80px;
+  }
   .topic-card-icon img {
     width: 70px;
     height: 70px;
   }
+  
 }
 
 /* Tablet */
@@ -1915,8 +1922,8 @@ body {
 }
 
 .lp-youtube span {
-  font-family: var(--font-display) !important;
-  font-size: clamp(24px, 3.2vw, 32px);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(28px, 3.6vw, 40px);
   font-weight: 400;
   color: var(--color-text-dark);
 }
@@ -2063,20 +2070,21 @@ body {
   }
 }
 
-.hfy-top h2 {
+.hfy-top h2, .hfy-top h3 {
   font-family: var(--font-display) !important;
   font-size: clamp(38px, 4.2vw, 64px);
   font-weight: 400;
   color: var(--color-text-dark);
   line-height: 1.1;
-  margin: 0 0 10px;
+  
 }
 
-.hfy-top h2 span {
+.hfy-top h3 {
+  margin: 0 0 10px;
   color: var(--color-orange-btn);
 }
 
-.hfy-tagline {
+.hfy-tagline, .hfy-top p {
   font-family: var(--font-secondary) !important;
   font-size: clamp(15px, 1.4vw, 20px);
   color: #707070;
@@ -2597,7 +2605,7 @@ p.alone-orange-text {
   } */
 
   .hero-banner {
-    margin-top: -155px;
+    margin-top: -240px;
     padding-top: 200px;
   }
 }
@@ -3007,6 +3015,7 @@ p.alone-orange-text {
 }
 
 
+
 /* ══════════════════════════════════════
    Here For You Section — Responsive
    ══════════════════════════════════════ */
@@ -3084,7 +3093,7 @@ p.alone-orange-text {
     font-size: clamp(28px, 7vw, 38px);
   }
 
-  .hfy-tagline {
+  .hfy-tagline, .hfy-top p {
     font-size: 14px;
   }
 
@@ -3482,8 +3491,8 @@ p.alone-orange-text {
 
 .le-explore-icon {
   flex-shrink: 0;
-  width: 80px;
-  height: 80px;
+  width: 125px;
+  height: 125px;
   background: #FEE9E0;
   border-radius: 50%;
   display: flex;
@@ -3492,8 +3501,8 @@ p.alone-orange-text {
 }
 
 .le-explore-icon img {
-  width: 48px;
-  height: 48px;
+  /* width: 48px;
+  height: 48px; */
   object-fit: contain;
 }
 
@@ -3597,7 +3606,7 @@ p.alone-orange-text {
 
 .le-author {
   font-family: var(--font-secondary) !important;
-  font-size: clamp(13px, 1.2vw, 17px);
+  font-size: clamp(13px, 1.1vw, 17px);
   color: #1E4838;
 }
 
@@ -3606,7 +3615,7 @@ p.alone-orange-text {
   align-items: center;
   gap: 6px;
   font-family: var(--font-secondary) !important;
-  font-size: clamp(13px, 1.2vw, 17px);
+  font-size: clamp(13px, 1.1vw, 17px);
   color: #1E4838;
 }
 
@@ -4299,7 +4308,7 @@ p.alone-orange-text {
 .fe-card {
   background: var(--color-white);
   border-radius: 24px;
-  padding: 28px;
+  padding: 28px 35px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
   flex: 1;
 }
@@ -4451,6 +4460,24 @@ p.alone-orange-text {
   color: var(--color-text-dark);
   text-decoration: none;
   transition: color 0.2s;
+}
+
+.fe-links li a::before {
+  content: "";
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  background: var(--color-orange-btn);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.fe-links li a::after {
+  content: "\203A"; /* › chevron */
+  margin-left: auto;
+  font-size: 50px;
+  color: var(--color-orange-btn);
+  line-height: 1;
 }
 
 .fe-links li a:hover {
@@ -4742,4 +4769,41 @@ p.alone-orange-text {
   .footer-cta a:last-of-type {
     margin-bottom: 0;
   }
+}
+
+
+@media (min-width: 1023px) and (max-width: 1155px) {
+  .le-meta{
+    gap: 5px;
+    padding: 0px 0px 14px !important;
+  }
+  .le-listen-btn{
+    padding: 10px 14px !important;
+  }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1100px) {
+    .logo-wrapper img {
+        width: 190px;
+        height: 250px;
+    }
+}
+@media (min-width: 1101px) and (max-width: 1161px) {
+    .logo-wrapper img {
+        width: 215px;
+        height: 270px;
+    }
+    .nav-menu{
+      gap: 20px;
+    }
+}
+@media (min-width: 1162px) and (max-width: 1400px) {
+    .logo-wrapper img {
+        width: 220px;
+        height: 280px !important;
+    }
+    .nav-menu{
+      gap: 20px;
+    }
 }
