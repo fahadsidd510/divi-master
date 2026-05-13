@@ -20,11 +20,16 @@ $reading_content = get_field('reading_content', $page_id);
 $reading_feature_repeater = get_field('reading_feature', $page_id);
 $podcast_top_button = get_field('podcast_top_button', $page_id);
 $podcast_top_content = get_field('podcast_content', $page_id);
-$podcast_top_image = get_field('podcast_image', $page_id);
+$podcast_image = get_field('podcast_image', $page_id);
 $podcast_offers_repeater = get_field('podcast_offers', $page_id);
 $podcast_follow_button_heading = get_field('podcast_follow_button_heading', $page_id);
 $podcast_follow_button_text = get_field('podcast_follow_button_text', $page_id);
 $podcast_follow_button_link = get_field('podcast_follow_button_link', $page_id);
+$platform_icon = get_field('platform_icon', $page_id);
+$platform_content = get_field('platform_content', $page_id);
+$platform_partners_repeater = get_field('platform_partners', $page_id);
+$platform_youtube_icon = get_field('platform_youtube_icon', $page_id);
+$platform_youtube_text_and_link = get_field('platform_youtube_text_and_link', $page_id);
 
 ?>
 
@@ -424,35 +429,47 @@ $podcast_follow_button_link = get_field('podcast_follow_button_link', $page_id);
             <span><?php echo $podcast_top_button['title']; ?></span>
           </div>
           <?php endif; ?>
-          <h2>Join Our Podcast <br>Community</h2>
-          <h3>Birth Mother Matters in Adoption Radio</h3>
-          <p>Learn adoption from every perspective.<br> Real stories . Real insights . Real adoption journeys</p>
-          <div class="pc-badges-row">
-            <div class="pc-pill">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/gift.svg" alt="Free">
-              <span>100% Free</span>
+          <?php if ($podcast_top_content) : ?>
+          <?php echo $podcast_top_content; ?>
+          <?php endif; ?>
+          <?php if ($podcast_offers_repeater): ?>
+            <div class="pc-badges-row">
+              <?php foreach ($podcast_offers_repeater as $offer): 
+                $icon = $offer['podcast_offer_icon'];
+                $text = $offer['podcast_offer_text'];
+                // Get image URL safely
+                $icon_url = is_array($icon) ? $icon['url'] : $icon;
+              ?>                
+                <div class="pc-pill">
+                  <?php if ($icon_url): ?>
+                    <img src="<?php echo esc_url($icon_url); ?>" alt="<?php echo esc_attr($text); ?>">
+                  <?php endif; ?>
+
+                  <?php if ($text): ?>
+                    <span><?php echo esc_html($text); ?></span>
+                  <?php endif; ?>
+                </div>
+              <?php endforeach; ?>
             </div>
-            <div class="pc-pill">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/cost.svg" alt="No Cost">
-              <span>No Cost</span>
-            </div>
-            <div class="pc-pill">
-              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/no-fees.svg" alt="No Fees">
-              <span>No Fees</span>
-            </div>
-          </div>
-          <div class="pc-follow-bar">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/follow-us-bell.svg" alt="Bell icon">
-            <div class="pc-follow-text">
-              <strong>Follow Us to get Notified</strong>
-              <span>We'll let you know when new episode are released!</span>
-            </div>
-          </div>
+          <?php endif; ?>
+          <?php if ($podcast_follow_button_heading && $podcast_follow_button_text && $podcast_follow_button_link) : ?>
+            <a href="<?php echo esc_url($podcast_follow_button_link['url']); ?>" target="<?php echo esc_attr($podcast_follow_button_link['target']); ?>">
+              <div class="pc-follow-bar">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/follow-us-bell.svg" alt="Bell icon">
+                <div class="pc-follow-text">
+                  <strong><?php echo $podcast_follow_button_heading; ?></strong>
+                  <span><?php echo $podcast_follow_button_text; ?></span>
+                </div>
+              </div>
+            </a>
+          <?php endif; ?>
         </div>
         <!-- Right Phone Mockup -->
-        <div class="pc-phone">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/Mbl.png" alt="Podcast app on phone">
-        </div>
+        <?php if ($podcast_image) : ?>
+          <div class="pc-phone">
+            <img src="<?php echo esc_url($podcast_image['url']); ?>" alt="<?php echo esc_attr($podcast_image['alt']); ?>">
+          </div>
+        <?php endif; ?>
       </div>
     </div>
   </section>
