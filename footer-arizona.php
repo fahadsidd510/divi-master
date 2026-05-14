@@ -222,6 +222,8 @@ $talk_content = get_field('talk_content', $page_id);
   </section>
   <?php endif; ?>
 </main>
+<!-- LINK JS FILE HERE -->
+<script src="<?php echo get_stylesheet_directory_uri(); ?>/src/js/az-landing.js"></script>
 <?php wp_footer(); ?>
 </body>
 </html>

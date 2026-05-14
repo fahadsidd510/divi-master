@@ -391,73 +391,6 @@ add_action( 'init', 'register_landing_menu' );
  * AZ Landing Page
  */
 
-function register_podcast_cpt() {
-
-    $labels = array(
-        'name'               => 'Podcasts',
-        'singular_name'      => 'Podcast',
-        'menu_name'          => 'Podcasts',
-        'name_admin_bar'     => 'Podcast',
-        'add_new'            => 'Add New',
-        'add_new_item'       => 'Add New Podcast',
-        'new_item'           => 'New Podcast',
-        'edit_item'          => 'Edit Podcast',
-        'view_item'          => 'View Podcast',
-        'all_items'          => 'All Podcasts',
-        'search_items'       => 'Search Podcasts',
-        'not_found'          => 'No podcasts found.',
-    );
-
-    $args = array(
-        'labels'             => $labels,
-        'public'             => true,
-        'menu_icon'          => 'dashicons-microphone',
-        'supports'           => array('title', 'editor', 'thumbnail'),
-        'rewrite'            => array(
-            'slug'           => '/',
-            'with_front'     => false
-        ),
-        'has_archive'        => false,
-        'show_in_rest'       => true,
-    );
-
-    register_post_type('podcast', $args);
-}
-add_action('init', 'register_podcast_cpt');
-
-
-// Podcast Category Taxonomy
-function register_podcast_category_taxonomy() {
-
-    $labels = array(
-        'name'              => 'Podcast Categories',
-        'singular_name'     => 'Podcast Category',
-        'search_items'      => 'Search Categories',
-        'all_items'         => 'All Categories',
-        'parent_item'       => 'Parent Category',
-        'parent_item_colon' => 'Parent Category:',
-        'edit_item'         => 'Edit Category',
-        'update_item'       => 'Update Category',
-        'add_new_item'      => 'Add New Category',
-        'new_item_name'     => 'New Category Name',
-        'menu_name'         => 'Categories',
-    );
-
-    $args = array(
-        'hierarchical'      => true, // like categories (not tags)
-        'labels'            => $labels,
-        'show_ui'           => true,
-        'show_admin_column' => true,
-        'query_var'         => true,
-        'rewrite'           => array('slug' => 'podcast-category'),
-        'show_in_rest'      => true, // Gutenberg support
-    );
-
-    register_taxonomy('podcast_category', array('podcast'), $args);
-}
-add_action('init', 'register_podcast_category_taxonomy');
-
-
 function fetch_rss_podcast_cards($atts) {
 
     $atts = shortcode_atts(array(
@@ -478,7 +411,7 @@ function fetch_rss_podcast_cards($atts) {
     $maxitems  = $rss->get_item_quantity($atts['limit']);
     $rss_items = $rss->get_items(0, $maxitems);
 
-    // print_r($rss->get_items(0, 3));
+    //print_r($rss->get_items(0, 1));
 
     if ($maxitems == 0) return '<p>No episodes found.</p>';
 
@@ -596,10 +529,18 @@ function fetch_rss_podcast_cards($atts) {
             </div>
 
             <div class="ep-card-actions">
+                <?php 
+                $link = $item->get_permalink();
 
-                <!-- Listen -->
-                <button class="ep-btn ep-btn-listen"
-                    onclick="window.open('https://player.rss.com/birth-mother-matters-in-adoption/<?php echo esc_attr($episode_id); ?>','_blank')">
+                // extract episode ID from URL
+                preg_match('/\/(\d+)$/', rtrim($link, '/'), $matches);
+                $episode_id = $matches[1] ?? '';
+
+                $player_url = 'https://player.rss.com/birth-mother-matters-in-adoption/' . $episode_id;
+                ?>
+
+                <button class="ep-btn ep-btn-listen open-podcast"
+                    data-src="<?php echo esc_url($player_url); ?>">
                     
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/play.svg" alt="play">
                     Listen to Podcasts
@@ -613,13 +554,25 @@ function fetch_rss_podcast_cards($atts) {
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/read.svg" alt="read">
                     Read Transcripts
                 </a>
-
             </div>
-
         </div>
 
         <?php endforeach; ?>
-
+        <div id="podcastModal" class="podcast-modal">
+            <div class="podcast-modal-content">
+                <span class="podcast-close">&times;</span>
+                <div class="podcast-player-embed">
+                <iframe 
+                    id="podcastIframe"
+                    src=""
+                    width="100%" 
+                    height="160"
+                    frameborder="0"
+                    scrolling="no">
+                </iframe>
+                </div>
+            </div>
+        </div>
     </div>
 
     <?php
@@ -647,32 +600,20 @@ function podcast_list_shortcode($atts) {
 
     $atts = shortcode_atts(array(
         'posts_per_page' => 6,
-        'category'       => '', // optional: slug
     ), $atts);
 
     $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
     $args = array(
-        'post_type'      => 'podcast',
+        'post_type'      => 'post',
         'posts_per_page' => $atts['posts_per_page'],
         'paged'          => $paged,
     );
 
-    // Optional taxonomy filter
-    if (!empty($atts['category'])) {
-        $args['tax_query'] = array(
-            array(
-                'taxonomy' => 'podcast_category',
-                'field'    => 'slug',
-                'terms'    => $atts['category'],
-            )
-        );
-    }
-
     $query = new WP_Query($args);
 
     if (!$query->have_posts()) {
-        return '<p>No podcasts found.</p>';
+        return '<p>No posts found.</p>';
     }
 
     ob_start();
@@ -682,17 +623,32 @@ function podcast_list_shortcode($atts) {
 
         <?php while ($query->have_posts()): $query->the_post();
 
-            $audio_url = get_field('podcast_audio_url');
-            $read_more = get_field('custom_read_more_url');
-            $thumb     = get_the_post_thumbnail_url(get_the_ID(), 'large');
-            $date      = get_the_date('M d, Y');
+            $thumb = get_the_post_thumbnail_url(get_the_ID(), 'large');
+            $date  = get_the_date('M d, Y');
 
-            // Taxonomy
-            $terms = get_the_terms(get_the_ID(), 'podcast_category');
+            // Category links
+            $categories = get_the_category();
             $tags = '';
 
-            if ($terms && !is_wp_error($terms)) {
-                $tags = implode(', ', wp_list_pluck($terms, 'name'));
+            if (!empty($categories)) {
+                $cat_links = array();
+
+                foreach ($categories as $cat) {
+                    $cat_links[] = '<a href="' . esc_url(get_category_link($cat->term_id)) . '">' . esc_html($cat->name) . '</a>';
+                }
+
+                $tags = implode(', ', $cat_links);
+            }
+
+            // Content to 268 characters
+            $content = apply_filters('the_content', get_the_content());
+            $content = wp_strip_all_tags($content);
+
+            if (mb_strlen($content) > 268) {
+                $excerpt = mb_substr($content, 0, 268);
+                $excerpt = preg_replace('/\s+\S*$/', '', $excerpt) . '...';
+            } else {
+                $excerpt = $content;
             }
         ?>
 
@@ -702,16 +658,12 @@ function podcast_list_shortcode($atts) {
                 <?php if ($thumb): ?>
                     <img src="<?php echo esc_url($thumb); ?>" alt="<?php the_title_attribute(); ?>">
                 <?php endif; ?>
-
-                <!-- <div class="le-thumb-badge">
-                    <img src="<?php //echo get_stylesheet_directory_uri(); ?>/src/images/mike.svg" alt="">
-                </div> -->
             </div>
 
             <h3><?php the_title(); ?></h3>
 
             <div class="le-meta">
-                <span class="le-author">by <?php echo get_the_author(); ?></span>
+                <span class="le-author">by <?php echo esc_html(get_the_author()); ?></span>
                 <span class="le-date">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/le-date.svg" alt="">
                     <?php echo esc_html($date); ?>
@@ -720,27 +672,18 @@ function podcast_list_shortcode($atts) {
 
             <?php if ($tags): ?>
             <div class="le-tags">
-                <p><?php echo esc_html($tags); ?></p>
+                <p><?php echo $tags; ?></p>
             </div>
             <?php endif; ?>
 
             <div class="le-excerpt">
-                <p><?php echo esc_html(wp_trim_words(get_the_excerpt(), 25)); ?></p>
+                <p><?php echo esc_html($excerpt); ?></p>
             </div>
 
             <div class="le-actions">
-
-                <?php if ($audio_url): ?>
-                <a href="<?php echo esc_url($audio_url); ?>" target="_blank" class="le-listen-btn">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/microphone-white.svg" alt="">
-                    Listen Now
-                </a>
-                <?php endif; ?>
-
-                <a href="<?php echo esc_url($read_more ?: get_permalink()); ?>" class="le-read-more">
+                <a href="<?php echo esc_url(get_permalink()); ?>" class="le-read-more">
                     Read More <span>&#8250;</span>
                 </a>
-
             </div>
 
             <div class="le-waveform">
@@ -753,21 +696,20 @@ function podcast_list_shortcode($atts) {
 
     </div>
 
-    <!-- Pagination -->
     <div class="le-pagination">
 
         <?php if ($paged > 1): ?>
-            <a href="<?php echo get_previous_posts_page_link(); ?>" class="le-page-btn le-page-prev">
+            <a href="<?php echo esc_url(get_pagenum_link($paged - 1)); ?>" class="le-page-btn le-page-prev">
                 <span>&#8592;</span> Older Entries
             </a>
         <?php endif; ?>
 
         <span class="le-page-count">
-            <?php echo $paged . ' of ' . $query->max_num_pages; ?>
+            <?php echo esc_html($paged . ' of ' . $query->max_num_pages); ?>
         </span>
 
         <?php if ($paged < $query->max_num_pages): ?>
-            <a href="<?php echo get_next_posts_page_link($query->max_num_pages); ?>" class="le-page-btn le-page-next">
+            <a href="<?php echo esc_url(get_pagenum_link($paged + 1)); ?>" class="le-page-btn le-page-next">
                 Next Entries <span>&#8594;</span>
             </a>
         <?php endif; ?>

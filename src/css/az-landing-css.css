@@ -781,6 +781,10 @@ body {
   .location-row {
     text-align: center;
   }
+
+  .here-for-you{
+    background-position: 50%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2829,11 +2833,16 @@ p.alone-orange-text {
   }
 
   .podcast-section {
-    padding: 40px 0px;
+    padding: 40px 0px 0px;
   }
 
   .category-card p{
     width: auto;
+  }
+
+  .le-grid{
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
@@ -3025,6 +3034,7 @@ p.alone-orange-text {
 @media (max-width: 900px) {
   .here-for-you {
     padding: 40px 0 50px;
+    background-position: 50%;
   }
 
   .hfy-top {
@@ -3361,6 +3371,10 @@ p.alone-orange-text {
 
   .wl-content {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -3371,6 +3385,13 @@ p.alone-orange-text {
 
   .wl-image {
     width: 100%;
+  }
+
+  .wl-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .wl-content h2 {
@@ -3632,9 +3653,10 @@ p.alone-orange-text {
   margin-bottom: 14px;
 }
 
-.le-tags p {
+.le-tags p, .le-tags p a {
   font-family: var(--font-secondary) !important;
   font-size: clamp(12px, 1.1vw, 17px);
+  font-weight: normal;
   color: #1E4838;
   line-height: 1.4;
   margin: 0;
@@ -3851,8 +3873,12 @@ p.alone-orange-text {
   }
 
   .le-page-btn {
-    padding: 12px 24px;
+    padding: 12px 10px;
     font-size: 15px;
+  }
+
+  .comm-badge {
+    padding: 15px 20px !important;
   }
 
   .le-page-prev,
@@ -4807,3 +4833,59 @@ p.alone-orange-text {
       gap: 20px;
     }
 }
+
+@media (max-width: 768px) {
+  .le-grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .pc-badge-orange{
+    padding: 20px 40px 20px 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 810px) {
+    .le-meta{
+      padding: 0px 5px 14px;
+    }
+}
+
+
+
+
+
+
+.podcast-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.podcast-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+}
+
+.podcast-close {
+  position: absolute;
+  /* right: 15px;
+  top: 10px;
+  font-size: 22px; */
+  top: -50px;
+  right: -30px;
+  font-size: 100px;
+  color: red;
+  cursor: pointer;
+}
+
+
