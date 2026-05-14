@@ -703,16 +703,15 @@ function podcast_list_shortcode($atts) {
                     <img src="<?php echo esc_url($thumb); ?>" alt="<?php the_title_attribute(); ?>">
                 <?php endif; ?>
 
-                <div class="le-thumb-badge">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/mike.svg" alt="">
-                    <span><?php echo 'EPISODE ' . get_the_ID(); ?></span>
-                </div>
+                <!-- <div class="le-thumb-badge">
+                    <img src="<?php //echo get_stylesheet_directory_uri(); ?>/src/images/mike.svg" alt="">
+                </div> -->
             </div>
 
             <h3><?php the_title(); ?></h3>
 
             <div class="le-meta">
-                <span class="le-author">by Cairs Content Team</span>
+                <span class="le-author">by <?php echo get_the_author(); ?></span>
                 <span class="le-date">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/le-date.svg" alt="">
                     <?php echo esc_html($date); ?>
