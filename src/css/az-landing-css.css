@@ -41,59 +41,11 @@
 @font-face {
   font-family: 'Marcellus';
   src: url('../fonts/Marcellus-Regular.woff2') format('woff2'),
-       url('../fonts/Marcellus-Regular.woff') format('woff'),
-       url('../fonts/Marcellus-Regular.ttf') format('truetype');
+       url('../fonts/Marcellus-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
-
-@font-face {
-  font-family: 'Microsoft Tai Le';
-  src: url('../fonts/microsoft-tai-le.woff2') format('woff2'),
-       url('../fonts/microsoft-tai-le.woff') format('woff'),
-       url('../fonts/microsoft-tai-le.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Modern No. 20';
-  src: url('../fonts/modern-no-20.woff2') format('woff2'),
-       url('../fonts/modern-no-20.woff') format('woff'),
-       url('../fonts/modern-no-20.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Microsoft Uighur';
-  src: url('../fonts/msuighur.woff2') format('woff2'),
-       url('../fonts/msuighur.woff') format('woff'),
-       url('../fonts/msuighur.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Segoe UI';
-  src: url('../fonts/segoe-ui-regular.woff2') format('woff2'),
-       url('../fonts/segoe-ui-regular.woff') format('woff'),
-       url('../fonts/segoe-ui-regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-
-
-
-
-
-
 /* playfair-display-regular - latin */
 @font-face {
   font-display: swap; 
@@ -169,10 +121,6 @@
 :root {
   /* Fonts */
   --font-primary: 'Marcellus', serif;
-  --font-secondary: 'Microsoft Tai Le', sans-serif;
-  --font-display: 'Modern No. 20', serif;
-  --font-episode: 'Microsoft Uighur', sans-serif;
-  --font-button-heading: 'Segoe UI', sans-serif;
   --font-playfair: 'Playfair Display', serif;
   --font-noto-serif: 'Noto Serif', serif;
 
@@ -1448,40 +1396,6 @@ body {
   text-decoration: none;
 }
 
-/* .ep-listening-wrapper {
-  background: #FDE4D6;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 55px;
-  padding: 58px 250px;
-  margin: 0 auto;
-  border-radius: 33px;
-  width: max-content;
-}
-
-.ep-book-icon {
-  width: 90px;
-  height: 90px;
-}
-
-.ep-listen-content h3 {
-  font-family: var(--font-playfair) !important;
-  font-size: clamp(38px, 1.8vw, 46px);
-  color: var(--color-text-dark);
-  line-height: 1.5;
-  text-align: center;
-}
-
-.ep-listen-content p {
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(24px, 1.8vw, 28px);
-  color: var(--color-text-dark);
-  line-height: 1.5;
-  text-align: center;
-} */
-
 
 /* ── Listening / Transcript CTA ── */
 
@@ -2375,7 +2289,7 @@ body {
 .hfy-about-247 {
   background: #F9DBD1;
   color: var(--color-orange-btn);
-  font-family: var(--font-secondary) !important;
+  font-family: var(--font-noto-serif) !important;
   font-size: clamp(20px, 2vw, 33px);
   font-weight: 700;
   padding: 15px 20px;
@@ -2383,128 +2297,6 @@ body {
   line-height: 1;
 }
 
-/* ── You're Not Alone Bar ── */
-
-/* .hfy-alone {
-  display: block !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  background: url('../images/not-alone-mother-new.png') left center / auto 100% no-repeat;
-  border-radius: 14px;
-  overflow: hidden;
-  padding: 45px 40px 45px 380px;
-  box-sizing: border-box;
-  min-height: 220px;
-}
-
-.hfy-alone-text {
-  width: 100%;
-}
-
-.hfy-alone-text h3 {
-  font-family: var(--font-playfair) !important;
-  font-size: clamp(24px, 3vw, 42px);
-  font-weight: 400;
-  color: var(--color-orange-btn);
-  margin: 0 0 6px;
-}
-
-.hfy-alone-text p {
-  font-family: var(--font-secondary) !important;
-  font-size: clamp(14px, 1.4vw, 20px);
-  color: var(--color-text-dark);
-  line-height: 1.4;
-  margin: 0 0 4px;
-}
-
-.hfy-alone-text p.hfy-alone-highlight {
-  color: var(--color-orange-btn);
-} */
-
-/* ── Responsive ── */
-
-/* @media (max-width: 900px) {
-  .hfy-top {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .hfy-schedule {
-    justify-content: center;
-  }
-
-  .hfy-support-label {
-    justify-content: center;
-  }
-
-  .hfy-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .hfy-about {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hfy-about-cta {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .hfy-alone {
-    padding: 40px 30px 40px 280px;
-    background-size: auto 100%;
-  }
-}
-
-@media (max-width: 680px) {
-  .here-for-you {
-    padding: 40px 0 50px;
-  }
-
-  .hfy-cards {
-    grid-template-columns: 1fr;
-    gap: 14px;
-  }
-
-  .hfy-card {
-    display: flex;
-    align-items: center;
-    text-align: left;
-    gap: 16px;
-    padding: 20px;
-  }
-
-  .hfy-card-icon {
-    margin: 0;
-    width: 56px;
-    height: 56px;
-    flex-shrink: 0;
-  }
-
-  .hfy-card-icon img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .hfy-about {
-    padding: 20px;
-  }
-
-  .hfy-about-247 {
-    padding: 6px 10px;
-  }
-
-  .hfy-alone {
-    flex-direction: column;
-    padding: 180px 20px 30px 20px;
-    background-position: center top;
-    background-size: 240px auto;
-    text-align: center;
-  }
-} */
 
 /* ── You're Not Alone Bar ── */
 
@@ -3673,7 +3465,7 @@ p.alone-orange-text {
 }
 
 .le-thumb-badge span {
-  font-family: var(--font-secondary) !important;
+  font-family: var(--font-noto-serif) !important;
   font-size: clamp(12px, 1vw, 14px);
   font-weight: 700;
   color: var(--color-text-dark);
@@ -4467,7 +4259,7 @@ p.alone-orange-text {
 
 .fe-parent-card h3 {
   font-family: var(--font-noto-serif) !important;
-  font-size: clamp(24px, 2.4vw, 32px);
+  font-size: clamp(24px, 2vw, 32px);
   font-weight: 700;
   color: var(--color-text-dark);
   line-height: 1.2;
