@@ -445,7 +445,7 @@ $cities_locations = get_field('cities_locations', $page_id);
           <?php if ($learning_blog_button) : ?>
           <a href="<?php echo esc_url($learning_blog_button['url']); ?>" target="<?php echo esc_attr($learning_blog_button['target']); ?>">
             <div class="pc-badge pc-badge-orange">
-              <img src="http://az-pregnancy.local/wp-content/themes/divi-master/src/images/book-white.svg" alt="White book icon">
+              <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/book-white.svg" alt="">
               <span><?php echo $learning_blog_button['title']; ?></span>
             </div>
           </a>
