@@ -4771,3 +4771,579 @@ p.alone-orange-text {
 .ep-card-subtitle{
   display: none;
 }
+
+
+
+/* ══════════════════════════════════════
+   GET IN TOUCH & EXPLORE Section
+   ══════════════════════════════════════ */
+
+.git-section {
+  padding: 35px 0 50px;
+}
+
+/* ── Top Heading ── */
+
+.git-top {
+  margin-bottom: 50px;
+}
+
+.git-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-orange-btn);
+  border-radius: 40px;
+  padding: 15px 40px;
+  margin-bottom: 22px;
+}
+
+.git-badge img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.git-badge span {
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(15px, 1.4vw, 22px);
+  font-weight: 700;
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.git-top h2 {
+  font-family: var(--font-display) !important;
+  font-size: clamp(38px, 4.2vw, 67px);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  line-height: 1.1;
+  margin: 0 0 16px;
+}
+
+.git-top h2 span {
+  color: var(--color-orange-btn);
+}
+
+.git-top > p {
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(15px, 1.4vw, 22px);
+  font-weight: 600;
+  color: #707070;
+  margin: 0;
+}
+
+/* ── 3-Column Grid ── */
+
+.git-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1.1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+.git-col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100%;
+}
+
+.git-card {
+  background: var(--color-white);
+  border-radius: 24px;
+  padding: 28px 32px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  flex: 1;
+}
+
+/* ── Map Card ── */
+
+.git-map-card {
+  padding: 18px 18px 24px;
+}
+
+.git-map {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.git-map img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.git-office {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+  padding: 0 8px;
+}
+
+.git-office-icon {
+  width: 56px;
+  height: 56px;
+  background: #FCDED2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.git-office-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.git-office h3 {
+  font-family: var(--font-display) !important;
+  font-size: clamp(28px, 2.6vw, 38px);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.git-map-card address {
+  font-style: normal;
+  padding: 0 8px;
+}
+
+.git-map-card address p {
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(16px, 1.6vw, 22px);
+  font-weight: 500;
+  color: #707070;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ── Adoptive Parent CTA ── */
+
+.git-parent-card {
+  text-align: center;
+  padding: 30px 24px;
+}
+
+.git-parent-icon {
+  margin: 0 auto 20px;
+  width: 220px;
+}
+
+.git-parent-icon img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.git-parent-card h3 {
+  font-family: var(--font-display) !important;
+  font-size: clamp(26px, 2.6vw, 36px);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+
+.git-learn-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-orange-btn);
+  color: var(--color-white);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(17px, 1.7vw, 24px);
+  font-weight: 700;
+  padding: 14px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: filter 0.2s, transform 0.2s;
+  margin-bottom: 24px;
+}
+
+.git-learn-btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+}
+
+.git-learn-btn span {
+  font-size: 1.2em;
+  line-height: 1;
+}
+
+.git-baf-logo img {
+  display: block;
+  max-width: 260px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ── Card Header (Useful Links + Contact Us) ── */
+
+.git-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.git-card-icon {
+  width: 64px;
+  height: 64px;
+  background: #FCDED2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.git-card-icon img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.git-card-header h3 {
+  font-family: var(--font-display) !important;
+  font-size: clamp(28px, 2.8vw, 42px);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+/* ── Useful Links ── */
+
+.git-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.git-links li a {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 0;
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(16px, 1.5vw, 22px);
+  letter-spacing: 0.5px;
+  color: var(--color-text-dark);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.git-links li a::before {
+  content: "";
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  background-color: #FCDED2;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.git-links li a::after {
+  content: "\203A";
+  margin-left: auto;
+  font-size: 36px;
+  color: var(--color-orange-btn);
+  line-height: 1;
+}
+
+.git-links li a:hover {
+  color: var(--color-orange-btn);
+}
+
+/* Icon per link item */
+.git-link-heart  a::before { background-image: url('../images/footer-icon-heart.svg'); }
+.git-link-feet   a::before { background-image: url('../images/footer-icon-feet.svg'); }
+.git-link-hand   a::before { background-image: url('../images/footer-icon-hand.svg'); }
+.git-link-shield a::before { background-image: url('../images/footer-icon-shield.svg'); }
+.git-link-pill   a::before { background-image: url('../images/footer-icon-pill.svg'); }
+.git-link-hands  a::before { background-image: url('../images/footer-icon-hands.svg'); }
+.git-link-home   a::before { background-image: url('../images/footer-icon-home.svg'); }
+.git-link-people a::before { background-image: url('../images/footer-icon-people.svg'); }
+.git-link-dollar a::before { background-image: url('../images/footer-icon-dollar.svg'); }
+.git-link-list   a::before { background-image: url('../images/footer-icon-list.svg'); }
+.git-link-lock   a::before { background-image: url('../images/footer-icon-lock.svg'); }
+.git-link-doc    a::before { background-image: url('../images/footer-icon-doc.svg'); }
+
+/* ── Contact Us — Phone cards ── */
+
+.git-phones {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.git-phone-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: #FCDED2;
+  border-radius: 16px;
+  padding: 18px 22px;
+}
+
+.git-phone-icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.git-phone-icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.git-phone-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.git-phone-label {
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(15px, 1.4vw, 20px);
+  color: var(--color-text-dark);
+  font-weight: 500;
+}
+
+.git-phone-num {
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(22px, 2.2vw, 32px);
+  font-weight: 700;
+  color: var(--color-orange-btn);
+  text-decoration: none;
+}
+
+/* ── Text & Email sections ── */
+
+.git-contact-section {
+  margin-bottom: 30px;
+}
+
+.git-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.git-section-heading h4 {
+  font-family: var(--font-display) !important;
+  font-size: clamp(26px, 2.5vw, 36px);
+  font-weight: 400;
+  color: var(--color-text-dark);
+  margin: 0;
+}
+
+.git-text-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.git-text-label {
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(16px, 1.6vw, 22px);
+  color: var(--color-text-dark);
+  font-weight: 500;
+}
+
+.git-text-num {
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 700;
+  color: var(--color-orange-btn);
+  text-decoration: none;
+}
+
+/* ── Send a Message button ── */
+
+.git-message-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  background: var(--color-orange-btn);
+  color: var(--color-white);
+  font-family: var(--font-button-heading) !important;
+  font-size: clamp(20px, 2vw, 28px);
+  font-weight: 600;
+  padding: 18px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.git-message-btn:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+}
+
+.git-message-btn img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+}
+
+/* ── Socials ── */
+
+.git-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.git-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: #FCDED2;
+  border-radius: 50%;
+  transition: transform 0.2s, filter 0.2s;
+}
+
+.git-social:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
+.git-social img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 1100px) {
+  .git-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .git-col:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 900px) {
+  .git-map img {
+    height: 220px;
+  }
+
+  .git-links li a {
+    font-size: 16px;
+    gap: 14px;
+  }
+
+  .git-links li a::before {
+    width: 38px;
+    height: 38px;
+    background-size: 20px 20px;
+  }
+
+  .git-phone-item {
+    padding: 14px 18px;
+    gap: 14px;
+  }
+
+  .git-social {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+@media (max-width: 680px) {
+  .git-section {
+    padding: 40px 0;
+  }
+
+  .git-top {
+    margin-bottom: 30px;
+  }
+
+  .git-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .git-col:last-child {
+    grid-column: auto;
+  }
+
+  .git-card {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .git-map img {
+    height: 180px;
+  }
+
+  .git-office-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .git-office-icon img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .git-parent-icon {
+    width: 160px;
+  }
+
+  .git-links li a {
+    font-size: 15px;
+    padding: 8px 0;
+  }
+
+  .git-links li a::before {
+    width: 34px;
+    height: 34px;
+    background-size: 18px 18px;
+  }
+
+  .git-links li a::after {
+    font-size: 28px;
+  }
+
+  .git-phone-item {
+    padding: 12px 14px;
+  }
+
+  .git-phone-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .git-message-btn {
+    font-size: 18px;
+    padding: 14px 20px;
+  }
+}

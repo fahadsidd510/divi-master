@@ -213,6 +213,172 @@ $talk_content = get_field('talk_content', $page_id);
     </div>
   </section>
 
+	<section class="git-section">
+		<div class="az-container">
+
+			<!-- Top Heading -->
+			<div class="git-top">
+			<div class="git-badge">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-white.svg" alt="">
+				<span>GET IN TOUCH &amp; EXPLORE</span>
+			</div>
+			<h2>We're Here to Help <br><span>&amp; Walk With You</span></h2>
+			<p>Reach out, explore helpful resources, or learn more about adoption.</p>
+			</div>
+
+			<!-- 3-Col Grid -->
+			<div class="git-grid">
+
+			<!-- Left Column -->
+			<div class="git-col">
+
+				<!-- Map Card -->
+				<div class="git-card git-map-card">
+				<div class="git-map">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer-map.png" alt="Office Location Map">
+				</div>
+				<div class="git-office">
+					<div class="git-office-icon">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/office-building.svg" alt="">
+					</div>
+					<h3>Main Office</h3>
+				</div>
+				<address>
+					<p>8433 N Black Canyon Hwy<br>
+					Building 6, Suite 152<br>
+					Phoenix, AZ 85021</p>
+				</address>
+				</div>
+
+				<!-- Adoptive Parent CTA -->
+				<div class="git-card git-parent-card">
+				<div class="git-parent-icon">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/heart-home.png" alt="">
+				</div>
+				<h3>Interested in becoming<br>an adoptive parent?</h3>
+				<a href="#" class="git-learn-btn">Learn More <span>&#8250;</span></a>
+				<div class="git-baf-logo">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/building-arizona-families-logo.png" alt="Building Arizona Families">
+				</div>
+				</div>
+
+			</div>
+
+			<!-- Middle Column: Useful Links -->
+			<div class="git-col">
+				<div class="git-card git-links-card">
+				<div class="git-card-header">
+					<div class="git-card-icon usefull-link-icon">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/link-chain.svg" alt="">
+					</div>
+					<h3>Useful Links</h3>
+				</div>
+
+				<ul class="git-links">
+					<li class="git-link-heart"><a href="#">Placing Your Baby for Adoption</a></li>
+					<li class="git-link-feet"><a href="#">Adoption Process</a></li>
+					<li class="git-link-hand"><a href="#">Arizona Crisis Pregnancy</a></li>
+					<li class="git-link-shield"><a href="#">Domestic Violence &amp; Adoption</a></li>
+					<li class="git-link-pill"><a href="#">Drug Use &amp; Adoption</a></li>
+					<li class="git-link-hands"><a href="#">Pregnant &amp; Incarcerated</a></li>
+					<li class="git-link-home"><a href="#">Homeless &amp; Adoption</a></li>
+					<li class="git-link-people"><a href="#">Teenage Pregnancies &amp; Adoption</a></li>
+					<li class="git-link-dollar"><a href="#">Financial Assistance</a></li>
+					<li class="git-link-list"><a href="#">Adoption in 10 Steps</a></li>
+					<li class="git-link-lock"><a href="#">Opt-out Preferences</a></li>
+					<li class="git-link-doc"><a href="#">Privacy Policy</a></li>
+				</ul>
+				</div>
+			</div>
+
+			<!-- Right Column: Contact Us -->
+			<div class="git-col">
+				<div class="git-card git-contact-card">
+				<div class="git-card-header">
+					<div class="git-card-icon">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/phone-orange.svg" alt="">
+					</div>
+					<h3>Contact Us</h3>
+				</div>
+
+				<!-- Phone numbers -->
+				<div class="git-phones">
+					<div class="git-phone-item">
+					<div class="git-phone-icon">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/phone-orange.svg" alt="">
+					</div>
+					<div class="git-phone-text">
+						<span class="git-phone-label">Telephone</span>
+						<a href="tel:6236954112" class="git-phone-num">623.695.4112</a>
+					</div>
+					</div>
+
+					<div class="git-phone-item">
+					<div class="git-phone-icon">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer-headphone-orange.svg" alt="">
+					</div>
+					<div class="git-phone-text">
+						<span class="git-phone-label">Toll Free</span>
+						<a href="tel:8003409665" class="git-phone-num">800.340.9665</a>
+					</div>
+					</div>
+
+					<div class="git-phone-item">
+					<div class="git-phone-icon">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/fax-orange.svg" alt="">
+					</div>
+					<div class="git-phone-text">
+						<span class="git-phone-label">Fax</span>
+						<a href="tel:6232186104" class="git-phone-num">623.218.6104</a>
+					</div>
+					</div>
+				</div>
+
+				<!-- Text section -->
+				<div class="git-contact-section">
+					<div class="git-section-heading">
+					<div class="git-card-icon">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer-chat.svg" alt="">
+					</div>
+					<h4>Text</h4>
+					</div>
+					<div class="git-text-row">
+					<span class="git-text-label">Birth Mothers:</span>
+					<a href="sms:6236954112" class="git-text-num">623.695.4112</a>
+					</div>
+					<div class="git-text-row">
+					<span class="git-text-label">Espa&ntilde;ol:</span>
+					<a href="sms:6236969538" class="git-text-num">623.696.9538</a>
+					</div>
+				</div>
+
+				<!-- Email section -->
+				<div class="git-contact-section">
+					<div class="git-section-heading">
+					<div class="git-card-icon">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer-email.svg" alt="">
+					</div>
+					<h4>Email</h4>
+					</div>
+					<a href="#" class="git-message-btn">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/footer-plane.svg" alt="">
+					Send a Message
+					</a>
+				</div>
+
+				<!-- Socials -->
+				<div class="git-socials">
+					<a href="#" class="git-social"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/facebook-svgrepo-com.svg" alt="Facebook"></a>
+					<a href="#" class="git-social"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/twitter-svgrepo-com.svg" alt="Twitter"></a>
+					<a href="#" class="git-social"><img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/instagram-svgrepo-com.svg" alt="Instagram"></a>
+				</div>
+				</div>
+			</div>
+
+			</div>
+		</div>
+	</section>
+
   <!-- ── Footer Bottom CTA ── -->
   <?php if ($talk_content) : ?>
   <section class="footer-cta">
