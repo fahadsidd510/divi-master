@@ -218,9 +218,13 @@ $talk_content = get_field('talk_content', $page_id);
 
 			<!-- Top Heading -->
 			<div class="git-top">
-			<div class="git-badge">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-white.svg" alt="">
+			<!-- <div class="git-badge">
+				<img src="<?php //echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-white.svg" alt="">
 				<span>GET IN TOUCH &amp; EXPLORE</span>
+			</div> -->
+			<div class="fe-badge">
+				<img src="http://az-pregnancy.local/wp-content/themes/divi-master/src/images/location-pin-white.svg" alt="Pin">
+				<span>Get In Touch &amp; Explore</span>
 			</div>
 			<h2>We're Here to Help <br><span>&amp; Walk With You</span></h2>
 			<p>Reach out, explore helpful resources, or learn more about adoption.</p>
@@ -255,7 +259,8 @@ $talk_content = get_field('talk_content', $page_id);
 				<div class="git-parent-icon">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/heart-home.png" alt="">
 				</div>
-				<h3>Interested in becoming<br>an adoptive parent?</h3>
+				<!-- <h3>Interested in becoming<br>an adoptive parent?</h3> -->
+				<h3>Interested in becoming an adoptive parent?</h3>
 				<a href="#" class="git-learn-btn">Learn More <span>&#8250;</span></a>
 				<div class="git-baf-logo">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/building-arizona-families-logo.png" alt="Building Arizona Families">

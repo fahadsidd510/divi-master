@@ -4259,7 +4259,8 @@ p.alone-orange-text {
 
 .fe-parent-card h3 {
   font-family: var(--font-noto-serif) !important;
-  font-size: clamp(24px, 2vw, 32px);
+  /* font-size: clamp(24px, 2vw, 32px); */
+  font-size: clamp(22px, 2vw, 24px);
   font-weight: 700;
   color: var(--color-text-dark);
   line-height: 1.2;
@@ -4814,7 +4815,7 @@ p.alone-orange-text {
 }
 
 .git-top h2 {
-  font-family: var(--font-display) !important;
+  font-family: var(--font-playfair) !important;
   font-size: clamp(38px, 4.2vw, 67px);
   font-weight: 400;
   color: var(--color-text-dark);
@@ -4827,7 +4828,7 @@ p.alone-orange-text {
 }
 
 .git-top > p {
-  font-family: var(--font-button-heading) !important;
+  font-family: var(--font-noto-serif) !important;
   font-size: clamp(15px, 1.4vw, 22px);
   font-weight: 600;
   color: #707070;
@@ -4903,9 +4904,9 @@ p.alone-orange-text {
 }
 
 .git-office h3 {
-  font-family: var(--font-display) !important;
-  font-size: clamp(28px, 2.6vw, 38px);
-  font-weight: 400;
+  font-family: var(--font-noto-serif) !important;
+  font-size: clamp(24px, 2.2vw, 29px);
+  font-weight: 700;
   color: var(--color-text-dark);
   margin: 0;
 }
@@ -4916,7 +4917,7 @@ p.alone-orange-text {
 }
 
 .git-map-card address p {
-  font-family: var(--font-button-heading) !important;
+  font-family: var(--font-primary) !important;
   font-size: clamp(16px, 1.6vw, 22px);
   font-weight: 500;
   color: #707070;
@@ -4933,7 +4934,7 @@ p.alone-orange-text {
 
 .git-parent-icon {
   margin: 0 auto 20px;
-  width: 220px;
+  width: 300px;
 }
 
 .git-parent-icon img {
@@ -4943,9 +4944,9 @@ p.alone-orange-text {
 }
 
 .git-parent-card h3 {
-  font-family: var(--font-display) !important;
-  font-size: clamp(26px, 2.6vw, 36px);
-  font-weight: 400;
+  font-family: var(--font-noto-serif) !important;
+  font-size: clamp(26px, 2.6vw, 32px);
+  font-weight: 700;
   color: var(--color-text-dark);
   line-height: 1.2;
   margin: 0 0 18px;
@@ -4957,7 +4958,7 @@ p.alone-orange-text {
   gap: 8px;
   background: var(--color-orange-btn);
   color: var(--color-white);
-  font-family: var(--font-button-heading) !important;
+  font-family: var(--font-noto-serif) !important;
   font-size: clamp(17px, 1.7vw, 24px);
   font-weight: 700;
   padding: 14px 40px;
@@ -4979,7 +4980,6 @@ p.alone-orange-text {
 
 .git-baf-logo img {
   display: block;
-  max-width: 260px;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -5012,8 +5012,8 @@ p.alone-orange-text {
 }
 
 .git-card-header h3 {
-  font-family: var(--font-display) !important;
-  font-size: clamp(28px, 2.8vw, 42px);
+  font-family: var(--font-playfair) !important;
+  font-size: clamp(30px, 2.8vw, 39px);
   font-weight: 400;
   color: var(--color-text-dark);
   margin: 0;
@@ -5119,8 +5119,8 @@ p.alone-orange-text {
 }
 
 .git-phone-label {
-  font-family: var(--font-button-heading) !important;
-  font-size: clamp(15px, 1.4vw, 20px);
+  font-family: var(--font-primary) !important;
+  font-size: clamp(18px, 1.4vw, 25px);
   color: var(--color-text-dark);
   font-weight: 500;
 }
