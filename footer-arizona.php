@@ -218,10 +218,6 @@ $talk_content = get_field('talk_content', $page_id);
 
 			<!-- Top Heading -->
 			<div class="git-top">
-			<!-- <div class="git-badge">
-				<img src="<?php //echo get_stylesheet_directory_uri(); ?>/src/images/location-pin-white.svg" alt="">
-				<span>GET IN TOUCH &amp; EXPLORE</span>
-			</div> -->
 			<div class="fe-badge">
 				<img src="http://az-pregnancy.local/wp-content/themes/divi-master/src/images/location-pin-white.svg" alt="Pin">
 				<span>Get In Touch &amp; Explore</span>

@@ -5032,9 +5032,9 @@ p.alone-orange-text {
   align-items: center;
   gap: 18px;
   padding: 10px 0;
-  font-family: var(--font-button-heading) !important;
-  font-size: clamp(16px, 1.5vw, 22px);
-  letter-spacing: 0.5px;
+  font-family: var(--font-primary) !important;
+  font-size: clamp(17px, 1.5vw, 25px);
+  font-weight: normal;
   color: var(--color-text-dark);
   text-decoration: none;
   transition: color 0.2s;
@@ -5091,7 +5091,7 @@ p.alone-orange-text {
 .git-phone-item {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 30px;
   background: #FCDED2;
   border-radius: 16px;
   padding: 18px 22px;
@@ -5107,15 +5107,15 @@ p.alone-orange-text {
 }
 
 .git-phone-icon img {
-  width: 36px;
-  height: 36px;
+  width: 45px;
+  height: 45px;
   object-fit: contain;
 }
 
 .git-phone-text {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 20px;
 }
 
 .git-phone-label {
@@ -5126,8 +5126,8 @@ p.alone-orange-text {
 }
 
 .git-phone-num {
-  font-family: var(--font-button-heading) !important;
-  font-size: clamp(22px, 2.2vw, 32px);
+  font-family: var(--font-noto-serif) !important;
+  font-size: clamp(23px, 2.2vw, 35px);
   font-weight: 700;
   color: var(--color-orange-btn);
   text-decoration: none;
@@ -5147,8 +5147,8 @@ p.alone-orange-text {
 }
 
 .git-section-heading h4 {
-  font-family: var(--font-display) !important;
-  font-size: clamp(26px, 2.5vw, 36px);
+  font-family: var(--font-playfair) !important;
+  font-size: clamp(27px, 2.5vw, 39px);
   font-weight: 400;
   color: var(--color-text-dark);
   margin: 0;
@@ -5163,15 +5163,15 @@ p.alone-orange-text {
 }
 
 .git-text-label {
-  font-family: var(--font-button-heading) !important;
+  font-family: var(--font-primary) !important;
   font-size: clamp(16px, 1.6vw, 22px);
   color: var(--color-text-dark);
   font-weight: 500;
 }
 
 .git-text-num {
-  font-family: var(--font-button-heading) !important;
-  font-size: clamp(20px, 2vw, 28px);
+  font-family: var(--font-noto-serif) !important;
+  font-size: clamp(24px, 2.4vw, 35px);
   font-weight: 700;
   color: var(--color-orange-btn);
   text-decoration: none;
@@ -5187,13 +5187,14 @@ p.alone-orange-text {
   width: 100%;
   background: var(--color-orange-btn);
   color: var(--color-white);
-  font-family: var(--font-button-heading) !important;
+  font-family: var(--font-playfair) !important;
   font-size: clamp(20px, 2vw, 28px);
-  font-weight: 600;
+  font-weight: 500;
   padding: 18px 24px;
   border-radius: 50px;
   text-decoration: none;
   transition: filter 0.2s, transform 0.2s;
+  margin: 0px 15px;
 }
 
 .git-message-btn:hover {
