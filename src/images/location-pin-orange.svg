@@ -1,3 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24.9" height="38.949" viewBox="0 0 24.9 38.949">
-  <path id="Location" d="M19.515,3.01A11.688,11.688,0,0,0,1.369,17.177L11.691,36.606,22.013,17.177a11.689,11.689,0,0,0-2.5-14.167ZM11.69,17.439A5.938,5.938,0,1,1,17.629,11.5,5.937,5.937,0,0,1,11.69,17.439Z" transform="translate(0.759 0.745)" fill="none" stroke="#e86f47" stroke-width="1.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="18.859" height="29.499" viewBox="0 0 18.859 29.499">
+  <g id="Group_10936" data-name="Group 10936" transform="translate(-233.571 -10817.958)">
+    <path id="Location" d="M13.642,2.105a8.17,8.17,0,0,0-12.685,9.9L8.173,25.59l7.215-13.581a8.171,8.171,0,0,0-1.746-9.9Z" transform="translate(234.827 10819.203)" fill="none" stroke="#e86f47" stroke-width="2.5"/>
+    <circle id="Ellipse_74" data-name="Ellipse 74" cx="4" cy="4" r="4" transform="translate(239 10824)" fill="#e86f47"/>
+  </g>
 </svg>
