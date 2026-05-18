@@ -4786,7 +4786,29 @@ p.alone-orange-text {
 /* ── Top Heading ── */
 
 .git-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
   margin-bottom: 50px;
+}
+
+.git-top-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.git-top-decor {
+  flex-shrink: 0;
+  width: 380px;
+  max-width: 30%;
+}
+
+.git-top-decor img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .git-badge {
@@ -4800,15 +4822,14 @@ p.alone-orange-text {
 }
 
 .git-badge img {
-  width: 22px;
-  height: 22px;
+  width: 35px;
+  height: 40px;
   object-fit: contain;
 }
 
 .git-badge span {
-  font-family: var(--font-button-heading) !important;
-  font-size: clamp(15px, 1.4vw, 22px);
-  font-weight: 700;
+  font-family: var(--font-primary) !important;
+  font-size: clamp(22px, 2vw, 35px);
   color: var(--color-white);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -4827,7 +4848,7 @@ p.alone-orange-text {
   color: var(--color-orange-btn);
 }
 
-.git-top > p {
+.git-top p {
   font-family: var(--font-noto-serif) !important;
   font-size: clamp(15px, 1.4vw, 22px);
   font-weight: 600;
@@ -4869,7 +4890,7 @@ p.alone-orange-text {
   position: relative;
   border-radius: 16px;
   overflow: hidden;
-  margin-bottom: 18px;
+  margin-bottom: 50px;
 }
 
 .git-map img {
@@ -4887,10 +4908,6 @@ p.alone-orange-text {
 }
 
 .git-office-icon {
-  width: 56px;
-  height: 56px;
-  background: #FCDED2;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4898,8 +4915,9 @@ p.alone-orange-text {
 }
 
 .git-office-icon img {
-  width: 32px;
-  height: 32px;
+  display: block;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -4965,7 +4983,7 @@ p.alone-orange-text {
   border-radius: 30px;
   text-decoration: none;
   transition: filter 0.2s, transform 0.2s;
-  margin-bottom: 24px;
+  margin-bottom: 40px;
 }
 
 .git-learn-btn:hover {
@@ -4995,10 +5013,6 @@ p.alone-orange-text {
 }
 
 .git-card-icon {
-  width: 64px;
-  height: 64px;
-  background: #FCDED2;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5006,8 +5020,9 @@ p.alone-orange-text {
 }
 
 .git-card-icon img {
-  width: 30px;
-  height: 30px;
+  display: block;
+  max-width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -5043,13 +5058,11 @@ p.alone-orange-text {
 .git-links li a::before {
   content: "";
   flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  background-color: #FCDED2;
+  width: 60px;
+  height: 60px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 24px 24px;
-  border-radius: 50%;
+  background-size: contain;
   display: inline-block;
 }
 
@@ -5065,7 +5078,7 @@ p.alone-orange-text {
   color: var(--color-orange-btn);
 }
 
-/* Icon per link item */
+/* Icon per link item — SVGs include their own circular bg + color */
 .git-link-heart  a::before { background-image: url('../images/footer-icon-heart.svg'); }
 .git-link-feet   a::before { background-image: url('../images/footer-icon-feet.svg'); }
 .git-link-hand   a::before { background-image: url('../images/footer-icon-hand.svg'); }
@@ -5084,31 +5097,32 @@ p.alone-orange-text {
 .git-phones {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  margin-bottom: 30px;
+  gap: 20px;
+  margin: 50px 0;
 }
 
 .git-phone-item {
   display: flex;
   align-items: center;
-  gap: 30px;
+  justify-content: start;
+  gap: 5px;
   background: #FCDED2;
   border-radius: 16px;
-  padding: 18px 22px;
+  padding: 18px 22px 25px;
 }
 
 .git-phone-icon {
   flex-shrink: 0;
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .git-phone-icon img {
-  width: 45px;
-  height: 45px;
+  /* width: 45px;
+  height: 45px; */
   object-fit: contain;
 }
 
@@ -5143,7 +5157,7 @@ p.alone-orange-text {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 .git-section-heading h4 {
@@ -5158,7 +5172,7 @@ p.alone-orange-text {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
 }
 
@@ -5194,7 +5208,6 @@ p.alone-orange-text {
   border-radius: 50px;
   text-decoration: none;
   transition: filter 0.2s, transform 0.2s;
-  margin: 0px 15px;
 }
 
 .git-message-btn:hover {
@@ -5221,9 +5234,7 @@ p.alone-orange-text {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  background: #FCDED2;
+
   border-radius: 50%;
   transition: transform 0.2s, filter 0.2s;
 }
@@ -5234,8 +5245,7 @@ p.alone-orange-text {
 }
 
 .git-social img {
-  width: 28px;
-  height: 28px;
+
   object-fit: contain;
 }
 
@@ -5252,6 +5262,17 @@ p.alone-orange-text {
 }
 
 @media (max-width: 900px) {
+  .git-top {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .git-top-decor {
+    width: 240px;
+    max-width: 60%;
+  }
+
   .git-map img {
     height: 220px;
   }
@@ -5262,9 +5283,8 @@ p.alone-orange-text {
   }
 
   .git-links li a::before {
-    width: 38px;
-    height: 38px;
-    background-size: 20px 20px;
+    width: 48px;
+    height: 48px;
   }
 
   .git-phone-item {
@@ -5287,6 +5307,10 @@ p.alone-orange-text {
     margin-bottom: 30px;
   }
 
+  .git-top-decor {
+    width: 180px;
+  }
+
   .git-grid {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -5305,16 +5329,6 @@ p.alone-orange-text {
     height: 180px;
   }
 
-  .git-office-icon {
-    width: 44px;
-    height: 44px;
-  }
-
-  .git-office-icon img {
-    width: 24px;
-    height: 24px;
-  }
-
   .git-parent-icon {
     width: 160px;
   }
@@ -5325,9 +5339,8 @@ p.alone-orange-text {
   }
 
   .git-links li a::before {
-    width: 34px;
-    height: 34px;
-    background-size: 18px 18px;
+    width: 42px;
+    height: 42px;
   }
 
   .git-links li a::after {
