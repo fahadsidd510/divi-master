@@ -243,7 +243,8 @@ body {
   display: flex;
   align-items: baseline;
   gap: 60px;
-  font-size: clamp(20px, 2.2vw, 31px);
+  /* font-size: clamp(20px, 2.2vw, 31px); */
+  font-size: clamp(20px, 1.8vw, 31px);
   font-family: var(--font-primary);
   font-weight: normal;
   color: var(--color-link-blue);
@@ -284,7 +285,8 @@ body {
 
 .location-row {
   color: var(--color-text-dark);
-  font-size: clamp(24px, 1.8vw, 29px);
+  /* font-size: clamp(24px, 1.8vw, 29px); */
+  font-size: clamp(23px, 1.6vw, 29px);
   font-family: var(--font-primary);
   letter-spacing: 0.3px;
 }
@@ -323,7 +325,7 @@ body {
   text-decoration: none;
   color: var(--color-white);
   font-family: var(--font-primary);
-  font-size: clamp(23px, 1.6vw, 28px);
+  font-size: clamp(22px, 1.6vw, 28px);
   font-weight: normal;
   text-transform: uppercase;
   padding: 15px 8px;
@@ -1867,7 +1869,7 @@ body {
 .lp-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 14px;
+  gap: 30px;
   margin-bottom: 14px;
 }
 
@@ -1877,7 +1879,12 @@ body {
   justify-content: center;
   text-decoration: none;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  min-height: 64px;
+  min-height: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 9px 10px 7px rgba(0, 0, 0, 0.1);
 }
 
 /* .lp-card:hover {
@@ -1887,8 +1894,10 @@ body {
 
 .lp-card img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  border-radius: 11px;
 }
 
 /* YouTube full-width bar */
@@ -1919,7 +1928,7 @@ body {
 
 .lp-youtube span {
   font-family: var(--font-primary) !important;
-  font-size: clamp(28px, 3.0vw, 40px);
+  font-size: clamp(23px, 3.0vw, 40px);
   font-weight: 400;
   color: var(--color-text-dark);
 }
@@ -1944,7 +1953,7 @@ body {
 
   .lp-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 30px;
     margin-bottom: 10px;
   }
 
@@ -4887,4 +4896,80 @@ p.alone-orange-text {
     font-size: 18px;
     padding: 14px 20px;
   }
+}
+
+
+
+/***** customiser CSS  *****/
+
+.fe-parent-card h3{
+	font-size: clamp(24px, 1.9vw, 32px) !important;
+}
+
+.az-content h2, .category-card h3{
+	font-weight: 500 !important;
+}
+
+.git-text-num{
+	font-size: clamp(24px, 1.7vw, 35px) !important;
+}
+
+.git-parent-card h3{
+	font-size: clamp(24px, 1.6vw, 32px) !important;
+}
+
+@media (max-width: 680px) {
+    .hfy-about-left p {
+        font-size: 13px !important;
+    }
+}
+
+.pc-follow-text span{
+	font-size: clamp(12px, 1.4vw, 17px);
+}
+
+.banner-heading{
+	font-size: clamp(40px, 5vw, 79px);
+}
+.banner-subtext{
+	font-size: clamp(21px, 2.2vw, 33px);
+}
+
+.le-header-left h2 {
+	font-size: clamp(36px, 3.1vw, 60px);
+}
+
+
+.git-badge span {
+	font-size: clamp(19px, 2vw, 35px);
+}
+
+.podcast-close{
+	 color: #fff;
+	 right: -20px;
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+  /* styles */
+		.hero-banner{
+			background-position: 75%;
+			
+		}
+		.hero-banner::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgb(0 0 0 / .45);
+        z-index: 1;
+    }
+		
+		    .nav-menu > li > a {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
 }

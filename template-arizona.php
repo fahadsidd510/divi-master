@@ -154,7 +154,7 @@ $cities_locations = get_field('cities_locations', $page_id);
   </section>
 
   <!-- ── Section 3: Listen & Explore Episodes ── -->
-  <section class="explore-episodes">
+  <section class="explore-episodes" id="listen-podcasts">
     <div class="az-container">
       <?php if ($episodes_content) : ?>
        <div class="explore-episodes-intro az-content">
