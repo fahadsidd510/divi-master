@@ -608,6 +608,13 @@ function podcast_list_shortcode($atts) {
         'post_type'      => 'post',
         'posts_per_page' => $atts['posts_per_page'],
         'paged'          => $paged,
+        'tax_query'      => array(
+            array(
+                'taxonomy' => 'category',
+                'field'    => 'slug',
+                'terms'    => 'adoption-radio',
+            ),
+        ),
     );
 
     $query = new WP_Query($args);
