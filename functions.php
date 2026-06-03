@@ -411,8 +411,6 @@ function fetch_rss_podcast_cards($atts) {
     $maxitems  = $rss->get_item_quantity($atts['limit']);
     $rss_items = $rss->get_items(0, $maxitems);
 
-    //print_r($rss->get_items(0, 1));
-
     if ($maxitems == 0) return '<p>No episodes found.</p>';
 
     ob_start();
@@ -432,11 +430,10 @@ function fetch_rss_podcast_cards($atts) {
 
             // Data
             $title = $item->get_title();
-            // Limit title to 5 words
             $title_limited = wp_trim_words($title, 6, '...');
 
             // Extract Season & Episode
-            $season_episode_badge = 'Episode'; // default fallback
+            $season_episode_badge = 'Episode';
 
             if (preg_match('/Season\s*(\d+),\s*Episode\s*(\d+)/i', $title, $matches)) {
                 $season = $matches[1];
@@ -454,9 +451,7 @@ function fetch_rss_podcast_cards($atts) {
 
                 $raw_duration = trim($duration_tag[0]['data']);
 
-                // Normalize
                 if (is_numeric($raw_duration)) {
-                    // seconds → MM:SS
                     $minutes = floor($raw_duration / 60);
                     $seconds = $raw_duration % 60;
 
@@ -464,13 +459,11 @@ function fetch_rss_podcast_cards($atts) {
                     $parts = explode(':', $raw_duration);
 
                     if (count($parts) === 3) {
-                        // HH:MM:SS → MM:SS
                         $hours   = (int) $parts[0];
                         $minutes = (int) $parts[1] + ($hours * 60);
                         $seconds = (int) $parts[2];
 
                     } elseif (count($parts) === 2) {
-                        // MM:SS
                         $minutes = (int) $parts[0];
                         $seconds = (int) $parts[1];
 
@@ -487,7 +480,6 @@ function fetch_rss_podcast_cards($atts) {
 
             $description = wp_trim_words(wp_strip_all_tags($item->get_description()), 20);
             $podcast_title = 'Birth Mother Matters in Adoption';
-            // Author name
             $author = $item->get_author();
             $author_name = $author ? $author->get_name() : 'Unknown';
         ?>
@@ -531,26 +523,20 @@ function fetch_rss_podcast_cards($atts) {
             <div class="ep-card-actions">
                 <?php 
                 $link = $item->get_permalink();
-
-                // extract episode ID from URL
                 preg_match('/\/(\d+)$/', rtrim($link, '/'), $matches);
                 $episode_id = $matches[1] ?? '';
-
                 $player_url = 'https://player.rss.com/birth-mother-matters-in-adoption/' . $episode_id;
                 ?>
 
                 <button class="ep-btn ep-btn-listen open-podcast"
                     data-src="<?php echo esc_url($player_url); ?>">
-                    
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/play.svg" alt="play">
                     Listen to Podcasts
                 </button>
 
-                <!-- Transcript -->
                 <a href="<?php echo esc_url($item->get_permalink()); ?>" 
                    target="_blank" 
                    class="ep-btn ep-btn-read">
-                   
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/src/images/read.svg" alt="read">
                     Read Transcripts
                 </a>
@@ -558,25 +544,27 @@ function fetch_rss_podcast_cards($atts) {
         </div>
 
         <?php endforeach; ?>
+
         <div id="podcastModal" class="podcast-modal">
             <div class="podcast-modal-content">
                 <span class="podcast-close">&times;</span>
                 <div class="podcast-player-embed">
-                <iframe 
-                    id="podcastIframe"
-                    src=""
-                    width="100%" 
-                    height="160"
-                    frameborder="0"
-                    scrolling="no">
-                </iframe>
+                    <div class="skeleton-loader"></div>
+                    <iframe 
+                        id="podcastIframe"
+                        src=""
+                        width="100%" 
+                        height="160"
+                        frameborder="0"
+                        scrolling="no"
+                        style="display:none;">
+                    </iframe>
                 </div>
             </div>
         </div>
     </div>
 
     <?php
-    // Dynamic total count + link
     $total_items = $rss->get_item_quantity();
     $feed_link   = $rss->get_link();
     ?>

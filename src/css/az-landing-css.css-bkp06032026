@@ -48,7 +48,7 @@
 }
 /* playfair-display-regular - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; 
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 400;
@@ -56,7 +56,7 @@
 }
 /* playfair-display-500 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; 
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 500;
@@ -64,7 +64,7 @@
 }
 /* playfair-display-600 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; 
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 600;
@@ -72,7 +72,7 @@
 }
 /* playfair-display-700 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; 
   font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 700;
@@ -82,7 +82,7 @@
 
 /* noto-serif-regular - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; 
   font-family: 'Noto Serif';
   font-style: normal;
   font-weight: 400;
@@ -90,7 +90,7 @@
 }
 /* noto-serif-500 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; 
   font-family: 'Noto Serif';
   font-style: normal;
   font-weight: 500;
@@ -98,7 +98,7 @@
 }
 /* noto-serif-600 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; 
   font-family: 'Noto Serif';
   font-style: normal;
   font-weight: 600;
@@ -106,7 +106,7 @@
 }
 /* noto-serif-700 - latin */
 @font-face {
-  font-display: swap;
+  font-display: swap; 
   font-family: 'Noto Serif';
   font-style: normal;
   font-weight: 700;
@@ -1072,7 +1072,7 @@ body {
   border: none;
   border-radius: 8px;
   font-family: var(--font-primary);
-  font-size: clamp(28px, 3vw, 30px);
+  font-size: clamp(28px, 3vw, 38px);
   font-weight: normal;
   color: #fff;
   cursor: pointer;
@@ -1551,7 +1551,7 @@ body {
   .topic-cards-grid {
     max-width: 100%;
   }
-
+  
 }
 
 @media (max-width: 768px) {
@@ -1572,11 +1572,11 @@ body {
     width: 70px;
     height: 70px;
   }
-
+  
 }
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) { 
 
   .ep-listening-wrapper {
         max-width: 100%;
@@ -1597,7 +1597,7 @@ body {
 }
 
 
-@media (min-width: 1025px) and (max-width: 1144px) {
+@media (min-width: 1025px) and (max-width: 1144px) { 
   .topic-cards-grid {
         grid-template-columns: 1fr;
         gap: 20px;
@@ -2081,7 +2081,7 @@ body {
   font-weight: 400;
   color: var(--color-text-dark);
   line-height: 1.1;
-
+  
 }
 
 .hfy-top h3 {
@@ -3507,7 +3507,7 @@ p.alone-orange-text {
 }
 
 .le-author {
-
+  
 }
 
 .le-date {
@@ -4038,7 +4038,6 @@ p.alone-orange-text {
   text-decoration: none;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  pointer-events: none;
 }
 
 .comm-cities li a::before {
@@ -4951,15 +4950,15 @@ p.alone-orange-text {
 }
 
 /* Portrait */
-@media only screen
-  and (min-device-width: 1024px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 2) {
   /* styles */
 		.hero-banner{
 			background-position: 75%;
-
+			
 		}
 		.hero-banner::before {
         content: "";
@@ -4968,12 +4967,14 @@ p.alone-orange-text {
         background: rgb(0 0 0 / .45);
         z-index: 1;
     }
-
+		
 		    .nav-menu > li > a {
         font-size: 16px;
         letter-spacing: 1px;
     }
 }
+
+
 
 .skeleton-loader {
     position: relative;
@@ -4989,12 +4990,12 @@ p.alone-orange-text {
     left: 0;
     top: 0;
     background-repeat: no-repeat;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%),
-        linear-gradient(#aaaaaa 16px, transparent 0),
-        linear-gradient(#aaaaaa 16px, transparent 0),
-        linear-gradient(#aaaaaa 16px, transparent 0),
-        linear-gradient(#aaaaaa 16px, transparent 0),
-        linear-gradient(#aaaaaa 72px, transparent 0),
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%), 
+        linear-gradient(#aaaaaa 16px, transparent 0), 
+        linear-gradient(#aaaaaa 16px, transparent 0), 
+        linear-gradient(#aaaaaa 16px, transparent 0), 
+        linear-gradient(#aaaaaa 16px, transparent 0), 
+        linear-gradient(#aaaaaa 72px, transparent 0), 
         linear-gradient(#ffffff 100%, transparent 0);
     background-size: 264px 100%, 128px 16px, 256px 16px, 496px 16px, 496px 16px, 81px 72px, 100% 100%;
     background-position: 0 0, 128px 29px, 128px 62px, 16px 103px, 16px 130px, 16px 15px, 0 0;

@@ -30,30 +30,38 @@ document.addEventListener('DOMContentLoaded', function() {
 // postcard podcast modal behavior
 document.addEventListener("DOMContentLoaded", function() {
 
-  const modal = document.getElementById("podcastModal");
-  const iframe = document.getElementById("podcastIframe");
-  const closeBtn = document.querySelector(".podcast-close");
+    const modal = document.getElementById("podcastModal");
+    const iframe = document.getElementById("podcastIframe");
+    const closeBtn = document.querySelector(".podcast-close");
+    const skeleton = document.querySelector(".skeleton-loader");
 
-  document.querySelectorAll(".open-podcast").forEach(btn => {
-      btn.addEventListener("click", function() {
+    iframe.addEventListener("load", function() {
+        skeleton.style.display = "none";
+        iframe.style.display = "block";
+    });
 
-          const src = this.getAttribute("data-src");
+    document.querySelectorAll(".open-podcast").forEach(btn => {
+        btn.addEventListener("click", function() {
+            const src = this.getAttribute("data-src");
 
-          iframe.src = src;
-          modal.style.display = "flex";
-      });
-  });
+            // Reset: show skeleton, hide iframe
+            skeleton.style.display = "block";
+            iframe.style.display = "none";
+            iframe.src = src;
+            modal.style.display = "flex";
+        });
+    });
 
-  closeBtn.onclick = function() {
-      modal.style.display = "none";
-      iframe.src = "";
-  };
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+        iframe.src = "";
+    };
 
-  window.onclick = function(e) {
-      if (e.target === modal) {
-          modal.style.display = "none";
-          iframe.src = "";
-      }
-  };
+    window.onclick = function(e) {
+        if (e.target === modal) {
+            modal.style.display = "none";
+            iframe.src = "";
+        }
+    };
 
 });
