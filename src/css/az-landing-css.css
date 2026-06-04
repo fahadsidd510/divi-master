@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════
    AZ Pregnancy Help — Landing Page CSS
-   Fonts: Source Serif 4, Raleway
+   Fonts: Raleway
    Container: 1560px
    ══════════════════════════════════════
 
@@ -37,33 +37,6 @@
 /* ══════════════════════════════════════
    1. FONT FACES
    ══════════════════════════════════════ */
-
-
-/* source-serif-4-regular - latin */
-@font-face {
-  font-display: swap; 
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/SourceSerif4-Regular.woff2') format('woff2'); 
-}
-/* source-serif-4-600 - latin */
-@font-face {
-  font-display: swap; 
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/SourceSerif4-Medium.woff2') format('woff2'); 
-}
-/* source-serif-4-700 - latin */
-@font-face {
-  font-display: swap; 
-  font-family: 'Source Serif 4';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/SourceSerif4-Bold.woff2') format('woff2'); 
-}
-
 
 /* raleway-regular - latin */
 @font-face {
@@ -105,7 +78,6 @@
 
 :root {
   /* Fonts */
-  --heading-font: 'Source Serif 4', serif;
   --primary-font: 'Raleway', serif;
 
 
@@ -972,7 +944,7 @@ body {
 
 .podcast-icon {
   margin-bottom: 25px;
-  padding: 0 45px;
+  padding: 0px;
 }
 
 .podcast-icon img {
@@ -982,7 +954,7 @@ body {
 }
 
 .banner-heading {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(48px, 5vw, 79px);
   font-weight: 600;
   color: var(--color-white);
@@ -1133,7 +1105,7 @@ body {
 /* ── 7a. Birth Mother Intro ── */
 
 .az-content h2 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(28px, 3vw, 49px);
   color: var(--color-text-dark);
   line-height: 1.1;
@@ -1143,7 +1115,7 @@ body {
 
 .az-content p {
   font-family: var(--primary-font) !important;
-  font-size: clamp(20px, 2vw, 35px);
+  font-size: clamp(20px, 1.5vw, 35px);
   font-weight: normal;
   color: var(--color-text-dark);
   line-height: 1.55;
@@ -1174,7 +1146,7 @@ body {
 }
 
 .category-card h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(28px, 2.0vw, 42px);
   color: var(--color-text-dark);
   text-align: center;
@@ -1184,7 +1156,7 @@ body {
 
 .category-card p {
   font-family: var(--primary-font) !important;
-  font-size: clamp(18px, 1.8vw, 23px);
+  font-size: clamp(18px, 1.2vw, 23px);
   color: var(--color-text-dark);
   line-height: 1.5;
   width: 55%;
@@ -1269,7 +1241,7 @@ body {
 }
 
 .ep-card-title {
-  font-family: var(--heading-font);
+  font-family: var(--primary-font);
   font-size: clamp(16px, 2vw, 21px);
   color: #1E4838;
   line-height: 1.2;
@@ -1291,7 +1263,7 @@ body {
 
 .ep-card-description {
   font-family: var(--primary-font) !important;
-  font-size: clamp(14px, 1.2vw, 17px);
+  font-size: clamp(14px, 1.0vw, 17px);
   color: #1E4838;
   width: 65%;
 }
@@ -1414,7 +1386,7 @@ body {
 }
 
 .ep-listen-content h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(38px, 2.8vw, 49px);
   font-weight: 400;
   color: var(--color-text-dark);
@@ -1424,7 +1396,7 @@ body {
 
 .ep-listen-content p {
   font-family: var(--primary-font) !important;
-  font-size: clamp(24px, 1.8vw, 30px);
+  font-size: clamp(18px, 1.3vw, 30px);
   color: var(--color-text-dark);
   line-height: 1.5;
   margin: 0;
@@ -1438,7 +1410,7 @@ body {
   font-size: clamp(20px, 1.8vw, 38px);
   font-weight: 400;
   text-decoration: none;
-  padding: 20px 44px;
+  padding: 10px 35px;
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -1519,7 +1491,7 @@ body {
 }
 
 .topic-card-text h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(32px, 2.5vw, 43px);
   font-weight: 400;
   color: var(--color-text-dark);
@@ -1529,7 +1501,7 @@ body {
 
 .topic-card-text p {
   font-family: var(--primary-font) !important;
-  font-size: clamp(18px, 1.4vw, 25px);
+  font-size: clamp(16px, 1.3vw, 25px);
   font-weight: normal;
   color: var(--color-text-dark);
   line-height: 1.4;
@@ -1644,8 +1616,8 @@ body {
 }
 
 .pc-badge span {
-  font-family: var(--heading-font) !important;
-  font-size: clamp(18px, 2vw, 27px);
+  font-family: var(--primary-font) !important;
+  font-size: clamp(15px, 2vw, 27px);
   font-weight: 700;
   color: var(--color-white);
   text-transform: uppercase;
@@ -1654,7 +1626,7 @@ body {
 
 /* Heading */
 .pc-heading, .pc-content h2 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(42px, 4.8vw, 70px);
   font-weight: 400;
   color: var(--color-text-dark);
@@ -1733,7 +1705,7 @@ body {
 }
 
 .pc-follow-text strong {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(20px, 1.8vw, 30px);
   font-weight: 700;
   color: var(--color-white);
@@ -1833,7 +1805,7 @@ body {
 }
 
 .lp-header h2 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(40px, 2.5vw, 55px);
   font-weight: 500;
   color: #1E0D37;
@@ -2068,7 +2040,7 @@ body {
 }
 
 .hfy-top h2, .hfy-top h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(38px, 4.2vw, 60px);
   font-weight: 400;
   color: var(--color-text-dark);
@@ -2108,7 +2080,7 @@ body {
 
 .hfy-schedule p, .hfy-schedule span p {
   display: block;
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(18px, 1.8vw, 27px);
   font-weight: 700;
   color: #707070;
@@ -2142,7 +2114,7 @@ body {
 }
 
 .hfy-support-label h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(26px, 2.8vw, 41px);
   font-weight: 400;
   color: var(--color-text-dark);
@@ -2191,7 +2163,7 @@ body {
 }
 
 .hfy-card h4 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   /* font-size: clamp(18px, 1.8vw, 27px); */
   font-size: clamp(18px, 1.8vw, 31px);
   font-weight: 700;
@@ -2202,7 +2174,7 @@ body {
 
 .hfy-card p {
   font-family: var(--primary-font) !important;
-  font-size: clamp(16px, 1.6vw, 25px);
+  font-size: clamp(17px, 1.2vw, 25px);
   font-weight: normal;
   color: var(--color-text-dark);
   line-height: 1.4;
@@ -2230,7 +2202,7 @@ body {
   display: inline-block;
   background: var(--color-orange-btn);
   color: var(--color-white);
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(16px, 1.6vw, 27px);
   font-weight: 700;
   text-transform: uppercase;
@@ -2276,14 +2248,14 @@ body {
 
 .hfy-about-cta div:first-of-type span {
   display: block;
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(16px, 1.6vw, 28px);
   color: var(--color-white);
 }
 
 .hfy-about-cta div:first-of-type strong {
   display: block;
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(28px, 3vw, 48px);
   font-weight: 700;
   color: var(--color-white);
@@ -2337,7 +2309,7 @@ body {
 }
 
 .hfy-alone-text h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(38px, 4vw, 64px);
   font-weight: 500;
   color: var(--color-text-dark);
@@ -2345,7 +2317,7 @@ body {
 }
 
 .hfy-alone-text p {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(20px, 2vw, 33px);
   font-weight: 700;
   color: #707070;
@@ -2355,7 +2327,7 @@ body {
 
 
 p.alone-orange-text {
-  font-family: var(--heading-font);
+  font-family: var(--primary-font);
   font-size: clamp(20px, 2vw, 32px);
   color: var(--color-orange-btn);
   font-weight: 700;
@@ -3180,7 +3152,7 @@ p.alone-orange-text {
 }
 
 .wl-content h2 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(38px, 3.0vw, 59px);
   font-weight: 500;
   color: var(--color-text-dark);
@@ -3352,8 +3324,8 @@ p.alone-orange-text {
 }
 
 .le-header-left h2 {
-  font-family: var(--heading-font) !important;
-  font-size: clamp(38px, 2.5vw, 60px);
+  font-family: var(--primary-font) !important;
+  font-size: clamp(36px, 2.5vw, 60px);
   font-weight: 400;
   color: var(--color-text-dark);
   line-height: 1.1;
@@ -3480,7 +3452,7 @@ p.alone-orange-text {
 
 /* Card title */
 .le-card h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(16px, 1.6vw, 21px);
   font-weight: 700;
   color: #000;
@@ -3591,7 +3563,7 @@ p.alone-orange-text {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(13px, 1.2vw, 15px);
   font-weight: 700;
   color: var(--color-orange-btn);
@@ -3634,7 +3606,7 @@ p.alone-orange-text {
   display: inline-flex;
   align-items: baseline;
   gap: 10px;
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(18px, 1.8vw, 27px);
   font-weight: 600;
   padding: 30px 60px;
@@ -3664,7 +3636,7 @@ p.alone-orange-text {
 }
 
 .le-page-count {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(16px, 1.6vw, 23px);
   color: var(--color-text-dark);
   font-weight: 500;
@@ -3784,7 +3756,7 @@ p.alone-orange-text {
 }
 
 .ps-header h2 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(40px, 4.8vw, 64px);
   font-weight: 500;
   color: var(--color-text-dark);
@@ -3911,7 +3883,7 @@ p.alone-orange-text {
 }
 
 .comm-badge span {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(16px, 1.5vw, 25px);
   font-weight: 700;
   color: var(--color-white);
@@ -3920,7 +3892,7 @@ p.alone-orange-text {
 }
 
 .comm-top-content h2 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(40px, 3.0vw, 59px);
   font-weight: 500;
   color: var(--color-text-dark);
@@ -3988,7 +3960,7 @@ p.alone-orange-text {
 }
 
 .comm-serve-heading h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(34px, 3.8vw, 54px);
   font-weight: 500;
   color: var(--color-text-dark);
@@ -4031,7 +4003,7 @@ p.alone-orange-text {
   background: var(--color-white);
   border-radius: 40px;
   padding: 14px 20px;
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(17px, 1.7vw, 25px);
   font-weight: 700;
   color: #000;
@@ -4144,7 +4116,7 @@ p.alone-orange-text {
 }
 
 .footer-cta h2 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(38px, 4.5vw, 65px);
   font-weight: 400;
   color: var(--color-white);
@@ -4366,7 +4338,7 @@ p.alone-orange-text {
 }
 
 .git-badge span {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(22px, 2vw, 35px);
   color: var(--color-white);
   text-transform: uppercase;
@@ -4374,7 +4346,7 @@ p.alone-orange-text {
 }
 
 .git-top h2 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(38px, 4.2vw, 67px);
   font-weight: 400;
   color: var(--color-text-dark);
@@ -4461,7 +4433,7 @@ p.alone-orange-text {
 }
 
 .git-office h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(24px, 2.2vw, 29px);
   font-weight: 700;
   color: var(--color-text-dark);
@@ -4501,7 +4473,7 @@ p.alone-orange-text {
 }
 
 .git-parent-card h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(26px, 2.6vw, 32px);
   font-weight: 700;
   color: var(--color-text-dark);
@@ -4516,7 +4488,7 @@ p.alone-orange-text {
   gap: 8px;
   background: var(--color-orange-btn);
   color: var(--color-white);
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(17px, 1.7vw, 24px);
   font-weight: 700;
   padding: 14px 40px;
@@ -4568,7 +4540,7 @@ p.alone-orange-text {
 }
 
 .git-card-header h3 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(30px, 2.8vw, 39px);
   font-weight: 400;
   color: var(--color-text-dark);
@@ -4681,7 +4653,7 @@ p.alone-orange-text {
 }
 
 .git-phone-num {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(23px, 2.2vw, 35px);
   font-weight: 700;
   color: var(--color-orange-btn);
@@ -4702,7 +4674,7 @@ p.alone-orange-text {
 }
 
 .git-section-heading h4 {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(27px, 2.5vw, 39px);
   font-weight: 400;
   color: var(--color-text-dark);
@@ -4725,7 +4697,7 @@ p.alone-orange-text {
 }
 
 .git-text-num {
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(24px, 2.4vw, 35px);
   font-weight: 700;
   color: var(--color-orange-btn);
@@ -4742,7 +4714,7 @@ p.alone-orange-text {
   width: 100%;
   background: var(--color-orange-btn);
   color: var(--color-white);
-  font-family: var(--heading-font) !important;
+  font-family: var(--primary-font) !important;
   font-size: clamp(20px, 2vw, 28px);
   font-weight: 500;
   padding: 18px 24px;
@@ -5010,3 +4982,5 @@ p.alone-orange-text {
         background-position: 100% 0, 128px 29px, 128px 62px, 16px 103px, 16px 130px, 16px 15px, 0 0;
     }
 }
+
+
